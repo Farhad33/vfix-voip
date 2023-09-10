@@ -1,4 +1,4 @@
-
+import ButtonComponent from '@/common/Button'
 import {Container, Title, Paragraph, Button, Section} from './pagestyle'
 
 export const metadata = {
@@ -8,7 +8,9 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <Container>
+    <Container >
+      <ButtonComponent variant='primary'>Majiddddd</ButtonComponent>
+      <ButtonComponent variant='secondary'>Askarifarsangi</ButtonComponent>
       <Section>
         <Title>Hello</Title>
         <Paragraph>This is a Paragraph</Paragraph>
