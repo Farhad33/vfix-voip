@@ -45,7 +45,7 @@ export const Theme ={
         lineHeight: {
             h1: "-1.5px",
             h2: "-0.5px",
-            h3: "0",
+            h3: "30px",
             h4: "0.25px",
             h5: "0",
             h6: "0.15px",
@@ -67,6 +67,8 @@ export const Theme ={
             bold: "700",
         },
     },
+
+    
     button: {
         primary: {
             // backgroundColor: `linear-gradient(90deg, ${color.Green200} 0%, ${color.Blue100} 100%)`,
@@ -108,4 +110,5 @@ export const Theme ={
         },
 
     },
+    
 }
