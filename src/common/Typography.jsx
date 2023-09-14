@@ -1,7 +1,6 @@
-import styled from 'styled-components'
+import { TypographyRoot } from "./GeneralStyle";
 import { Theme } from "./Theme";
 
-// eslint-disable-next-line react/prop-types
 export default function Typography({ variant , component, children}) { 
     return (
         <TypographyRoot
@@ -13,8 +12,3 @@ export default function Typography({ variant , component, children}) {
     );
 }
 
-const TypographyRoot = styled.span`
-    font-size: ${({variant}) => Theme.typography.fontSize[variant]};
-    line-height: ${({variant}) => Theme.typography.lineHeight[variant]};
-    font-weight: ${({variant}) => Theme.typography.fontWeights[variant]};
-`
