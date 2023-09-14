@@ -14,20 +14,17 @@ export default function Footer() {
                     </FooterLogo>
                     <FooterLogoContent>
                         <Address>
-                            <Typography variant='p' component='p'>
+                            <Typography variant='p'>
                                 {Data.footer.address}
                             </Typography>
                         </Address>
                         <FollowUs>
                             <FollowUsTitle>
-                                <Typography variant='p' component='body1'>
+                                <Typography variant='p'>
                                     {Data.footer.social}
                                 </Typography>
                             </FollowUsTitle>
                             <FollowUsImages>
-                                
-
-                                
                                 {
                                     Data.footer.imgs.map((image, index) =>(
                                         <BackgroundImage key={index}>
@@ -40,7 +37,7 @@ export default function Footer() {
                         </FollowUs>
                         <MobileApp>
                             <MobileTitle>
-                                <Typography variant='p' component='body1'>
+                                <Typography variant='p'>
                                     {Data.footer.app}
                                 </Typography>
                             </MobileTitle>
@@ -91,7 +88,7 @@ export default function Footer() {
             </FooreContainer>
             <FooterEndContainer>
                     <CopyRight>
-                            <Typography variant='p' component='overLine'>
+                            <Typography variant='p'>
                                 {Data.footer.footerEnd.copyRight}
                             </Typography>
                     </CopyRight>

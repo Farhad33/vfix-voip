@@ -10,7 +10,7 @@ export const ServicesContainer = styled.div`
     justify-content: center;
     padding-top: 50px;
 `
-export const ServicesTitle = styled.span`
+export const ServicesTitle = styled.h2`
     text-align: center;
     padding-bottom: 50px;
 `

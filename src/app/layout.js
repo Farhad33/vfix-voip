@@ -1,7 +1,7 @@
 import StyledComponentsRegistry from '../lib/registry'
 import { Quicksand } from 'next/font/google'
-import Navbar from '@/common/navbar/Navbar'
 import './Globalstyle.css'
+import Navbar from '@/common/navbar/Navbar'
 import Footer from '@/common/footer/Footer'
 
 

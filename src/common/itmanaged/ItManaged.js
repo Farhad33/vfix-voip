@@ -11,10 +11,10 @@ export default function ItManaged() {
             <ItManagedContainer>
                 <ItManagedLeftSide>
                     <LeftSideTitle>
-                        <Typography variant='h2' component='h2'>{Data.itmanaged.title}</Typography>
+                        <Typography variant='h2'>{Data.itmanaged.title}</Typography>
                     </LeftSideTitle>
                     <LeftSideParagraph>
-                        <Typography variant='p' component='body1'>{Data.itmanaged.paragraph}</Typography>
+                        <Typography variant='p'>{Data.itmanaged.paragraph}</Typography>
                     </LeftSideParagraph>
                     <Button>{Data.itmanaged.button}</Button>
                 </ItManagedLeftSide>

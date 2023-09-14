@@ -34,8 +34,8 @@ export default function Success() {
                 </SuccessCenterSide>
                 <SuccessRightSide>
                     <SuccessTitle>
-                        <Typography variant='h3' component='h3'>Success With VFIX Communications</Typography>
-                        <Typography variant='p' component='body1'>
+                        <Typography variant='h3'>Success With VFIX Communications</Typography>
+                        <Typography variant='p'>
                             Unlock your business s potential for success with our comprehensive suite of services. From reliable IT management to cutting-edge cloud solutions and seamless communication, we provide the tools and expertise to drive your business forward. Partner with us today and experience the transformation that leads to unparalleled success.
                         </Typography>
                         <Button>Learn More</Button>
