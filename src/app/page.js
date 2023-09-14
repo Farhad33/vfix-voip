@@ -1,10 +1,14 @@
-import ButtonComponent from '@/common/Button'
 import Typography from '@/common/Typography'
 import {Page, Title, Paragraph, Button, Section} from './pagestyle'
 import Header from '@/common/header/Header'
 import Success from '@/common/success/Success'
 import Services from '@/common/services/Services'
 import ItManaged from '@/common/itmanaged/ItManaged'
+import ItServices from '@/common/itservices/ItServices'
+import ITConsulting from '@/common/itconsulting/ITConsulting'
+import Industries from '@/common/industries/Industries'
+import PartnerWithVfix from '@/common/partnerwithvfix/PartnerWithVfix'
+import LearnMore from '@/common/learnmore/LearnMore'
 
 export const metadata = {
   title: 'Create Next App',
@@ -19,29 +23,11 @@ export default function Home() {
       <Success />
       <Services />
       <ItManaged />
-      <ButtonComponent variant='primary'>Majiddddd</ButtonComponent>
-      <ButtonComponent variant='secondary'>Askarifarsangi</ButtonComponent>
-      <Section>
-        <Typography variant='h1' component='h1'>Hello</Typography>
-        <Title>Hello</Title>
-        <Paragraph>This is a Paragraph</Paragraph>
-        <Button>Click Me!</Button>
-      </Section>
-      <Section>
-        <Title>Hello</Title>
-        <Paragraph>This is a Paragraph</Paragraph>
-        <Button>Click Me!</Button>
-      </Section>
-      <Section>
-        <Title>Hello</Title>
-        <Paragraph>This is a Paragraph</Paragraph>
-        <Button>Click Me!</Button>
-      </Section>
-      <Section>
-        <Title>Hello</Title>
-        <Paragraph>This is a Paragraph</Paragraph>
-        <Button>Click Me!</Button>
-      </Section>
+      <ItServices />
+      <ITConsulting />
+      <Industries />
+      <PartnerWithVfix />
+      <LearnMore />
     </Page> 
     
   )

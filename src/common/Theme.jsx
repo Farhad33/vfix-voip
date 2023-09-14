@@ -36,26 +36,26 @@ export const Theme ={
             h6: "14px",
             subline1: "21px",
             subline2: "18px",
-            body1: "21px",
+            body1: "24px",
             body2: "18px",
             button: "16px",
             caption: "14px",
             overLine: "13px",
         },
         lineHeight: {
-            h1: "-1.5px",
-            h2: "-0.5px",
+            h1: "60px",
+            h2: "40px",
             h3: "30px",
-            h4: "0.25px",
-            h5: "0",
-            h6: "0.15px",
-            subline1: "0.15px",
-            subline2: "0.1px",
-            body1: "0.5px",
-            body2: "0.15px",
-            button: "1.25px",
-            caption: "0.4px",
-            overLine: "1.25px",
+            h4: "20px",
+            h5: "15px",
+            h6: "12px",
+            subline1: "24px",
+            subline2: "20px",
+            body1: "24px",
+            body2: "20px",
+            button: "24px",
+            caption: "20px",
+            overLine: "16px",
         },
         fontWeights: {
             thin: "100",
@@ -66,49 +66,6 @@ export const Theme ={
             semiBold: "600",
             bold: "700",
         },
-    },
-
-    
-    button: {
-        primary: {
-            // backgroundColor: `linear-gradient(90deg, ${color.Green200} 0%, ${color.Blue100} 100%)`,
-            // backgourndColor: color.Green100,
-            color: 'red',
-            border: `none`,
-            borderRadius:'20px',
-            hover: {
-                background: color.Black, 
-                transition: '0.2s',
-              },
-                },
-        size: {
-            small: {
-                width: '110px',
-            },
-            medium: {
-                width: '135px',
-            }
-        },
-        secondary: {
-            // backgroundColor: `linear-gradient(90deg, ${color.Green200} 0%, ${color.Blue100} 100%)`,
-            // backgourndColor: color.Green100,
-            color: 'blue',
-            border: `none`,
-            borderRadius:'20px',
-            hover: {
-                background: color.Black, 
-                transition: '0.2s',
-              },
-                },
-        size: {
-            small: {
-                width: '110px',
-            },
-            medium: {
-                width: '135px',
-            }
-        },
-
     },
     
 }

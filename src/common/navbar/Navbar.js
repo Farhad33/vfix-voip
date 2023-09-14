@@ -3,12 +3,10 @@ import {Container, Button} from '../MainStyle'
 import {NavContainer, NavLinks, UL, LI,StyledLink} from '../navbar/NavbarStyle'
 import Image from 'next/image'
 import logovfix from '../photos/vfixlogo.png'
-// import { useRouter } from 'next/router';
 
 export default function Navbar() {
 
-    // const router = useRouter()
-    // const currenRoute = router.pathname
+    
     return (
         <Container>
             <NavContainer>

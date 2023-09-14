@@ -8,12 +8,6 @@ export const Page = styled.div`
     min-height: 100vh;
 `
 
-// export const Container = styled.div`
-//     width: 100%;
-//     padding: 0 5%;
-//     height: 100vh;
-// `
-
 export const Section = styled.div`
     display: flex;
     flex-direction: column;

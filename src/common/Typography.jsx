@@ -1,7 +1,6 @@
 import { TypographyRoot } from "./GeneralStyle";
 import { Theme } from "./Theme";
 
-// eslint-disable-next-line react/prop-types
 export default function Typography({ variant , component, children}) { 
     return (
         <TypographyRoot

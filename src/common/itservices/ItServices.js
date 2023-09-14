@@ -1,20 +1,37 @@
-import {Container, Button} from '../MainStyle'
-import Image from 'next/image'
+import {Container} from '../MainStyle'
 import Typography from '../Typography'
 import { Data } from '../Data'
-import {ItServicesContainer, ItServicesHead, ItServicesCardContainer} from './ItServicesStyle'
+import {ItServicesContainer, ItServicesHead, ItServicesCardContainer, HeadTitle, HeadParagraph} from './ItServicesStyle'
 import ItServicesCard from './ItServicesCard'
-import ITManaged from '../photos/IT-Managed.png'
 
 export default function ItServices() {
     return(
         <Container>
             <ItServicesContainer>
                 <ItServicesHead>
-                    
+                    <HeadTitle>
+                        <Typography variant='h2' component='h2'>
+                            {Data.ITManagedServices.headTitle}
+                        </Typography>
+                    </HeadTitle>
+                    <HeadParagraph>
+                        <Typography variant='p' component='body1'>
+                            {Data.ITManagedServices.headContent}
+                        </Typography>
+                    </HeadParagraph>
                 </ItServicesHead>
                 <ItServicesCardContainer>
-                    
+                    {
+                        Data.ITManagedServices.cards.map((card, index) => (
+                            <ItServicesCard 
+                            key={card.index}
+                            title={card.title}
+                            content={card.paragraph}
+                            urlImage={card.img}
+                            btnText={card.button}
+                            />
+                        ))
+                    }
                 </ItServicesCardContainer>
             </ItServicesContainer>
         </Container>

@@ -1,6 +1,5 @@
 'use client'
 import styled from "styled-components";
-import Typography from "../Typography";
 
 
 export const ServicesContainer = styled.div`
@@ -10,7 +9,6 @@ export const ServicesContainer = styled.div`
     align-items: center;
     justify-content: center;
     padding-top: 50px;
-    /* width: 50%; */
 `
 export const ServicesTitle = styled.span`
     text-align: center;

@@ -3,9 +3,7 @@ import styled from "styled-components";
 import { Theme } from "./Theme";
 
 export const Container = styled.div`
-    /* width: 100%;
-    padding: 0 5%;
-    height: 100vh; */
+  
 `
 
 export const Button = styled.button`
