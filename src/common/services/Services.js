@@ -10,7 +10,7 @@ export default function Services() {
         <Container>
             <ServicesContainer>
                 <ServicesTitle>
-                    <Typography variant='h2' component='h2'>{Data.services.headTitle}</Typography>
+                    <Typography variant='h2'>{Data.services.headTitle}</Typography>
                 </ServicesTitle>
                 <ServicesCardContainer>
                     {

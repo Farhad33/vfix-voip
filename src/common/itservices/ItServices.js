@@ -10,12 +10,12 @@ export default function ItServices() {
             <ItServicesContainer>
                 <ItServicesHead>
                     <HeadTitle>
-                        <Typography variant='h2' component='h2'>
+                        <Typography variant='h3'>
                             {Data.ITManagedServices.headTitle}
                         </Typography>
                     </HeadTitle>
                     <HeadParagraph>
-                        <Typography variant='p' component='body1'>
+                        <Typography variant='p'>
                             {Data.ITManagedServices.headContent}
                         </Typography>
                     </HeadParagraph>

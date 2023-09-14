@@ -18,7 +18,7 @@ export const HeaderLeftSide = styled.div`
 export const HeaderRightSide = styled.div`
     width: 60%;
 `
-export const HeadTitle = styled.span`
+export const HeadTitle = styled.h2`
 
 `
 

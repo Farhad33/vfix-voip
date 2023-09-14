@@ -66,6 +66,5 @@ export const Theme ={
             semiBold: "600",
             bold: "700",
         },
-    },
-    
+    }, 
 }

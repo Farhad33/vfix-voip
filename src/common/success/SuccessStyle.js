@@ -6,13 +6,11 @@ export const SuccessContainer = styled.div`
     grid-template-columns: repeat(3, 1fr);
 `
 export const SuccessLeftSide = styled.div`
-    /* display: flex; */
 `
 export const SuccessCenterSide = styled.div`
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
-    /* align-self: flex-start; */
+    
 `
 export const SuccessRightSide = styled.div`
     display: flex;

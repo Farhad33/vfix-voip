@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import {Container, Button} from '../MainStyle'
-import {NavContainer, NavLinks, UL, LI,StyledLink} from '../navbar/NavbarStyle'
+import {NavContainer, NavLinks, Ul, Li,StyledLink} from '../navbar/NavbarStyle'
 import Image from 'next/image'
 import logovfix from '../photos/vfixlogo.png'
 
@@ -16,29 +16,29 @@ export default function Navbar() {
                 width={140}
                 />
                 <NavLinks>
-                    <UL >
-                        <LI>
+                    <Ul>
+                        <Li>
                             <StyledLink href='/'>Home</StyledLink>
-                        </LI>
-                        <LI>
+                        </Li>
+                        <Li>
                             <StyledLink href='/whyvfix'>Why Vfix</StyledLink>
-                        </LI>
-                        <LI>
+                        </Li>
+                        <Li>
                             <StyledLink href='/servic'>Services</StyledLink>
-                        </LI>
-                        <LI>
+                        </Li>
+                        <Li>
                             <StyledLink href='/pricing'>Pricing & FAQs</StyledLink>
-                        </LI>
-                        <LI>
+                        </Li>
+                        <Li>
                             <StyledLink href='/company'>Company</StyledLink>
-                        </LI>
-                        <LI>
+                        </Li>
+                        <Li>
                             <StyledLink href='/down'>Downloads</StyledLink>
-                        </LI>
-                        <LI>
+                        </Li>
+                        <Li>
                             <StyledLink href='/login'><Button>Login</Button></StyledLink>
-                        </LI>
-                    </UL>
+                        </Li>
+                    </Ul>
                 </NavLinks>
             </NavContainer>
         </Container>

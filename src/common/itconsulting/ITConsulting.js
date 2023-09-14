@@ -9,12 +9,12 @@ export default function ITConsulting() {
         <ITConsultingContainer>
             <ITConsultingHead>
                 <HeadTitle>
-                    <Typography variant='h3' component='h3'>
+                    <Typography variant='h3'>
                         {Data.ITConsultingServices.headTitle}
                     </Typography>
                 </HeadTitle>
                 <HeadParagraph>
-                    <Typography variant='p' component='body1'>
+                    <Typography variant='p'>
                         {Data.ITConsultingServices.headContent}
                     </Typography>
                 </HeadParagraph>

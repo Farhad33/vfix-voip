@@ -1,5 +1,4 @@
-import Typography from '@/common/Typography'
-import {Page, Title, Paragraph, Button, Section} from './pagestyle'
+import {Page} from './pagestyle'
 import Header from '@/common/header/Header'
 import Success from '@/common/success/Success'
 import Services from '@/common/services/Services'

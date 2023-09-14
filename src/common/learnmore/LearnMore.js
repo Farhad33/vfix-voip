@@ -10,12 +10,12 @@ export default function LearnMore() {
         <LearnMoreContainer>
             <LearnMoreLeftSide>
                 <LeftSideTitle>
-                    <Typography variant='h2' component='h2'>
+                    <Typography variant='h2'>
                         {Data.learnMore.headTitle}
                     </Typography>
                 </LeftSideTitle>
                 <LeftSideParagraph>
-                    <Typography variant='p' component='body1'>
+                    <Typography variant='p'>
                         {Data.learnMore.headContent}
                     </Typography>
                 </LeftSideParagraph>

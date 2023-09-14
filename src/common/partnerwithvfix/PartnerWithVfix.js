@@ -9,12 +9,12 @@ export default function PartnerWithVfix() {
         <PartnerWithVfixContainer>
             <PartnerWithVfixHead>
                 <HeadTitle>
-                    <Typography variant='h3' component='h3'>
+                    <Typography variant='h3'>
                         {Data.PartnerWithVfix.headTitle}
                     </Typography>
                 </HeadTitle>
                 <HeadParagraph>
-                    <Typography variant='p' component='body1'>
+                    <Typography variant='p'>
                         {Data.PartnerWithVfix.headContent}
                     </Typography>
                 </HeadParagraph>
