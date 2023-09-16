@@ -1,7 +1,10 @@
 export const Data = {
     navbar: {
         menu: ['Home', 'Why Vfix', 'Services', 'Princing & FAQs', 'Company', 'Downloadds'],
-        login:'Login',
+        links: ['/', 'whyvfix', 'servic', 'pricing', 'company', 'download'],
+        login:'/login',
+        img: '/Navbar/vfixlogo.png',
+        alt: 'Vfix Voip Logo'
     },
     header: {
         title: 'We help our Customers transform and grow their businesses with confidence.',
