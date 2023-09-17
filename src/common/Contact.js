@@ -4,6 +4,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import styled from 'styled-components';
 // import { Data } from '../common/Data';
 import { Location, Phone, Email } from './Svg'
+import { Button } from './MainStyle'
 
 export default function Contact () {
 
@@ -48,6 +49,7 @@ const Data =  {
 
   function onSubmit(e){
       e.preventDefault();
+      alert(form.current.name.value)
     //   emailjs.sendForm('service_znsyjev', 'template_4f1qfpu', form.current, 'A6zWxwdubwFpZ1fy0')
     //     .then((result) => {
     //         form.current.name.value = '';
@@ -66,42 +68,42 @@ const Data =  {
         <h1>{Data.contact.subject}</h1>
         <p>{Data.contact.p}</p>
         <Contactdiv>
-            <Shadow />
+            {/* <Shadow /> */}
             <Contactinfo>
                 {/* <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/farsangi'><Linkedin fontSize="25px"/></a> */}
 
-                <a href="">
+                <Item href="">
                     <div>
-                        <Location color='red' fontSize="25px"/>
+                        <Location color='white' fontSize="25px"/>
                         <div>
                             <p>{Data.contact.address}</p>
                         </div> 
                     </div>
-                </a>
-                <a href="">
+                </Item>
+                <Item href="">
                     <div>
-                        <Phone color='red' fontSize="25px"/>
+                        <Phone color='white' fontSize="25px"/>
                         <div>
                             <p>{Data.contact.phone1}</p>
                         </div> 
                     </div>
-                </a>
-                <a href="">
+                </Item>
+                <Item href="">
                     <div>
-                        <Email color='red' fontSize="25px"/>
+                        <Email color='white' fontSize="25px"/>
                         <div>
                             <p>{Data.contact.email}</p>
                         </div> 
                     </div>
-                </a>
-                <a href="">
+                </Item>
+                <Item href="">
                     <div>
-                        <Phone color='red' fontSize="25px"/>
+                        <Phone color='white' fontSize="25px"/>
                         <div>
                             <p>{Data.contact.phone2}</p>
                         </div> 
                     </div>
-                </a>
+                </Item>
 
             
             </Contactinfo>        
@@ -113,7 +115,8 @@ const Data =  {
                     <input type="email" name="email" placeholder={Data.contact.email} required/>      
                     <input type="text" name="telephone" placeholder={Data.contact.telephone} required/>      
                     <textarea name="message" placeholder={Data.contact.message} rows="10" cols="50"/>    
-                    <input type="submit" value="Submit" />
+                    {/* <input type="submit" value="Submit" /> */}
+                    <Button type="submit" value="Submit"> Submit </Button>
                     {message && <Message err={message == 'Your message was not sent'}>{message}</Message>}
                 </form>
             </FormContainer>
@@ -132,7 +135,6 @@ const ContactContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightblue;
     /* position: absolute; */
 
 
@@ -158,8 +160,12 @@ const ContactContainer = styled.div`
 
 
 const Contactdiv = styled.div`
+    margin-top: 15px;
     background-color: #4C4E51;
     display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 5px;
 `
 const FormContainer = styled.div`
     display: flex;
@@ -206,6 +212,10 @@ const FormContainer = styled.div`
     }
 `
 const Contactinfo = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
 
 `
 const Shadow = styled.div`
@@ -226,4 +236,18 @@ const Message = styled.p`
     color: ${({err}) => err ? 'red' : 'green'};
     font-size: 18px;
     margin-top: 10px;
+`
+
+const Item = styled.a`
+    div {
+        margin-bottom: 10px;
+
+        /* background-color: white; */
+        display: flex;
+        align-items: center;
+        p {
+            width: 300px;
+        }
+    }
+
 `
