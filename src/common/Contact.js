@@ -1,6 +1,6 @@
 'use client'
 import React, { useRef, useEffect, useState } from 'react';
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 // import { Data } from '../common/Data';
 
@@ -47,17 +47,17 @@ const Data =  {
 
   function onSubmit(e){
       e.preventDefault();
-      emailjs.sendForm('service_znsyjev', 'template_4f1qfpu', form.current, 'A6zWxwdubwFpZ1fy0')
-        .then((result) => {
-            form.current.name.value = '';
-            form.current.email.value = '';
-            form.current.message.value = '';            
-            console.log(result.text);
-            setMessage(Data.contact.sent);
-        }, (error) => {
-            console.log(error.text);
-            setMessage(Data.contact.err);
-        });
+    //   emailjs.sendForm('service_znsyjev', 'template_4f1qfpu', form.current, 'A6zWxwdubwFpZ1fy0')
+    //     .then((result) => {
+    //         form.current.name.value = '';
+    //         form.current.email.value = '';
+    //         form.current.message.value = '';            
+    //         console.log(result.text);
+    //         setMessage(Data.contact.sent);
+    //     }, (error) => {
+    //         console.log(error.text);
+    //         setMessage(Data.contact.err);
+    //     });
     };  
 
   return (
@@ -84,7 +84,7 @@ const Data =  {
                     <input type="text" name="telephone" placeholder={Data.contact.telephone} required/>      
                     <textarea name="message" placeholder={Data.contact.message} rows="10" cols="50"/>    
                     <input type="submit" value="Submit" />
-                    {message && <Message err={message == 'Your message was not sent' || message== 'Meldingen din ble ikke sendt'}>{message}</Message>}
+                    {message && <Message err={message == 'Your message was not sent'}>{message}</Message>}
                 </form>
             </FormContainer>
         </Contactdiv>
