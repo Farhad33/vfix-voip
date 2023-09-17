@@ -19,4 +19,7 @@ export const Button = styled.button`
     transition: 0.7s;
     
   }
+  @media (max-width: 640px) {
+    padding: 0 10px;
+  }
 `

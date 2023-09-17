@@ -29,4 +29,7 @@ export const IndustriesCardContainer = styled.div`
     justify-content: center;
     align-items: center;
     gap: 35px;
+    @media (max-width: 640px) {
+        flex-direction: column;
+    }
 `

@@ -1,18 +1,24 @@
 'use client'
 import styled from "styled-components"
+import Typography from "../Typography"
 
 export default function LearnMoreCard({title, content}) {
     return (
-        <CardContainer>
+        <CardContainer>     
             <CardTitle>
-                {title}
+                <Typography>
+                    {title}
+                </Typography>
             </CardTitle>
             <CardContent>
-                {content}
+                <Typography variant='body2'>
+                    {content}
+                </Typography>
             </CardContent>
         </CardContainer>
     )
 }
+
 
 const CardContainer = styled.div`
     display: flex;
@@ -21,6 +27,10 @@ const CardContainer = styled.div`
     justify-content: center;
     width: 80%;
     border-bottom: 1px solid #586780;
+    @media (max-width: 768px) {
+        width: 100%;
+        justify-content: flex-start;
+    }
 `
 const CardTitle = styled.h3`
     font-size: 50px;

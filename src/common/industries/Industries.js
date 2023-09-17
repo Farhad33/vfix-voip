@@ -14,7 +14,7 @@ export default function Industries() {
                     </Typography>
                 </HeadTitle>
                 <HeadParagraph>
-                    <Typography variant='p'>
+                    <Typography variant='subline3'>
                         {Data.IndustriesWeServe.headContent}
                     </Typography>
                 </HeadParagraph>

@@ -14,7 +14,7 @@ export default function ITConsulting() {
                     </Typography>
                 </HeadTitle>
                 <HeadParagraph>
-                    <Typography variant='p'>
+                    <Typography variant='subline3'>
                         {Data.ITConsultingServices.headContent}
                     </Typography>
                 </HeadParagraph>

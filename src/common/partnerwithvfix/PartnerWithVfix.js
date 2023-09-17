@@ -14,7 +14,7 @@ export default function PartnerWithVfix() {
                     </Typography>
                 </HeadTitle>
                 <HeadParagraph>
-                    <Typography variant='p'>
+                    <Typography variant='subline3'>
                         {Data.PartnerWithVfix.headContent}
                     </Typography>
                 </HeadParagraph>
@@ -33,9 +33,15 @@ export default function PartnerWithVfix() {
             </PartnerWithVfixContainerCard>
             <PartnerWithVfixContactUs>
                 <ContactUsParagraph>
-                    {Data.PartnerWithVfix.contactUsText}
+                    <Typography variant='overLine'>
+                        {Data.PartnerWithVfix.contactUsText}
+                    </Typography>
                 </ContactUsParagraph>
-                <Button>{Data.PartnerWithVfix.contactUsBtn}</Button>
+                <Button>
+                    <Typography variant='button'>
+                        {Data.PartnerWithVfix.contactUsBtn}
+                    </Typography>
+                </Button>
             </PartnerWithVfixContactUs>
         </PartnerWithVfixContainer>
     )

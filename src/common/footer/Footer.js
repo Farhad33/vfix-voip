@@ -1,6 +1,6 @@
 import Typography from "../Typography";
 import { Data } from "../Data";
-import {ContainerFooter, FooreContainer, FooterLeftSide, FooterRightSide,ListContainer, ListColumn, ListTitle, ListUl, ListLi, FooterLogo, Address, FollowUs, FollowUsTitle, FollowUsImages, MobileApp, MobileTitle, MobileImage, FooterEndContainer, CopyRight, Privecy, PrivecyTag, FooterLogoContent, BackgroundImage} from './FooterStyle'
+import {ContainerFooter, FooreContainer, FooterLeftSide, FooterRightSide,ListContainer, ListColumn, ListTitle, ListUl, ListLi, FooterLogo, Address, FollowUs, FollowUsTitle, FollowUsImages, MobileApp, MobileTitle, MobileImage, FooterEndContainer, CopyRight, Privecy, PrivecyTag, FooterLogoContent, BackgroundImage, ImagStyle} from './FooterStyle'
 import Image from "next/image";
 
 export default function Footer() {
@@ -9,18 +9,18 @@ export default function Footer() {
             <FooreContainer>
                 <FooterLeftSide>
                     <FooterLogo>
-                        <Image src={Data.footer.logoFooter} alt={Data.footer.logoName} width={300}
-                        height={70} />
+                        <ImagStyle src={Data.footer.logoFooter} alt={Data.footer.logoName} width={300}
+                        height={70} layout="responsive"/>
                     </FooterLogo>
                     <FooterLogoContent>
                         <Address>
-                            <Typography variant='p'>
+                            <Typography variant='body2'>
                                 {Data.footer.address}
                             </Typography>
                         </Address>
                         <FollowUs>
                             <FollowUsTitle>
-                                <Typography variant='p'>
+                                <Typography variant='h3'>
                                     {Data.footer.social}
                                 </Typography>
                             </FollowUsTitle>
@@ -37,7 +37,7 @@ export default function Footer() {
                         </FollowUs>
                         <MobileApp>
                             <MobileTitle>
-                                <Typography variant='p'>
+                                <Typography variant='h3'>
                                     {Data.footer.app}
                                 </Typography>
                             </MobileTitle>
@@ -58,24 +58,36 @@ export default function Footer() {
                         Data.footer.lists.map((section, colIndex) => (
                             <ListContainer key={colIndex} >
                                 <ListColumn>
-                                    <ListTitle>{section.title1}</ListTitle>
+                                    <ListTitle>
+                                        <Typography variant='h4'>
+                                            {section.title1}
+                                        </Typography>
+                                    </ListTitle>
                                     <ListUl>
                                         {
                                             section.list1.map((item, itemIndex) => (
                                                 <ListLi key={itemIndex}>
-                                                    {item}
+                                                    <Typography variant='overLine'>
+                                                        {item}
+                                                    </Typography>
                                                 </ListLi>
                                             ))
                                         }
                                     </ListUl>
                                 </ListColumn>
                                 <ListColumn>
-                                    <ListTitle>{section.title2}</ListTitle>
+                                    <ListTitle>
+                                        <Typography variant='h4'>
+                                                {section.title2}
+                                        </Typography>
+                                    </ListTitle>
                                     <ListUl>
                                         {
                                             section.list2.map((item, itemIndex) => (
                                                 <ListLi key={itemIndex}>
-                                                    {item}
+                                                   <Typography variant='overLine'>
+                                                        {item}
+                                                    </Typography>
                                                 </ListLi>
                                             ))
                                         }
@@ -88,7 +100,7 @@ export default function Footer() {
             </FooreContainer>
             <FooterEndContainer>
                     <CopyRight>
-                            <Typography variant='p'>
+                            <Typography variant='overLine'>
                                 {Data.footer.footerEnd.copyRight}
                             </Typography>
                     </CopyRight>
@@ -96,7 +108,9 @@ export default function Footer() {
                         {
                             Data.footer.footerEnd.list.map((lists, index) => (
                                 <PrivecyTag key={index}>
-                                    {lists}
+                                    <Typography variant='body3'>
+                                        {lists}
+                                    </Typography>
                                 </PrivecyTag>
                             ))
                         }

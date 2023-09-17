@@ -9,6 +9,7 @@ export const ServicesContainer = styled.div`
     align-items: center;
     justify-content: center;
     padding-top: 50px;
+    margin-bottom: 50px;
 `
 export const ServicesTitle = styled.h2`
     text-align: center;

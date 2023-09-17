@@ -26,4 +26,7 @@ export const ItServicesCardContainer = styled.div`
     gap: 30px;
     justify-content: center;
     align-items: center;
+    @media (max-width: 440px) {
+        grid-template-columns: 60%;
+    }
 `

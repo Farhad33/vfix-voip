@@ -1,6 +1,7 @@
 'use client'
 import styled from "styled-components";
 import Image from "next/image";
+import Typography from "../Typography";
 
 
 
@@ -11,8 +12,16 @@ export default function ITConsultingCard({title, content, urlImage}) {
                 <Image src={urlImage} alt={title} width={70} height={70} />
             </CardImage>
             <CardContetnContainer>
-                <CardTitle>{title}</CardTitle>
-                <CardContetn>{content}</CardContetn>
+                <CardTitle>
+                    <Typography variant='h3'>
+                        {title}
+                    </Typography>
+                </CardTitle>
+                <CardContetn>
+                    <Typography variant='body3'>
+                        {content}
+                    </Typography>
+                </CardContetn>
             </CardContetnContainer>
         </CardContainer>
     )
@@ -28,15 +37,18 @@ const CardContainer = styled.div`
     border-radius: 10px;
     width: 43%;
     padding: 45px;
+    @media (max-width: 640px) {
+        width: 75%;
+    }
 `
 const CardImage = styled.div`
-    margin-bottom: 30px;
+    margin-bottom: calc(1vw + 6px);
 `
 const CardContetnContainer = styled.div`
 
 `
 const CardTitle = styled.h3`
-    margin-bottom: 20px;
+    margin-bottom: calc(1vw + -1px);
 `
 
 const CardContetn = styled.p`

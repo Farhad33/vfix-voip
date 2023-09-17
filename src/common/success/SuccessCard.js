@@ -1,6 +1,7 @@
 'use client'
 import styled from 'styled-components';
 import Image from 'next/image';
+import Typography from '../Typography';
 
 
 
@@ -10,8 +11,16 @@ export default function SuccessCard ({ title, content, urlImage })  {
         <CardImage>
             <Image src={urlImage} alt={title} width={100} height={100} />
         </CardImage>
-      <CardTitle>{title}</CardTitle>
-      <CardContent>{content}</CardContent>
+      <CardTitle>
+        <Typography variant='h4'>
+          {title}
+        </Typography>
+      </CardTitle>
+      <CardContent>
+        <Typography variant='body3'>
+          {content}
+        </Typography>
+      </CardContent>
     </CardContainer>
   );
 };
@@ -19,16 +28,21 @@ export default function SuccessCard ({ title, content, urlImage })  {
 const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 250px;
+  width: 85%;
+  margin-bottom: 35px;
+  @media (max-width: 768px) {
+       width: 40%;
+
+    }
 `;
 
 const CardImage = styled.div`
 
 `
 const CardTitle = styled.h2`
-  font-size: 22px;
+  margin-bottom: 10px;
 `;
 
 const CardContent = styled.p`
-  font-size: 14px;
+
 `;

@@ -1,5 +1,6 @@
 'use client'
 import styled from "styled-components"
+import Image from "next/image"
 
 
 
@@ -21,19 +22,25 @@ export const FooreContainer = styled.div`
     align-items:flex-start;
     column-gap: 150px;
     padding-top:50px;
+    @media (max-width: 1000px) {
+        column-gap: calc(2vw + 5px);
+    }
 `
 
 export const FooterLeftSide = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding-left: 50px; */
     width: 30%;
 `
 export const FooterLogo = styled.div`
 
 `
-
+export const ImagStyle = styled(Image)`
+    @media (max-width: 870px) {
+        padding: 0 20px;
+    }
+`
 export const FooterLogoContent = styled.div`
     display: flex;
     flex-direction: column;
@@ -56,7 +63,8 @@ export const BackgroundImage = styled.div`
   
 `
 export const FollowUs = styled.div`
-    margin-bottom: 15px;
+    padding-bottom: 15px;
+    
 `
 
 export const FollowUsTitle = styled.p`
@@ -66,6 +74,9 @@ export const FollowUsTitle = styled.p`
 export const FollowUsImages = styled.div`
     display: flex;
     gap: 25px;
+    @media (max-width: 870px) {
+        flex-wrap: wrap;
+    }
 `
 
 export const MobileApp = styled.div`
@@ -89,19 +100,26 @@ export const FooterRightSide = styled.div`
     align-items: flex-start;
     gap: 100px;
     width: 70%;
-    /* margin-top: 50px; */
+    @media (max-width: 870px) {
+        gap: calc(2vw + 15px);
+    }
+    @media (max-width: 600px) {
+        width: 60%;
+        gap: calc(2vw + 10px);
+    }
+
 `
 export const ListContainer = styled.div`
 `
 export const ListColumn = styled.div`
 `
 export const ListTitle = styled.h3`
-    padding-bottom: 10px;
+    padding-bottom: calc(1vw + -2px);
 `
 
 export const ListUl = styled.ul`
     list-style: none;
-    padding-bottom: 20px;
+    padding-bottom: calc(1vw + -2px);
 `
 
 export const ListLi = styled.li``
@@ -111,7 +129,7 @@ export const FooterEndContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 40px 50px 50px 40px;
+    padding: calc(1vw + 2px);
 `
 
 export const CopyRight = styled.span`

@@ -1,6 +1,7 @@
 'use client'
 import styled from "styled-components"
 import Image from "next/image"
+import Typography from "../Typography"
 
 export default function IndustriesCard({title, content, urlImage}) {
     return(
@@ -10,10 +11,14 @@ export default function IndustriesCard({title, content, urlImage}) {
             </CardImage>
             <CardContentContainer>
                 <CardTitle>
-                    {title}
+                    <Typography variant='h4'>
+                        {title}
+                    </Typography>
                 </CardTitle>
                 <CardContent>
-                    {content}
+                    <Typography variant='overLine'>
+                        {content}
+                    </Typography>
                 </CardContent>
             </CardContentContainer>
         </CardContainer>
@@ -27,9 +32,14 @@ const CardContainer = styled.div`
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     padding: 10px 5px;
     border-radius: 10px;
+    @media (max-width: 640px) {
+        width: 65%;
+    }
 `
 const CardImage = styled.div`
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 const CardContentContainer = styled.div`
     display: flex;
@@ -43,5 +53,5 @@ const CardTitle = styled.h4`
 `
 
 const CardContent = styled.p`
-    font-size: 10px;
+    
 `
