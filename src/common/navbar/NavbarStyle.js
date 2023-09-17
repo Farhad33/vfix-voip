@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link";
 import styled from "styled-components";
+import { color } from "../Theme"
 
 export const Container = styled.div`
     width: 100%;
@@ -16,29 +17,29 @@ export const NavContainer = styled.div`
 
 export const NavLinks = styled.div`
     @media (max-width: 768px) {
-    display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
-    position: absolute;
-    top: 5%;
-    left: 0;
-    width: 90%;
-    padding: 20px;
-    z-index: 1;
-    background:  linear-gradient(to bottom, #00D59C, #009CD5);
-  }
+        display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+        position: absolute;
+        top: 5%;
+        left: 0;
+        width: 90%;
+        padding: 20px;
+        z-index: 1;
+        background:  linear-gradient(to bottom, ${color.Green200}, ${color.Blue100});
+    }
 `
 
 export const MenuButton = styled.button`
     display: none;
-  @media (max-width: 768px) {
-    display: block;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    position: absolute;
-    top: 20px;
-    right: 70px;
-    z-index: 2; 
+    @media (max-width: 768px) {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        position: absolute;
+        top: 20px;
+        right: 70px;
+        z-index: 2; 
     }
 `
 export const UlList = styled.ul`

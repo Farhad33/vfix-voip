@@ -6,8 +6,6 @@ export const color = {
     Purple100: '#9747FF',
     White: '#FAFAFA',
     Black: '#000000',
-    // background: linear-gradient(90deg, #00D59C 0%, #009CD5 100%);
-
 }
 
 export const Theme ={
@@ -62,14 +60,31 @@ export const Theme ={
             caption: "20px",
             overLine: "calc(1vw + -1px)",
         },
-        fontWeights: {
-            thin: "100",
-            extraLight: "200",
-            light: "300",
-            regular: "400",
-            medium: "500",
-            semiBold: "600",
-            bold: "700",
+        fontWeight: {
+            h1: "700",
+            h2: "500",
+            h3: "700",
+            h4: "20px",
+            h5: "15px",
+            h6: "500",
+            subline1: "24px",
+            subline2: "20px",
+            subline3: "calc(1vw + 5px)",
+            body1: "24px",
+            body2: "calc(1vw + 5px)",
+            body3: "calc(1vw + 1px)",
+            button: "calc(1vw + 5px)",
+            caption: "20px",
+            overLine: "calc(1vw + -1px)",
         },
+        // fontWeights: {
+        //     thin: "100",
+        //     extraLight: "200",
+        //     light: "300",
+        //     regular: "400",
+        //     medium: "500",
+        //     semiBold: "600",
+        //     bold: "700",
+        // },
     }, 
 }
