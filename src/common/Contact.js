@@ -3,6 +3,7 @@ import React, { useRef, useEffect, useState } from 'react';
 // import emailjs from '@emailjs/browser';
 import styled from 'styled-components';
 // import { Data } from '../common/Data';
+import { Location, Phone, Email } from './Svg'
 
 export default function Contact () {
 
@@ -67,13 +68,42 @@ const Data =  {
         <Contactdiv>
             <Shadow />
             <Contactinfo>
-                <ul>
-                    <li>asdasasd</li>
-                    <li>asdasasd</li>
-                    <li>asdasasd</li>
-                    <li>asdasasd</li>
-                </ul>
-                
+                {/* <a target="_blank" rel="noreferrer" href='https://www.linkedin.com/in/farsangi'><Linkedin fontSize="25px"/></a> */}
+
+                <a href="">
+                    <div>
+                        <Location color='red' fontSize="25px"/>
+                        <div>
+                            <p>{Data.contact.address}</p>
+                        </div> 
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <Phone color='red' fontSize="25px"/>
+                        <div>
+                            <p>{Data.contact.phone1}</p>
+                        </div> 
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <Email color='red' fontSize="25px"/>
+                        <div>
+                            <p>{Data.contact.email}</p>
+                        </div> 
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <Phone color='red' fontSize="25px"/>
+                        <div>
+                            <p>{Data.contact.phone2}</p>
+                        </div> 
+                    </div>
+                </a>
+
+            
             </Contactinfo>        
             <FormContainer>
                 <form ref={form} onSubmit={onSubmit}>
