@@ -1,6 +1,7 @@
 'use client'
 import styled from "styled-components";
 import Image from "next/image";
+import Typography from "../Typography";
 
 export default function PartnerWithVfixCard({title, content, urlImage}) {
     return(
@@ -10,10 +11,14 @@ export default function PartnerWithVfixCard({title, content, urlImage}) {
             </CardImage>
             <CardContentContainer>
                 <CardTitle>
-                    {title}
+                    <Typography variant='h4'>
+                        {title}
+                    </Typography>
                 </CardTitle>
                 <CardContent>
-                    {content}
+                    <Typography variant='overLine'>
+                        {content}
+                    </Typography>
                 </CardContent>
             </CardContentContainer>
         </CardContainer>
@@ -25,9 +30,15 @@ const CardContainer = styled.div`
     align-items: flex-start;
     justify-content: center;
     width: 60%;
+    @media (max-width: 768px) {
+        width: 30%;
+    }
+    @media (max-width: 500px) {
+        width: 60%;
+    }
 `
 const CardImage = styled.div`
-    margin-bottom: 20px;
+    margin-bottom:calc(1vw + -2px);
 `
 const CardContentContainer = styled.div`
     display: flex;
@@ -37,9 +48,12 @@ const CardContentContainer = styled.div`
     padding-left: 10px;
 `
 const CardTitle = styled.h4`
-    margin-bottom: 10px;
+    padding: calc(1vw + -7px);
 `
 
 const CardContent = styled.p`
-    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 `

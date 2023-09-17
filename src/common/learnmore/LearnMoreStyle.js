@@ -7,6 +7,10 @@ export const LearnMoreContainer = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: calc(2vw + 8px);
+    }
 
 `
 export const LearnMoreLeftSide =styled.div`
@@ -15,18 +19,32 @@ export const LearnMoreLeftSide =styled.div`
     justify-content: center;
     align-items: flex-start;
     width: 50%;
+    @media (max-width: 768px) {
+        align-items: center;
+        width: 60%;
+    }
 `
 export const LeftSideTitle = styled.h2`
-    margin-bottom: 20px;
+    margin-bottom: calc(2vw + 1px);
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+
 `
 export const LeftSideParagraph = styled.p`
-    margin-bottom: 15px;
+    margin-bottom: calc(2vw + 1px);
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 `
 export const LeftSideCardContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    @media (max-width: 768px) {
+        padding-bottom: 20px;
+    }
 `
 export const LearnMoreRightSide = styled.div`
     display: flex;

@@ -9,25 +9,38 @@ export const Data = {
     header: {
         title: 'We help our Customers transform and grow their businesses with confidence.',
         paragraph: 'VFIX Communications IT Managed Services, IT consulting, and business communications solutions such as VoIP, Unified Communications (UC), Hosted PBX Contact Center and Business Messaging services are designed to enhance productivity, streamline operations, and drive digital transformation. Partner with us to unlock the full potential of your organization and achieve sustainable growth.',
-        button: 'Learn More'
+        button: 'Learn More',
+        img:'/Header/header.png',
+        alt: 'Man'
     },
     success: {
-        card1: {
-            title: 'Carrier Grade Network',
-            paragraph: 'Carrier-Grade Network -25 years experience delivering TDM and Cloud Services',
-        },
-        card2: {
-            title: 'Tailored Solutions',
-            paragraph: 'We provide personalized, customized solutions that cater to your specific business needs, ensuring maximum efficiency and effectiveness.',
-        },
-        card3: {
-            title: 'Expertise and Support',
-            paragraph: 'Our experienced team of certified professionals offers comprehensive support and guidance, ensuring seamless implementation and ongoing management of your IT infrastructure.',
-        },
-        card4: {
-            title: 'End-to-End Services',
-            paragraph: 'From IT Managed Services to cloud solutions and business communications, we offer a complete suite of services, simplifying your technology needs by having a single, trusted partner.',
-        },
+        headTitle: 'Success With VFIX Communications',
+        headContent: ' Unlock your business s potential for success with our comprehensive suite of services. From reliable IT management to cutting-edge cloud solutions and seamless communication, we provide the tools and expertise to drive your business forward. Partner with us today and experience the transformation that leads to unparalleled success.',
+        button: 'Learn More',
+        cards1: [
+            {
+                title: 'Carrier Grade Network',
+                paragraph: 'Carrier-Grade Network -25 years experience delivering TDM and Cloud Services',
+                img: '/SuccessWithVfix/SuccessWithVfix01.png'
+            },
+            {
+                title: 'Tailored Solutions',
+                paragraph: 'We provide personalized, customized solutions that cater to your specific business needs, ensuring maximum efficiency and effectiveness.',
+                img: '/SuccessWithVfix/SuccessWithVfix02.png'
+            },
+        ],
+        cards2: [
+            {
+                title: 'Expertise and Support',
+                paragraph: 'Our experienced team of certified professionals offers comprehensive support and guidance, ensuring seamless implementation and ongoing management of your IT infrastructure.',
+                img: '/SuccessWithVfix/SuccessWithVfix03.png'
+            },
+            {
+                title: 'End-to-End Services',
+                paragraph: 'From IT Managed Services to cloud solutions and business communications, we offer a complete suite of services, simplifying your technology needs by having a single, trusted partner.',
+                img: '/SuccessWithVfix/SuccessWithVfix04.png'
+            },
+        ]
     },
     services: {
         headTitle: 'View Our UCaaS Services',
@@ -64,6 +77,7 @@ export const Data = {
         title: 'Your Trusted IT Managed Service Provider and IT Consulting Partner',
         paragraph: 'At VFIX Communications, we are committed to delivering comprehensive IT solutions that meet the diverse needs of businesses across industries. As your trusted IT Managed Service Provider (MSP) and IT consulting partner, we offer a wide range of services to ensure your technology infrastructure is robust, secure, and aligned with your business goals. With our expertise and strategic guidance, we help you maximize productivity, enhance security, and drive digital transformation.',
         button: 'Learn More',
+        img: '/ITManaged/ITManaged.png'
     },
     ITManagedServices: {
         headTitle: 'IT Managed Services',

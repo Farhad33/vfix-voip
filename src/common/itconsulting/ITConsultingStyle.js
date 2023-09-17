@@ -12,6 +12,9 @@ export const ITConsultingHead = styled.div`
     justify-content: center;
     align-items: center;
     margin: 40px 0;
+    @media (max-width: 64px) {
+        flex-direction: column;
+    }
 `
 
 export const HeadTitle = styled.h3`

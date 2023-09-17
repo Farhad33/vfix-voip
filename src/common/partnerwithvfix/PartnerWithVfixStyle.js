@@ -6,6 +6,8 @@ export const PartnerWithVfixContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin-bottom: calc(1vw + -4px);
 `
 
 export const PartnerWithVfixHead = styled.div`
@@ -32,10 +34,14 @@ export const HeadParagraph = styled.p`
 export const PartnerWithVfixContainerCard = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 35px;
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 `
 export const PartnerWithVfixContactUs = styled.div`
     display: flex;

@@ -15,7 +15,7 @@ export default function ItServices() {
                         </Typography>
                     </HeadTitle>
                     <HeadParagraph>
-                        <Typography variant='p'>
+                        <Typography variant='subline3'>
                             {Data.ITManagedServices.headContent}
                         </Typography>
                     </HeadParagraph>

@@ -15,7 +15,7 @@ export default function LearnMore() {
                     </Typography>
                 </LeftSideTitle>
                 <LeftSideParagraph>
-                    <Typography variant='p'>
+                    <Typography variant='subline3'>
                         {Data.learnMore.headContent}
                     </Typography>
                 </LeftSideParagraph>
@@ -33,7 +33,7 @@ export default function LearnMore() {
                 <Button>{Data.learnMore.button}</Button>
             </LearnMoreLeftSide>
             <LearnMoreRightSide>
-                <Image src={Data.learnMore.img} width={550} height={550}  alt={Data.learnMore.headTitle}/>
+                <Image src={Data.learnMore.img} width={550} height={550}  alt={Data.learnMore.headTitle} layout='responsive'/>
             </LearnMoreRightSide>
         </LearnMoreContainer>
     )
