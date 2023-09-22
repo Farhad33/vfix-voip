@@ -2,7 +2,7 @@
 import styled from "styled-components";
 import Image from "next/image";
 import Typography from "../Typography";
-import { Theme } from "../Theme";
+import { color } from "../Theme";
 
 export default function ServicesCard({title, content, urlImage}) {
     return (
@@ -20,7 +20,7 @@ export default function ServicesCard({title, content, urlImage}) {
 const CardContainer = styled.div`
     width: 240px;
     height: 310px;
-    border: 1px solid #58678026;
+    border: 1px solid ${color.Blue100};
     border-radius: 10px;
     padding: 30px 10px 30px 30px;
 ;

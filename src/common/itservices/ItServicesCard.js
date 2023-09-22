@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Image from "next/image"
 import {Button} from '../MainStyle'
 import Typography from "../Typography"
+import {color} from '../Theme'
 
 
 export default function ItServicesCard({urlImage, title, content, btnText, btnUrl}) {
@@ -18,7 +19,7 @@ export default function ItServicesCard({urlImage, title, content, btnText, btnUr
                     </Typography>
                 </CardTitle>
                 <CardContent>
-                    <Typography variant='body3'>
+                    <Typography variant='subline4'>
                         {content}
                     </Typography>
                 </CardContent>
@@ -39,7 +40,7 @@ const CardContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid #E3E3E3;    
+    border: 1px solid ${color.Gray100};    
     border-radius: 10px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 `

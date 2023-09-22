@@ -16,7 +16,7 @@ export default function IndustriesCard({title, content, urlImage}) {
                     </Typography>
                 </CardTitle>
                 <CardContent>
-                    <Typography variant='overLine'>
+                    <Typography variant='body3'>
                         {content}
                     </Typography>
                 </CardContent>

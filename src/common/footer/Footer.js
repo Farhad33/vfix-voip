@@ -59,7 +59,7 @@ export default function Footer() {
                             <ListContainer key={colIndex} >
                                 <ListColumn>
                                     <ListTitle>
-                                        <Typography variant='h4'>
+                                        <Typography variant='h3'>
                                             {section.title1}
                                         </Typography>
                                     </ListTitle>
@@ -67,7 +67,7 @@ export default function Footer() {
                                         {
                                             section.list1.map((item, itemIndex) => (
                                                 <ListLi key={itemIndex}>
-                                                    <Typography variant='overLine'>
+                                                    <Typography variant='body2'>
                                                         {item}
                                                     </Typography>
                                                 </ListLi>
@@ -77,7 +77,7 @@ export default function Footer() {
                                 </ListColumn>
                                 <ListColumn>
                                     <ListTitle>
-                                        <Typography variant='h4'>
+                                        <Typography variant='h3'>
                                                 {section.title2}
                                         </Typography>
                                     </ListTitle>
@@ -85,7 +85,7 @@ export default function Footer() {
                                         {
                                             section.list2.map((item, itemIndex) => (
                                                 <ListLi key={itemIndex}>
-                                                   <Typography variant='overLine'>
+                                                   <Typography variant='body2'>
                                                         {item}
                                                     </Typography>
                                                 </ListLi>

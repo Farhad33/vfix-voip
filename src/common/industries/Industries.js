@@ -9,12 +9,12 @@ export default function Industries() {
         <IndustriesContainer>
             <IndustriesHead>
                 <HeadTitle>
-                    <Typography variant='h3'>
+                    <Typography variant='h2'>
                         {Data.IndustriesWeServe.headTitle}
                     </Typography>
                 </HeadTitle>
                 <HeadParagraph>
-                    <Typography variant='subline3'>
+                    <Typography variant='body3'>
                         {Data.IndustriesWeServe.headContent}
                     </Typography>
                 </HeadParagraph>

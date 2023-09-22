@@ -13,7 +13,7 @@ export default function Header()  {
                         <Typography variant='h2'>{Data.header.title}</Typography>
                     </HeadTitle>
                     <Paragraph>
-                        <Typography variant='subline3'>
+                        <Typography variant='body3'>
                             {Data.header.paragraph}
                         </Typography>
                     </Paragraph>

@@ -1,6 +1,7 @@
 'use client'
 import styled from "styled-components"
 import Typography from "../Typography"
+import { color } from "../Theme"
 
 export default function LearnMoreCard({title, content}) {
     return (
@@ -26,7 +27,7 @@ const CardContainer = styled.div`
     align-items: center;
     justify-content: center;
     width: 80%;
-    border-bottom: 1px solid #586780;
+    border-bottom: 1px solid ${color.Blue50};
     @media (max-width: 768px) {
         width: 100%;
         justify-content: flex-start;
@@ -35,9 +36,9 @@ const CardContainer = styled.div`
 const CardTitle = styled.h3`
     font-size: 50px;
     font-weight: 300;
-    color: #586780;
+    color:  ${color.Blue50};
     padding-right: 20px;
 `
 const CardContent = styled.p`
-    color: #586780;
+    color:  ${color.Blue50};
 `

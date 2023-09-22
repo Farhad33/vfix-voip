@@ -17,7 +17,7 @@ export default function SuccessCard ({ title, content, urlImage })  {
         </Typography>
       </CardTitle>
       <CardContent>
-        <Typography variant='body3'>
+        <Typography variant='subline4'>
           {content}
         </Typography>
       </CardContent>

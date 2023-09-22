@@ -16,7 +16,7 @@ export default function PartnerWithVfixCard({title, content, urlImage}) {
                     </Typography>
                 </CardTitle>
                 <CardContent>
-                    <Typography variant='overLine'>
+                    <Typography variant='subline4'>
                         {content}
                     </Typography>
                 </CardContent>
