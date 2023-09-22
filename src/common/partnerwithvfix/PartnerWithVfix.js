@@ -14,7 +14,7 @@ export default function PartnerWithVfix() {
                     </Typography>
                 </HeadTitle>
                 <HeadParagraph>
-                    <Typography variant='subline3'>
+                    <Typography variant='body2'>
                         {Data.PartnerWithVfix.headContent}
                     </Typography>
                 </HeadParagraph>

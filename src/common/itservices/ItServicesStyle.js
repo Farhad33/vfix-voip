@@ -14,6 +14,7 @@ export const ItServicesHead = styled.div`
 `
 export const HeadTitle = styled.h3`
     text-align: center;
+    padding-bottom: 15px;
 `
 export const HeadParagraph = styled.p`
     text-align: center;

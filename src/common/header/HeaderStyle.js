@@ -1,5 +1,4 @@
 'use client'
-import { Theme } from "../Theme";
 import styled from "styled-components";
 
 
@@ -36,8 +35,7 @@ export const HeaderRightSide = styled.div`
 export const HeadTitle = styled.h2`
     margin-bottom: 25px;
     @media (max-width: 1200px) {
-    /* font-size: ${({ varian }) => Theme.typography.fontSize.h5}; */
-    font-size: 30px;
+        font-size: 30px;
   }
 `
 

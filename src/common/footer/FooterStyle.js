@@ -1,7 +1,7 @@
 'use client'
 import styled from "styled-components"
 import Image from "next/image"
-
+import { color } from '../Theme'
 
 
 export const ContainerFooter = styled.div`
@@ -9,10 +9,10 @@ export const ContainerFooter = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, #00D59C 0%, #009CD5 100%);
+    background: linear-gradient(180deg, ${color.Green200} 0%, ${color.Blue200} 100%);
     border-radius: 130px 130px 0 0 ;
     width: 100%;
-    color: #ffffff;
+    color: ${color.White};
 `
 
 export const FooreContainer = styled.div`
@@ -53,7 +53,7 @@ export const Address = styled.p`
 `
 
 export const BackgroundImage = styled.div`
-    background:linear-gradient(180deg, #01D0A2 0%, #009CD5 100%);
+    background:linear-gradient(180deg, ${color.Green200} 0%,${color.Blue100} 100%);
     border-radius: 50%; 
     width: 30px;
     height: 30px; 
@@ -106,6 +106,10 @@ export const FooterRightSide = styled.div`
     @media (max-width: 600px) {
         width: 60%;
         gap: calc(2vw + 10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
 `

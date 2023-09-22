@@ -42,7 +42,7 @@ export default function Success() {
                             </Typography>
                         </TitleRightSide>
                         <ParagraphRightSide>
-                            <Typography variant='subline3'>
+                            <Typography variant='body3'>
                                 {Data.success.headContent}
                             </Typography>
                         </ParagraphRightSide>

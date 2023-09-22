@@ -3,6 +3,7 @@ import { Quicksand } from 'next/font/google'
 import './Globalstyle.css'
 import Navbar from '@/common/navbar/Navbar'
 import Footer from '@/common/footer/Footer'
+import Head from 'next/head'
 
 
 const  quicksand = Quicksand({
@@ -10,12 +11,12 @@ const  quicksand = Quicksand({
   weight: ['300', '400', '500', '600', '700']
 })
 
-
-
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <title>Vfix</title>
+      </Head>
       <body className={quicksand.className}>
         <Navbar/>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>

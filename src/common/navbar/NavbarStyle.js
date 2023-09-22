@@ -13,18 +13,24 @@ export const NavContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     padding-top: 25px;
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
+    @media (max-width: 768px) {
+        flex-direction: row;
+    }
 `
 
 export const NavLinks = styled.div`
     @media (max-width: 768px) {
         display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
         position: absolute;
-        top: 5%;
+        top: 0;
         left: 0;
-        width: 90%;
+        width: 100%;
         padding: 20px;
         z-index: 1;
-        background:  linear-gradient(to bottom, ${color.Green200}, ${color.Blue100});
+        background:  linear-gradient(to bottom, ${color.Green200}, ${color.Blue200});
     }
 `
 
@@ -38,7 +44,7 @@ export const MenuButton = styled.button`
         font-size: 24px;
         position: absolute;
         top: 20px;
-        right: 70px;
+        right: 60px;
         z-index: 2; 
     }
 `
@@ -47,37 +53,55 @@ export const UlList = styled.ul`
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
     @media (max-width: 640px) {
         flex-direction: column;
     }
 `
 
 export const LiItems = styled.li`
-    margin-left: 40px;
-    color: #000000;
+    color: ${color.Black};
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
     letter-spacing:0.15px;
-    @media (max-width: 640px) {
-        padding: 15px 0;
+    padding-left: 65px;
+    cursor: pointer;
+
+    @media (max-width: 1200px) {
+        padding-left: calc(1vw + 25px);
+    }
+    @media (max-width: 1150px) {
+        padding-left: calc(1vw + 16px);
+    }
+    @media (max-width: 800px) {
+        padding-left: calc(1vw + 8px);
+    }
+    @media (max-width: 768px) {
         font-size: 25px;
-        color: #FFFFFF;
+        color: ${color.White};
+        margin-bottom: 20px;
+    }
+    @media (max-width: 640px) {
+        font-size: 25px;
+        color: ${color.White};
     }
 `
 
 
 export const StyledLink = styled(Link)`
-    color: #000000;
+    color: ${color.Black};
     text-decoration: none;
     &:hover {
-        background-image: linear-gradient(to right, #00D59C, #009CD5);
+        background-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200});
         background-clip: text;
         -webkit-background-clip: text; 
         color: transparent; 
     }
     &:active {
-        background-image: linear-gradient(to right, #00D59C, #009CD5);
+        background-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200});
         background-clip: text;
         -webkit-background-clip: text; 
         color: transparent; 
@@ -85,18 +109,17 @@ export const StyledLink = styled(Link)`
 `;
 
 export const SpanLinks = styled.span`
-    padding: 0 18px;
     
-    @media  (max-width: 1200px) {
-        padding:0 5px ;
-    }
+    
     @media  (max-width: 768px) {
-        padding:0 0 ; 
+        padding:10px 0 ; 
+        font-size: 18px;
+        color: ${color.White};
     }
     @media (max-width: 640px) {
         padding: 5px 0;
         font-size: 18px;
-        color: #FFFFFF;
+        color: ${color.White};
     }
 `
 export const SpanButton = styled.span`

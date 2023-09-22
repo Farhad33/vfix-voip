@@ -18,7 +18,7 @@ export default function ITConsultingCard({title, content, urlImage}) {
                     </Typography>
                 </CardTitle>
                 <CardContetn>
-                    <Typography variant='body3'>
+                    <Typography variant='subline4'>
                         {content}
                     </Typography>
                 </CardContetn>

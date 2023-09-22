@@ -1,5 +1,6 @@
 'use client'
 import styled from "styled-components"
+import { color } from "../Theme"
 
 export const PartnerWithVfixContainer = styled.div`
     display: flex;
@@ -52,7 +53,7 @@ export const PartnerWithVfixContactUs = styled.div`
     width: 60%;
     border: 1px solid transparent;
     background-clip: content-box; 
-    border-image: linear-gradient(to right, #00D59C, #009CD5); 
+    border-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200}); 
     border-image-slice: 1; 
     border-radius: 30px; 
 `
