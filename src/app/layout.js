@@ -11,16 +11,10 @@ const  quicksand = Quicksand({
   weight: ['300', '400', '500', '600', '700']
 })
 
-// export const metadata = {
-//   title: 'Vfix Voip',
-//   description: 'Voip',
-// }
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-      {/* <link rel="icon" href="app/favicon.ico" sizes="any" /> */}
         <title>Vfix</title>
       </Head>
       <body className={quicksand.className}>
