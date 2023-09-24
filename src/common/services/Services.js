@@ -16,10 +16,10 @@ export default function Services() {
                     {
                         Data.services.cards.map((card, index) => (
                             <ServicesCard 
-                            key={card.index}
-                            title={card.title} 
-                            content={card.paragraph} 
-                            urlImage={card.img}  
+                                key={card.index}
+                                title={card.title} 
+                                content={card.paragraph} 
+                                urlImage={card.img}  
                             />
                         )
                         )

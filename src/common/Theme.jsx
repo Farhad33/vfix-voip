@@ -7,6 +7,9 @@ export const color = {
     Blue200: '#009CD5',
     Purple100: '#9747FF',
     Gray100: '#E3E3E3',
+    Gray200: '#E9E9E9',
+    Gray300: '#414141',
+    Gray400: '#b3b3b3',
     White: '#FAFAFA',
     Black: '#000000',
 }
@@ -30,7 +33,7 @@ export const Theme ={
             overLine: "span",
         },
         fontSize: {
-            h1: "50px",
+            h1: "calc(3vw + 5px)",
             h2: "calc(3vw + 2px)",
             h3: "calc(2vw + 2px)",
             h4: "calc(1vw + 6px)",
@@ -48,7 +51,7 @@ export const Theme ={
             overLine: "calc(1vw + -1px)",
         },
         lineHeight: {
-            h1: "60px",
+            h1: "calc(3vw + 5px)",
             h2: "calc(3vw + 2px)",
             h3: "calc(2vw + 2px)",
             h4: "20px",

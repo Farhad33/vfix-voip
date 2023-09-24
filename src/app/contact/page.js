@@ -1,4 +1,4 @@
-import Contact from "@/common/Contact";
+import Contact from "@/common/contactus/ContactUs";
 
 
 export default function Contactus(){

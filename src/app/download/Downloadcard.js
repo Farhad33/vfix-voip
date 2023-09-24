@@ -1,5 +1,6 @@
-import { DownloadCard, Content, Photo, ContentImg } from './styled'
+import { DownloadCard, Content, Photo, ContentImg, DownloadTitle, DownloadParagraph, DownloadRightSide, DownloadLeftSide, MobileApp } from './DownloadStyle'
 import Image from 'next/image'
+import Typography from '@/common/Typography'
 
 
 
@@ -7,40 +8,39 @@ import Image from 'next/image'
 export default function Downloadcard ({ card })  {
   return (
     <DownloadCard color={card.color} >
-      <Content color={card.color}>
-        <h1>{card.title}</h1>
-        <p>{card.paragraph1}</p>
-        <p>{card.paragraph2}</p>
-        <ContentImg>
-          <span>
+      <DownloadLeftSide color={card.color}>
+        <DownloadTitle>
+          <Typography variant='h1'>{card.title}</Typography>
+        </DownloadTitle>
+        <DownloadParagraph>
+          <Typography variant='body2'>{card.paragraph1}</Typography>
+          <Typography variant='body2'>{card.paragraph2}</Typography>
+        </DownloadParagraph>
+        <MobileApp>
             <Image
-              src= '/download/image42.png'
-              width={156}
-              height={40}
+              src= '/Download/AppStore.png'
+              width={120}
+              height={35}
               alt= {card.title}
-              quality={100}
             />
-          </span>
-          <span>
             <Image
-              src= '/download/image43.png'
-              width={156}
-              height={40}
+              src= '/Download/GooglePlay.png'
+              width={120}
+              height={35}
               alt= {card.title}
-              quality={100}
             />
-          </span>
-        </ContentImg>
-      </Content>
-      <Photo>
+        </MobileApp>
+      </DownloadLeftSide>
+      <DownloadRightSide>
         <Image
           src={card.img}
-          width={10000}
-          height={0}
+          width={650}
+          height={650}
           alt= {card.title}
-          quality={100}
-      />
-      </Photo>
+          layout="responsive"
+          quality={75}
+        />
+      </DownloadRightSide>
     </DownloadCard>
   )
 }
