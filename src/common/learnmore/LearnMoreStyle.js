@@ -24,14 +24,14 @@ export const LearnMoreLeftSide =styled.div`
         width: 60%;
     }
 `
-export const LeftSideTitle = styled.h2`
+export const LeftSideTitle = styled.div`
     margin-bottom: calc(2vw + 1px);
     @media (max-width: 768px) {
         text-align: center;
     }
 
 `
-export const LeftSideParagraph = styled.p`
+export const LeftSideParagraph = styled.span`
     margin-bottom: calc(2vw + 1px);
     @media (max-width: 768px) {
         text-align: center;

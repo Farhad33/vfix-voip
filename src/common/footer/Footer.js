@@ -10,7 +10,7 @@ export default function Footer() {
                 <FooterLeftSide>
                     <FooterLogo>
                         <ImagStyle src={Data.footer.logoFooter} alt={Data.footer.logoName} width={300}
-                        height={70} layout="responsive"/>
+                        height={70} style={{maxWidth: '100%'}}/>
                     </FooterLogo>
                     <FooterLogoContent>
                         <Address>

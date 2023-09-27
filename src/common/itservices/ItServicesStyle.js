@@ -12,11 +12,11 @@ export const ItServicesHead = styled.div`
     padding-bottom: 30px;
     
 `
-export const HeadTitle = styled.h3`
+export const HeadTitle = styled.div`
     text-align: center;
     padding-bottom: 15px;
 `
-export const HeadParagraph = styled.p`
+export const HeadParagraph = styled.div`
     text-align: center;
     width: 60%;
 `

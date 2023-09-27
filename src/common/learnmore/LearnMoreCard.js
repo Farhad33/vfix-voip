@@ -7,7 +7,7 @@ export default function LearnMoreCard({title, content}) {
     return (
         <CardContainer>     
             <CardTitle>
-                <Typography>
+                <Typography variant='h4'>
                     {title}
                 </Typography>
             </CardTitle>
@@ -33,12 +33,12 @@ const CardContainer = styled.div`
         justify-content: flex-start;
     }
 `
-const CardTitle = styled.h3`
+const CardTitle = styled.div`
     font-size: 50px;
     font-weight: 300;
     color:  ${color.Blue50};
     padding-right: 20px;
 `
-const CardContent = styled.p`
+const CardContent = styled.div`
     color:  ${color.Blue50};
 `

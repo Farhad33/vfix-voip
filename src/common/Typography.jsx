@@ -5,7 +5,7 @@ export default function Typography({ variant , component, children}) {
     return (
         <TypographyRoot
             as={component || Theme.typography.component[variant]}
-            variant={variant}
+            $variant={variant}
         >
             {children}
         </TypographyRoot>

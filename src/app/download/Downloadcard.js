@@ -10,11 +10,11 @@ export default function Downloadcard ({ card })  {
     <DownloadCard color={card.color} >
       <DownloadLeftSide color={card.color}>
         <DownloadTitle>
-          <Typography variant='h1'>{card.title}</Typography>
+          <Typography $variant='h1'>{card.title}</Typography>
         </DownloadTitle>
         <DownloadParagraph>
-          <Typography variant='body2'>{card.paragraph1}</Typography>
-          <Typography variant='body2'>{card.paragraph2}</Typography>
+          <Typography $variant='body2'>{card.paragraph1}</Typography>
+          <Typography $variant='body2'>{card.paragraph2}</Typography>
         </DownloadParagraph>
         <MobileApp>
             <Image

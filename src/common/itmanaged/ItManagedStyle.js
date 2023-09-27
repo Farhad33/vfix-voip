@@ -32,7 +32,7 @@ export const ItManagedRightSide = styled.div`
     }
 `
 
-export const LeftSideTitle = styled.h2`
+export const LeftSideTitle = styled.div`
     margin-bottom: 30px;
     @media (max-width: 768px) {
         text-align: center;
@@ -42,7 +42,7 @@ export const LeftSideTitle = styled.h2`
         margin-bottom: 7px;
     }
 `
-export const LeftSideParagraph = styled.p`
+export const LeftSideParagraph = styled.span`
     margin-bottom: 30px;
     @media (max-width: 768px) {
         margin-bottom: 15px;

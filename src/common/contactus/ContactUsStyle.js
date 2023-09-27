@@ -13,21 +13,19 @@ export const ContactContainer = styled.div`
     z-index: 1;
 `
 
-export const ContactTitle = styled.h2`
+export const ContactTitle = styled.div`
     padding-bottom: calc(2vw + -13px);
     @media (max-width: 1000px) {
         padding-bottom: calc(2vw + -4px);
     }
 `
 
-export const ContactParagraph = styled.p`
+export const ContactParagraph = styled.div`
     padding-bottom : calc(2vw + -13px);
     @media (max-width: 1000px) {
         padding-bottom: calc(2vw + 2px);
     }
 `
-
-
 
 export const ContactFormContainer = styled.div`
     display: flex;
@@ -77,7 +75,7 @@ const GeneraContactStyle = styled.div`
 export const ContentAddress = styled(GeneraContactStyle)`
   
 `
-export const Address = styled.p`
+export const Address = styled.div`
 
 `
 
@@ -85,7 +83,7 @@ export const ContentPhone = styled(GeneraContactStyle)``
 export const Phones = styled.div``
 
 export const ContentMail = styled(GeneraContactStyle)``
-export const Emails = styled.p``
+export const Emails = styled.div``
 
 
 export const ContactRightSide = styled.div`
@@ -145,7 +143,7 @@ export const ContactRightSide = styled.div`
         }
     }
 `
-export const FormTitle = styled.h4`
+export const FormTitle = styled.div`
     color: ${color.White};
     padding-bottom: calc(1vw + 5px);
 `

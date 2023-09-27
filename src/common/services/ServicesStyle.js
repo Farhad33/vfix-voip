@@ -11,7 +11,7 @@ export const ServicesContainer = styled.div`
     padding-top: 50px;
     margin-bottom: 50px;
 `
-export const ServicesTitle = styled.h2`
+export const ServicesTitle = styled.div`
     text-align: center;
     padding-bottom: 50px;
 `

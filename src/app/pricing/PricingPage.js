@@ -20,8 +20,6 @@ export default function PricingPage() {
                         items={card.list}
                         save={card.save}
                         />
-                            
-
                     ))
                 }
             </PricingCardContainer>
