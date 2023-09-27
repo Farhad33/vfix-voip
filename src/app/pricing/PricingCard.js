@@ -11,12 +11,12 @@ export default function PricinCard({title, paragraph, discount, save, annually, 
         <PricingCard>
             <CardContent>
                 <Title>
-                    <Typography variant='h3'>
+                    <Typography $variant='h3'>
                         {title}
                     </Typography>
                 </Title>
                 <Paragraph>
-                    <Typography variant='body2'>
+                    <Typography $variant='body2'>
                         {paragraph}
                     </Typography>
                 </Paragraph>
@@ -24,12 +24,12 @@ export default function PricinCard({title, paragraph, discount, save, annually, 
             <CardPrice>
                 <Discount>
                     <LeftSide>
-                        <Typography variant='body3'>
+                        <Typography $variant='body3'>
                             {discount}
                         </Typography>
                     </LeftSide>
                     <RightSide>
-                        <Typography variant='body2'>
+                        <Typography $variant='body2'>
                             {save}
                         </Typography>
                     </RightSide>
@@ -37,12 +37,12 @@ export default function PricinCard({title, paragraph, discount, save, annually, 
                 <Payment>
                     <Period>
                         <Annually>
-                            <Typography variant='h2'>
+                            <Typography $variant='h2'>
                                 {`$${annually}`}
                             </Typography>
                         </Annually>
                         <UserMonth>
-                            <Typography variant='body3'>
+                            <Typography $variant='body3'>
                                 {userMonth}
                             </Typography>
                         </UserMonth>
@@ -55,7 +55,7 @@ export default function PricinCard({title, paragraph, discount, save, annually, 
                     {
                         items.map((item, indexItem) => (
                             <Item key={indexItem}>
-                                <Typography variant='body3'>
+                                <Typography $variant='body3'>
                                     <Icons>
                                         {<AiOutlineCheck />}
                                     </Icons>

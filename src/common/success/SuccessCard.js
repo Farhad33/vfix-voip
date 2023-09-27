@@ -39,10 +39,10 @@ const CardContainer = styled.div`
 const CardImage = styled.div`
 
 `
-const CardTitle = styled.h2`
+const CardTitle = styled.div`
   margin-bottom: 10px;
 `;
 
-const CardContent = styled.p`
+const CardContent = styled.span`
 
 `;

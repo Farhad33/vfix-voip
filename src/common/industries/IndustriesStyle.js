@@ -13,12 +13,12 @@ export const IndustriesHead = styled.div`
 
 `
 
-export const HeadTitle = styled.h3`
+export const HeadTitle = styled.div`
     text-align: center;
     margin-bottom: 20px;
 `
 
-export const HeadParagraph = styled.p`
+export const HeadParagraph = styled.div`
     text-align: center;
     width: 60%;
 `

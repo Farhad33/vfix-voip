@@ -48,10 +48,10 @@ const CardContentContainer = styled.div`
     align-items: flex-start;
     padding-left: 10px;
 `
-const CardTitle = styled.h4`
+const CardTitle = styled.div`
 
 `
 
-const CardContent = styled.p`
+const CardContent = styled.span`
     
 `

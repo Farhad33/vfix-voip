@@ -64,13 +64,13 @@ export const SuccessTitle = styled.div`
     }
 `
 
-export const TitleRightSide = styled.h4`
+export const TitleRightSide = styled.div`
     margin-bottom: 30px;
     @media (max-width: 768px) {
         margin-bottom: 15px;
     }
 `
-export const ParagraphRightSide = styled.p`
+export const ParagraphRightSide = styled.span`
     margin-bottom: 30px;
     @media (max-width: 768px) {
         margin-bottom: 15px;

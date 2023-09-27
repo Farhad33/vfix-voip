@@ -47,11 +47,11 @@ const CardContentContainer = styled.div`
     align-items: flex-start;
     padding-left: 10px;
 `
-const CardTitle = styled.h4`
+const CardTitle = styled.div`
     padding: calc(1vw + -7px);
 `
 
-const CardContent = styled.p`
+const CardContent = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;

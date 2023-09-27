@@ -48,7 +48,7 @@ export const FooterLogoContent = styled.div`
     align-items: flex-start;
     padding-left: 50px;
 `
-export const Address = styled.p`
+export const Address = styled.div`
     margin: 30px 0;
 `
 
@@ -67,7 +67,7 @@ export const FollowUs = styled.div`
     
 `
 
-export const FollowUsTitle = styled.p`
+export const FollowUsTitle = styled.div`
     margin-bottom: 15px;
     `
 
@@ -84,7 +84,7 @@ export const MobileApp = styled.div`
     
 `
 
-export const MobileTitle = styled.p`
+export const MobileTitle = styled.div`
     padding-bottom: 15px;
 `
 
@@ -117,7 +117,7 @@ export const ListContainer = styled.div`
 `
 export const ListColumn = styled.div`
 `
-export const ListTitle = styled.h3`
+export const ListTitle = styled.div`
     padding-bottom: calc(1vw + -2px);
 `
 

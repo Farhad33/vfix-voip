@@ -9,7 +9,7 @@ export default function ITConsultingCard({title, content, urlImage}) {
     return(
         <CardContainer>
             <CardImage>
-                <Image src={urlImage} alt={title} width={70} height={70}  style={{width: '100%'}}/>
+                <Image src={urlImage} alt={title} width={70} height={70} />
             </CardImage>
             <CardContetnContainer>
                 <CardTitle>
@@ -47,10 +47,10 @@ const CardImage = styled.div`
 const CardContetnContainer = styled.div`
 
 `
-const CardTitle = styled.h3`
+const CardTitle = styled.div`
     margin-bottom: calc(1vw + -1px);
 `
 
-const CardContetn = styled.p`
+const CardContetn = styled.div`
 
 `

@@ -20,13 +20,13 @@ export const PartnerWithVfixHead = styled.div`
 
 `
 
-export const HeadTitle = styled.h3`
+export const HeadTitle = styled.div`
     text-align: center;
     margin-bottom: 20px;
     width: 65%;
 `
 
-export const HeadParagraph = styled.p`
+export const HeadParagraph = styled.div`
     text-align: center;
     width: 55%;
     font-size: 12px;
@@ -57,7 +57,7 @@ export const PartnerWithVfixContactUs = styled.div`
     border-image-slice: 1; 
     border-radius: 30px; 
 `
-export const ContactUsParagraph = styled.p`
+export const ContactUsParagraph = styled.div`
     font-size: 12px;
     width: 70%;
 `

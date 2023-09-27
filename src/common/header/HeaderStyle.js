@@ -32,14 +32,14 @@ export const HeaderRightSide = styled.div`
     align-items: center;
     width: 60%;
 `
-export const HeadTitle = styled.h2`
+export const HeadTitle = styled.div`
     margin-bottom: 25px;
     @media (max-width: 1200px) {
         font-size: 30px;
   }
 `
 
-export const Paragraph = styled.p`
+export const Paragraph = styled.div`
     margin-bottom: 25px;
     @media (max-width: 1200px) {
     }

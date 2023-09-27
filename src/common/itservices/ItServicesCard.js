@@ -58,10 +58,10 @@ const CardContentContainer = styled.div`
         width: 80%;
     }
 `
-const CardTitle = styled.h3`
+const CardTitle = styled.div`
     padding: calc(1vw + -1px);
 `
-const CardContent = styled.p`
+const CardContent = styled.div`
     padding: calc(1vw + -2px);
 `
 const CardButton = styled(Button)`
