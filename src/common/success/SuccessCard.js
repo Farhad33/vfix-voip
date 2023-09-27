@@ -9,7 +9,7 @@ export default function SuccessCard ({ title, content, urlImage })  {
   return (
     <CardContainer>
         <CardImage>
-            <Image src={urlImage} alt={title} width={100} height={100} />
+            <Image src={urlImage} alt={title} width={100} height={100}  style={{width: '40%', height: 'auto'}}/>
         </CardImage>
       <CardTitle>
         <Typography variant='h4'>

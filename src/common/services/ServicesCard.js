@@ -33,7 +33,7 @@ const CardImage = styled.div`
 const CardTitle = styled.h2`
     font-size: 20px;
     font-weight: 700;
-    color: #000000 ;
+    color: ${color.Black} ;
     padding-bottom: 15px;
 `
 const CardContent = styled.p`

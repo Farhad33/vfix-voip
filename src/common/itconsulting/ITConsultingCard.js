@@ -9,7 +9,7 @@ export default function ITConsultingCard({title, content, urlImage}) {
     return(
         <CardContainer>
             <CardImage>
-                <Image src={urlImage} alt={title} width={70} height={70} />
+                <Image src={urlImage} alt={title} width={70} height={70}  style={{width: '100%'}}/>
             </CardImage>
             <CardContetnContainer>
                 <CardTitle>

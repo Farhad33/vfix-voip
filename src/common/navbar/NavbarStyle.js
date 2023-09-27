@@ -23,7 +23,7 @@ export const NavContainer = styled.div`
 
 export const NavLinks = styled.div`
     @media (max-width: 768px) {
-        display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+        display: ${({ $isOpen }) => ($isOpen ? 'block' : 'none')};
         position: absolute;
         top: 0;
         left: 0;

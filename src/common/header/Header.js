@@ -20,7 +20,7 @@ export default function Header()  {
                     <Button>{Data.header.button}</Button>
                 </HeaderLeftSide>
                 <HeaderRightSide>
-                    <Image src={Data.header.img} alt={Data.header.alt} width={700} height={700} layout="responsive"/>
+                    <Image src={Data.header.img} alt={Data.header.alt} width={700} height={700} sizes='100vw' style={{width: '100%', height: 'auto'}} />
                 </HeaderRightSide>
             </HeaderContainer>
         </Container>
