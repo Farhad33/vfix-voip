@@ -23,11 +23,11 @@ export default function ITConsulting() {
                 {
                     Data.ITConsultingServices.cards.map((card, index) =>(
                         <ITConsultingCard
-                         key={index} 
-                         title={card.title}
-                         content={card.paragraph}
-                         urlImage={card.img}
-                         />
+                            key={index} 
+                            title={card.title}
+                            content={card.paragraph}
+                            urlImage={card.img}
+                        />
                     ))
                 }
             </ITConsultingCardContainer>

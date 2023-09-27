@@ -24,11 +24,11 @@ export default function ItServices() {
                     {
                         Data.ITManagedServices.cards.map((card, index) => (
                             <ItServicesCard 
-                            key={card.index}
-                            title={card.title}
-                            content={card.paragraph}
-                            urlImage={card.img}
-                            btnText={card.button}
+                                key={index}
+                                title={card.title}
+                                content={card.paragraph}
+                                urlImage={card.img}
+                                btnText={card.button}
                             />
                         ))
                     }

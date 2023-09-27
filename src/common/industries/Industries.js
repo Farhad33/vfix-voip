@@ -22,11 +22,11 @@ export default function Industries() {
             <IndustriesCardContainer>
                 {Data.IndustriesWeServe.cards.map((card, index) => (
                     <IndustriesCard
-                     key={index} 
-                     title={card.title}
-                     content={card.paragraph}
-                     urlImage={card.img}
-                     />
+                        key={index} 
+                        title={card.title}
+                        content={card.paragraph}
+                        urlImage={card.img}
+                    />
                 ))}
             </IndustriesCardContainer>
         </IndustriesContainer>

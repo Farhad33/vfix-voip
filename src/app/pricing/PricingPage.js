@@ -10,15 +10,15 @@ export default function PricingPage() {
                 {
                     Data.cards.map((card, index) => (
                         <PricinCard 
-                        key={index} 
-                        title={card.title}
-                        paragraph={card.content}
-                        discount={card.discount}
-                        annually={card.annually}
-                        userMonth={card.userMonth}
-                        captionBtn={card.button}
-                        items={card.list}
-                        save={card.save}
+                            key={index} 
+                            title={card.title}
+                            paragraph={card.content}
+                            discount={card.discount}
+                            annually={card.annually}
+                            userMonth={card.userMonth}
+                            captionBtn={card.button}
+                            items={card.list}
+                            save={card.save}
                         />
                     ))
                 }
