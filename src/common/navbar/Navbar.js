@@ -27,7 +27,7 @@ export default function Navbar() {
                 <MenuButton onClick={toggleMenu}>
                     {isOpen ? <TfiClose /> : <TfiMenu />}
                 </MenuButton>
-                <NavLinks isOpen = {isOpen}>
+                <NavLinks $isOpen = {isOpen}>
                     <UlList>
                         {
                             Data.navbar.menu.map((items, index) =>(

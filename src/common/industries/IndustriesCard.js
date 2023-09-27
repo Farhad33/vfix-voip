@@ -7,7 +7,7 @@ export default function IndustriesCard({title, content, urlImage}) {
     return(
         <CardContainer>
             <CardImage>
-                <Image src={urlImage} alt={title} width={100} height={100} />
+                <Image src={urlImage} alt={title} width={100} height={100} sizes="100vw" />
             </CardImage>
             <CardContentContainer>
                 <CardTitle>

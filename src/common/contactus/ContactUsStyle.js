@@ -142,9 +142,6 @@ export const ContactRightSide = styled.div`
                 background: ${color.Black};
                 transition: all .5s ease;
             }
-            /* @media (max-width: 640px) {
-                padding: 0 10px;
-            } */
         }
     }
 `

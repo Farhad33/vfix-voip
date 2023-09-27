@@ -10,7 +10,7 @@ export default function ItServicesCard({urlImage, title, content, btnText, btnUr
     return(
         <CardContainer>
             <CardImage>
-                <Image src={urlImage} width={400} height={400} alt={title} layout="responsive"/>
+                <Image src={urlImage} width={400} height={400} alt={title}  style={{width: '100%', height: 'auto'}} />
             </CardImage>
             <CardContentContainer>
                 <CardTitle>
