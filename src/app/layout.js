@@ -4,7 +4,6 @@ import './Globalstyle.css'
 import Navbar from '@/common/navbar/Navbar'
 import Footer from '@/common/footer/Footer'
 import Contactus from '@/common/contactus/ContactUs'
-import Head from 'next/head'
 
 
 
@@ -16,14 +15,13 @@ const  quicksand = Quicksand({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <title>Vfix</title>
-      </Head>
       <body className={quicksand.className}>
-        <Navbar/>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
-        <Contactus />
-        <Footer />
+        <StyledComponentsRegistry>
+          <Navbar/>
+          {children}
+          <Contactus />
+          <Footer />
+        </StyledComponentsRegistry>
       </body>
     </html>
   )
