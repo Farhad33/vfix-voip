@@ -24,7 +24,7 @@ export default function DiscreteSliderMarks() {
     };
 
     return (
-      <Container component='div' style={{width: '100%', display: 'flex'}}>
+      <Container>
         <Box sx={{ width: 300 }}>
           <Slider
               aria-label="Custom marks"

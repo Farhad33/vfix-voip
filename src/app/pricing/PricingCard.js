@@ -56,10 +56,7 @@ export default function PricinCard({title, paragraph, discount, save, annually, 
                         items.map((item, indexItem) => (
                             <Item key={indexItem}>
                                 <Typography variant='body3'>
-                                    <Icons>
-                                        {<AiOutlineCheck />}
-                                    </Icons>
-                                    {item}
+                                    ✓{item}
                                 </Typography>
                             </Item>
                         ))
