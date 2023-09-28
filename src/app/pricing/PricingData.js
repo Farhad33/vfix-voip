@@ -120,5 +120,48 @@ export const Data = {
             content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute.',
         },
     ],
+    Silder: {
+        monthly: 'Monthly',
+        annually: 'Annually',
+        upto: 'Save Upto 35%',
+        marks: [
+            {
+              value: 1,
+              label: '1-4',
+            },
+            {
+              value: 20,
+              label: '5-20',
+            },
+            {
+              value: 37,
+              label: '21-100',
+            },
+            {
+              value: 100,
+              label: '100+',
+            },
+          ]
+        }
 
 }
+
+export const marks = [
+    {
+      value: 1,
+      label: '1-4',
+    },
+    {
+      value: 20,
+      label: '5-20',
+    },
+    {
+      value: 37,
+      label: '21-100',
+    },
+    {
+      value: 100,
+      label: '100+',
+    },
+  ];
+  
