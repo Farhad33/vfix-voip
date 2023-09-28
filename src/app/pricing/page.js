@@ -1,7 +1,6 @@
 import { Page } from "../pagestyle"
-import CollapsibleList from "./PricingCollapsibleList"
+import FAQ from "./PricingFAQ"
 import PricingPage from "./PricingPage"
-import DiscreteSliderMarks from './SliderRange'
 
 export const metadata = {
     title: 'Pricing',
@@ -12,9 +11,8 @@ export default function Pricing() {
     return (
         <Page>
             <h1>Pricing</h1>
-            <DiscreteSliderMarks />
             <PricingPage />
-            <CollapsibleList />
+            <FAQ />
         </Page>
     )
 }

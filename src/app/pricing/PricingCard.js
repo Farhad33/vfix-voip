@@ -6,7 +6,17 @@ import { AiOutlineCheck } from "react-icons/ai";
 import { color } from "@/common/Theme";
 
 
-export default function PricinCard({title, paragraph, discount, save, annually, userMonth, captionBtn, items}) {
+export default function PricinCard({
+    title,
+    paragraph,
+    discount_amount,
+    discount_percent,
+    price,
+    captionBtn,
+    items,
+    contractLength
+}) {
+
     return (
         <PricingCard>
             <CardContent>
@@ -22,29 +32,30 @@ export default function PricinCard({title, paragraph, discount, save, annually, 
                 </Paragraph>
             </CardContent>
             <CardPrice>
-                <Discount>
-                    <LeftSide>
-                        <Typography variant='body3'>
-                            {discount}
-                        </Typography>
-                    </LeftSide>
-                    <RightSide>
-                        <Typography variant='body2'>
-                            {save}
-                        </Typography>
-                    </RightSide>
-                </Discount>
+                { contractLength === 'annually' ?
+                    <Discount>
+                        <LeftSide>
+                            <Typography variant='body3'>
+                                ${discount_amount}
+                            </Typography>
+                        </LeftSide>
+                        <RightSide>
+                            <Typography variant='body2'>
+                                Save {discount_percent}%
+                            </Typography>
+                        </RightSide>
+                    </Discount>
+                    : ''
+                }            
                 <Payment>
                     <Period>
                         <Annually>
                             <Typography variant='h2'>
-                                {`$${annually}`}
+                                ${price}
                             </Typography>
                         </Annually>
                         <UserMonth>
-                            <Typography variant='body3'>
-                                {userMonth}
-                            </Typography>
+                            <Typography variant='body3'>/User/Month</Typography>
                         </UserMonth>
                     </Period>
                     <Button>
@@ -68,10 +79,16 @@ export default function PricinCard({title, paragraph, discount, save, annually, 
 }
 
 const PricingCard = styled.div`
-    width: calc(29% - 40px);
-    height: calc(60em - 6px);
+    /* width: calc(29% - 40px);
+    height: calc(60em - 6px); */
+    width: 400px;
+    /* height: 1220px; */
+    min-height: 1050px;
+    max-height: 1300px;
+    
     border: none;
     box-shadow: 0px 6px 30px 0px ${color.Gray900};
+    /* padding: 25px; */
     padding-top: calc(2vw + 15px);
     padding-bottom: calc(1vw + 5px);
     padding-right:calc(2vw + 14px);

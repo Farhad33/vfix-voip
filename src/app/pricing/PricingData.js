@@ -6,13 +6,34 @@ export const Data = {
         {
             title: 'Basic',
             content: 'This plan is ideal for small businesses that require basic IT support to ensure their systems are up and running. It provides a cost-effective solution to keep systems and devices secure and updated.',
-            save: 'Save 22%',
-            discount: 25.65,
-            monthly: 28.95,
-            annually: 18.95,
-            userMonth: '/User/Month',
+            price: {
+                1: {
+                    discount_amount: '3.30',
+                    discount_percent: 10,
+                    monthly: 32.95,
+                    annually: 29.66,
+                },
+                25: {
+                    discount_amount: 4.79,
+                    discount_percent: 15,
+                    monthly: 31.95,
+                    annually: 27.16,
+                },
+                50: {
+                    discount_amount: 4.19,
+                    discount_percent: 15,
+                    monthly: 27.95,
+                    annually: 23.76,
+                },
+                100: {
+                    discount_amount: 4.85,
+                    discount_percent: 18,
+                    monthly: 26.95,
+                    annually: 22.10,
+                }
+            },
             button: 'Subscribe Now',
-            buttonLinke: '',
+            buttonLink: '',
             list: [
                 '24/7 help desk support for basic IT issues and inquiries ',
                 'Remote troubleshooting and problem diagnosis',
@@ -25,10 +46,32 @@ export const Data = {
         {
             title: 'Proactive',
             content: 'This plan is ideal for small businesses that require basic IT support to ensure their systems are up and running. It provides a cost-effective solution to keep systems and devices secure and updated.',
-            save: 'Save 35%',
-            discount: 35.65,
-            monthly: 36.95,
-            annually: 26.95,
+            price: {
+                1: {
+                    discount_amount: 3.30,
+                    discount_percent: 10,
+                    monthly: 32.95,
+                    annually: 29.66,
+                },
+                25: {
+                    discount_amount: 4.79,
+                    discount_percent: 15,
+                    monthly: 31.95,
+                    annually: 27.16,
+                },
+                50: {
+                    discount_amount: 4.19,
+                    discount_percent: 15,
+                    monthly: 27.95,
+                    annually: 23.76,
+                },
+                100: {
+                    discount_amount: 4.85,
+                    discount_percent: 18,
+                    monthly: 26.95,
+                    annually: 22.10,
+                }
+            },
             userMonth: '/User/Month',
             button: 'Subscribe Now',
             buttonLinke: '',
@@ -45,10 +88,32 @@ export const Data = {
         {
             title: 'Advance',
             content: 'This plan is ideal for small businesses that require basic IT support to ensure their systems are up and running. It provides a cost-effective solution to keep systems and devices secure and updated.',
-            save: 'Save 20%',
-            discount: 45.65,
-            monthly: 45.95,
-            annually: 35.95,
+            price: {
+                1: {
+                    discount_amount: 3.30,
+                    discount_percent: 10,
+                    monthly: 32.95,
+                    annually: 29.66,
+                },
+                25: {
+                    discount_amount: 4.79,
+                    discount_percent: 15,
+                    monthly: 31.95,
+                    annually: 27.16,
+                },
+                50: {
+                    discount_amount: 4.19,
+                    discount_percent: 15,
+                    monthly: 27.95,
+                    annually: 23.76,
+                },
+                100: {
+                    discount_amount: 4.85,
+                    discount_percent: 18,
+                    monthly: 26.95,
+                    annually: 22.10,
+                }
+            },
             userMonth: '/User/Month',
             button: 'Subscribe Now',
             buttonLinke: '',
@@ -63,13 +128,31 @@ export const Data = {
             ]
         },
     ],
-    pricing: [
-        {
-            less: [0, 0, 0],
-            medium: [22, 35, 20],
-            larg: [38.95, 48.95, 58.95],
-        },
-    ],
+
+    Silder: {
+        monthly: 'Monthly',
+        annually: 'Annually',
+        upto: 'Save Upto 35%',
+        marks: [
+            {
+              value: 1,
+              label: '1-4',
+            },
+            {
+              value: 25,
+              label: '5-20',
+            },
+            {
+              value: 50,
+              label: '21-100',
+            },
+            {
+              value: 100,
+              label: '100+',
+            },
+          ]
+    },
+
     CollapsibleList: [
         {
             title: 'What is an MSP service?',
@@ -120,48 +203,4 @@ export const Data = {
             content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute.',
         },
     ],
-    Silder: {
-        monthly: 'Monthly',
-        annually: 'Annually',
-        upto: 'Save Upto 35%',
-        marks: [
-            {
-              value: 1,
-              label: '1-4',
-            },
-            {
-              value: 20,
-              label: '5-20',
-            },
-            {
-              value: 37,
-              label: '21-100',
-            },
-            {
-              value: 100,
-              label: '100+',
-            },
-          ]
-        }
-
 }
-
-export const marks = [
-    {
-      value: 1,
-      label: '1-4',
-    },
-    {
-      value: 20,
-      label: '5-20',
-    },
-    {
-      value: 37,
-      label: '21-100',
-    },
-    {
-      value: 100,
-      label: '100+',
-    },
-  ];
-  

@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { color } from "@/common/Theme";
 
 export const Container = styled.div`
-  width: 100%;
   display: flex;
   justify-content: space-between;
 `

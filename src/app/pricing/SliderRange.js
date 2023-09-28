@@ -11,35 +11,39 @@ function valuetext(value) {
   return `${value}°C`;
 }
 
-export default function DiscreteSliderMarks() {
+export default function DiscreteSliderMarks({ setUserQuantity, setContractLength }) {
 
     const [checked, setChecked] = React.useState(true);
 
-    const handleChange2 = (event) => {
+    const handleSwitchChange = (event) => {
       setChecked(event.target.checked);
+      if(event.target.checked) {
+        setContractLength('annually')
+      } else {
+        setContractLength('monthly')
+      }
     };
     
-    const handleChange = (event, newValue) => {
-        console.log('newValue => ', newValue);
+    const handleSliderChange = (event, newValue) => {
+        setUserQuantity(newValue)
     };
 
     return (
       <Container>
         <Box sx={{ width: 300 }}>
           <Slider
-              aria-label="Custom marks"
               defaultValue={1}
               getAriaValueText={valuetext}
               step={null}
               marks={Data.Silder.marks}
               valueLabelDisplay="auto"
-              onChange={handleChange}
+              onChange={handleSliderChange}
           />
         </Box>
         <SwitchButton>
           <Switch
             checked={checked}
-            onChange={handleChange2}
+            onChange={handleSwitchChange}
             inputProps={{ 'aria-label': 'controlled' }}
           />
           <SwitchTitle>
