@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Data } from "./PricingData";
 import PricinCard from "./PricingCard";
-import DiscreteSliderMarks from './SliderRange'
+import SliderRange from './SliderRange'
 
 import { PricingPageContainer, PricingCardContainer} from './PricingPageStyle'
 
@@ -12,7 +12,7 @@ export default function PricingPage() {
 
     return(
         <PricingPageContainer>
-            <DiscreteSliderMarks 
+            <SliderRange 
                 setContractLength={setContractLength}
                 setUserQuantity={setUserQuantity}
             />
