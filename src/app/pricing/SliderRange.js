@@ -1,11 +1,13 @@
 "use client"
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import Switch from '@mui/material/Switch';
-import { Container,SwitchButton, SwitchTitle, Monthly, Annually } from './SliderRangeStyle'
+import { Container,SwitchButton, SwitchTitle, Monthly, Annually, SwitchButtonContainer, SliderContainer } from './SliderRangeStyle'
 import { Data } from './PricingData';
 import Typography from '@/common/Typography';
+
+
+
 
 function valuetext(value) {
   return `${value}°C`;
@@ -30,7 +32,7 @@ export default function DiscreteSliderMarks({ setUserQuantity, setContractLength
 
     return (
       <Container>
-        <Box>
+        <SliderContainer>
           <Slider
               defaultValue={1}
               getAriaValueText={valuetext}
@@ -39,13 +41,16 @@ export default function DiscreteSliderMarks({ setUserQuantity, setContractLength
               valueLabelDisplay="auto"
               onChange={handleSliderChange}
           />
-        </Box>
-        <SwitchButton>
-          <Switch
-            checked={checked}
-            onChange={handleSwitchChange}
-            inputProps={{ 'aria-label': 'controlled' }}
-          />
+        </SliderContainer>
+        <SwitchButtonContainer>
+          <SwitchButton>
+            <Switch
+              checked={checked}
+              onChange={handleSwitchChange}
+              inputProps={{ 'aria-label': 'controlled' }}
+              color={ setContractLength('annually') === 'annually' ? 'warning' : 'success'}
+            />
+          </SwitchButton>
           <SwitchTitle>
             <Monthly>
               <Typography variant='h4'>
@@ -61,7 +66,7 @@ export default function DiscreteSliderMarks({ setUserQuantity, setContractLength
               </Typography>
             </Annually>
           </SwitchTitle>
-        </SwitchButton>
+        </SwitchButtonContainer>
       </Container>
     );
 }

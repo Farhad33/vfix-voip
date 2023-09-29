@@ -1,17 +1,27 @@
 'use client'
 import styled from "styled-components";
-import { color } from "@/common/Theme";
 
 export const PricingPageContainer = styled.div`
     width: 85%;
     margin: auto;
 `
 export const PricingCardContainer = styled.div`
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     margin-top: 60px;
+    width: 100%;
+    gap: 20px;
+    @media (max-width: 1000px) {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 40px;
+    }
+    @media (max-width: 700px) {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
 `
 export const ContainerMap = styled.div``
 export const ItemList = styled.div``

@@ -10,17 +10,21 @@ export const CollapsibleHead = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 `
 export const HeadTitle = styled.div`
     padding-top: calc(2vw + 20px);
     padding-bottom: calc(2vw + 2px);
+    width: 90%;
+    text-align: center;
 `
 export const HeadParagraph = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding-bottom: calc(2vw + 4px);
-    width: 93%;
+    width: 90%;
     p {
         font-weight: 500;
     }
