@@ -1,6 +1,9 @@
 import { Page } from "../pagestyle"
+import { Data } from "./PricingData"
 import FAQ from "./PricingFAQ"
 import PricingPage from "./PricingPage"
+import Typography from "@/common/Typography"
+import { PricingTitle } from './PricingPageStyle'
 
 export const metadata = {
     title: 'Pricing',
@@ -10,7 +13,11 @@ export const metadata = {
 export default function Pricing() {
     return (
         <Page>
-            <h1>Pricing</h1>
+            <PricingTitle>
+                <Typography variant='h2'>
+                    {Data.pricingTitle}
+                </Typography>
+            </PricingTitle>
             <PricingPage />
             <FAQ />
         </Page>

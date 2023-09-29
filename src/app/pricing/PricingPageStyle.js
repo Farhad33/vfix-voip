@@ -11,9 +11,12 @@ export const PricingCardContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    /* gap: calc(2rem + 3px); */
-    /* margin-top: calc(10% + -7vh);
-    margin-bottom: calc(10% + -4vh); */
+    margin-top: 60px;
 `
 export const ContainerMap = styled.div``
 export const ItemList = styled.div``
+
+export const PricingTitle = styled.div`
+    text-align: center;
+    margin: 60px 0;
+`

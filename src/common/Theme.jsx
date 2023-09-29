@@ -43,7 +43,7 @@ export const Theme ={
             h2: "calc(3vw + 2px)",
             h3: "calc(2vw + 2px)",
             h4: "calc(1vw + 6px)",
-            h5: "16px",
+            h5: "calc(1vw + 3px)",
             h6: "14px",
             subline1: "21px",
             subline2: "18px",

@@ -1,5 +1,5 @@
 export const Data = {
-    princinTitle: 'Our Pricing and FAQs',
+    pricingTitle: 'Our Pricing and FAQs',
     frequentlyTitle: 'Frequently Asked Questions',
     frequentlyParagraph: ' We offer IT services to clients, including proactive support, security management, and consulting. Businesses can choose from various MSP plans to optimize technology systems and enhance productivity. MSPs provide tailored solutions, data security, 24/7 support, and assistance with compliance requirements.',
     cards: [

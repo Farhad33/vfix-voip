@@ -30,7 +30,7 @@ export default function DiscreteSliderMarks({ setUserQuantity, setContractLength
 
     return (
       <Container>
-        <Box sx={{ width: 300 }}>
+        <Box>
           <Slider
               defaultValue={1}
               getAriaValueText={valuetext}
@@ -48,22 +48,21 @@ export default function DiscreteSliderMarks({ setUserQuantity, setContractLength
           />
           <SwitchTitle>
             <Monthly>
-              <Typography variant='h3'>
+              <Typography variant='h4'>
                 {Data.Silder.monthly}
               </Typography>
             </Monthly>
             <Annually>
-              <Typography variant='h3'>
+              <Typography variant='h4'>
                 {Data.Silder.annually}
               </Typography>
-              <Typography variant='h4'>
+              <Typography variant='h5'>
                 {Data.Silder.upto}
               </Typography>
             </Annually>
           </SwitchTitle>
-       `</SwitchButton>
+        </SwitchButton>
       </Container>
     );
 }
-
 
