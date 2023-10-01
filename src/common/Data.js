@@ -1,7 +1,127 @@
 export const Data = {
     navbar: {
-        menu: ['Home', 'Why Vfix', 'Services', 'Princing & FAQs', 'Company', 'Downloadds'],
-        links: ['/', 'whyvfix', 'servic', 'pricing', 'company', 'download'],
+        menu: [
+                {
+                    title: 'Home',
+                    link: '/',
+                },
+                {
+                    title: 'Services',
+                    link: 'services',
+                    // subLink: [
+                    //   {
+                    //     headTitle: 'UCaas',
+                    //     subLinks: [
+                    //       {
+                    //         subTitle: 'CLOUD PHONE SYSTEM',
+                    //         subLink: 'cloudphonesystem',
+                    //         icon: '/Services/UCaas/CloudPhoneSystem.png',
+                    //       },
+                    //       {
+                    //         subTitle: 'CLOUD CONTACT CENTER',
+                    //         subLink: 'cloudcontentcenter',
+                    //         icon: '/Services/UCaas/CloudContactCenter.png',
+                    //       },
+                    //       {
+                    //         subTitle: 'BUSINESS MESSAGING',
+                    //         subLink: 'businessmessaging',
+                    //         icon: '/Services/UCaas/BussinessMessaging.png',
+                    //       },
+                    //       {
+                    //         subTitle: 'TEAM & WEB COLLABORATION',
+                    //         subLink: 'teamwebcollaboration',
+                    //         icon: '/Services/UCaas/Team&WebCollaboration.png',
+                    //       },
+                    //       {
+                    //         subTitle: 'DIRECT ROUTING FOR MICROSOFT TEAMS',
+                    //         subLink: 'directrouting',
+                    //         icon: '/Services/UCaas/DirectRoutingForMicrosoftTeam.png',
+                    //       },
+                    //       {
+                    //         subTitle: 'MOBILE & DESKTOP APPS',
+                    //         subLink: 'mobiledesktopapp',
+                    //         icon: '/Services/UCaas/Mobile&DesktopApps.png',
+                    //       },
+                    //     ],
+                    //   },
+                    //   {
+                    //     headTitle: 'IT MSP',
+                    //     subLinks: [
+                    //       {
+                    //         subTitle: 'Proactive Monitoring and Maintenance',
+                    //         subLink: 'proactivemonitoring',
+                    //         icon: '/Services/ITMSP/ProactiveMonitoringandMaintenance.png',
+                    //       },
+                    //       {
+                    //         subTitle: 'Network Security and Compliance',
+                    //         subLink: 'networksecurity',
+                    //         icon: '/Services/ITMSP/NetworkSecurityandCompliance.png',
+                    //       },
+                    //       {
+                    //         subTitle: 'Data Backup and Disaster Recovery',
+                    //         subLink: 'databackup',
+                    //         icon: '/Services/ITMSP/DataBackupandDisasterRecovery.png',
+                    //       },
+                    //       {
+                    //         subTitle: 'Help Desk Support',
+                    //         subLink: 'helpdesksupport',
+                    //         icon: '/Services/ITMSP/HelpDeskSupport.png',
+                    //       },
+                    //       {
+                    //         subTitle: 'Software and Hardware Management',
+                    //         subLink: 'softwarehardware',
+                    //         icon: '/Services/ITMSP/SoftwareAndHardwareManagement.png',
+                    //       },
+                    //       {
+                    //         subTitle: 'Cloud Services and Migration',
+                    //         subLink: 'cloudservices',
+                    //         icon: '/Services/ITMSP/CloudServicesAndMigration.png',
+                    //       },
+                    //     ],
+                    //   },
+                    //   {
+                    //     headTitle: 'IT Consulting',
+                    //     subLinks: [
+                    //       {
+                    //         subTitle: 'IT Consulting paragraph',
+                    //         subLink: 'itconsulting',
+                    //         icon: '/Services/ITConsulting/Consulting.png',
+                    //       },
+                    //     ],
+                    //   },
+                    // ],
+                  },
+                {
+                    title: 'Why Vfix',
+                    link: 'whyvfix',
+                },
+                {
+                    title: 'Princing & FAQs ˅',
+                    link: 'pricing',
+                    subLink: [
+                        {
+                            subTitle: 'IT MSP & Consulting',
+                            subLink: 'pricing',
+                            icon: '/Pricing/ITMSPConsulting.png'
+                        },
+                        {
+                            subTitle: 'Business Comminucations',
+                            subLink: 'business',
+                            icon: '/Pricing/BusinessComminucation.png'
+                        }
+                    ]
+                },
+                {
+                    title: 'Company',
+                    link: 'company',
+                   
+                },
+                {
+                    title: 'Downloadds',
+                    link: 'download',
+                },
+            
+            ],
         login:'/login',
         img: '/Navbar/vfixlogo.png',
         alt: 'Vfix Voip Logo'

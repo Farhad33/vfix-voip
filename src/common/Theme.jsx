@@ -1,5 +1,6 @@
 export const color = {
     Red100: '#FD346E',
+    Green50: '#71ffe3',
     Green100: '#01D0A2',
     Green200: '#00D59C',
     Blue50: '#586780',

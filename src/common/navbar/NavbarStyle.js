@@ -2,7 +2,15 @@
 import Link from "next/link";
 import styled from "styled-components";
 import { color } from "../Theme"
+import Image from "next/image";
 
+export const UlContainer = styled.div`
+    display: flex;
+    justify-content: center;
+
+`
+export const SubLinkIcon = styled(Image)`
+`
 export const Container = styled.div`
     width: 100%;
     padding: 0 5%;
@@ -21,7 +29,7 @@ export const NavContainer = styled.div`
     }
 `
 
-export const NavLinks = styled.div`
+export const NavLinks = styled.div`    
     @media (max-width: 768px) {
         display: ${({ $isOpen }) => ($isOpen ? 'block' : 'none')};
         position: absolute;
@@ -70,6 +78,8 @@ export const LiItems = styled.li`
     padding-left: 65px;
     cursor: pointer;
 
+   
+
     @media (max-width: 1200px) {
         padding-left: calc(1vw + 25px);
     }
@@ -89,7 +99,39 @@ export const LiItems = styled.li`
         color: ${color.White};
     }
 `
+ export const Ullink = styled.ul`
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: ${color.White};
+    box-shadow: 0px 6px 30px 5px ${color.Blue300};
+    gap: 40px;
+    margin-top: 15px;
+    padding: 20px;
 
+    @media (max-width: 768px) {
+        position: relative;
+        flex-direction: column;
+        background: linear-gradient(to bottom, ${color.Green50}, ${color.Blue200});
+        gap: 0;
+        
+    }
+    li {
+        padding: 5px;
+    }
+    a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    span {
+        margin-top: 10px;
+        font-weight: 700;
+    }
+   
+ `
 
 export const StyledLink = styled(Link)`
     color: ${color.Black};
