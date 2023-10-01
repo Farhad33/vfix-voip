@@ -97,7 +97,7 @@ export const Data = {
                 },
                 {
                     title: 'Princing & FAQs ˅',
-                    link: 'pricing',
+                    link: '',
                     subLink: [
                         {
                             subTitle: 'IT MSP & Consulting',
