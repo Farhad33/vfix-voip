@@ -136,7 +136,7 @@ export default function Business() {
                 <th>Advanced ($300/server/month)</th>
                 <th>Premium ($500/server/month)</th>
                 
-        </tr>
+                </tr>
                 <tr>
                     <td>Server monitoring</td>
                     <td class="center"><span class="checkmark"></span></td>

@@ -49,7 +49,7 @@ export const Theme ={
             subline1: "21px",
             subline2: "18px",
             subline3: "calc(1vw + 5px)",
-            subline4: "calc(1vw + 2px)",
+            subline4: "calc(0.5vw + 9px)",
             body1: "calc(1vw + 9px)",
             body2: "calc(0.5vw + 12px)",
             body3: "calc(0.5vw + 11px)",

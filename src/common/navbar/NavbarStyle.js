@@ -4,13 +4,7 @@ import styled from "styled-components";
 import { color } from "../Theme"
 import Image from "next/image";
 
-export const UlContainer = styled.div`
-    display: flex;
-    justify-content: center;
 
-`
-export const SubLinkIcon = styled(Image)`
-`
 export const Container = styled.div`
     width: 100%;
     padding: 0 5%;
@@ -56,6 +50,15 @@ export const MenuButton = styled.button`
         z-index: 2; 
     }
 `
+
+export const UlContainer = styled.div`
+    display: flex;
+    justify-content: center;
+
+`
+export const SubLinkIcon = styled(Image)`
+`
+
 export const UlList = styled.ul`
     display: flex;
     justify-content: space-between;
@@ -80,19 +83,26 @@ export const LiItems = styled.li`
 
    
 
+    @media (max-width: 1310px) {
+        padding-left:calc(0.5vw + 45px);
+    }
     @media (max-width: 1200px) {
         padding-left: calc(1vw + 25px);
     }
     @media (max-width: 1150px) {
         padding-left: calc(1vw + 16px);
     }
-    @media (max-width: 800px) {
+    @media (max-width: 840px) {
         padding-left: calc(1vw + 8px);
     }
     @media (max-width: 768px) {
         font-size: 25px;
         color: ${color.White};
         margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     @media (max-width: 640px) {
         font-size: 25px;
