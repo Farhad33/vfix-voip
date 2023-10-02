@@ -1,6 +1,6 @@
 'use client'
 import Typography from "@/common/Typography"
-import { CollapsibleContainer, ListContainer, ListTitle, ListContent, CollapsibleListContainer, HeadTitle, CollapsibleHead, HeadParagraph, Icons} from './PricingCollapsibleListStyle'
+import { CollapsibleContainer, ListContainer, ListTitle, ListContent, CollapsibleListContainer, HeadTitle, CollapsibleHead, HeadParagraph, Icons} from './PricingFAQStyle'
 import { Data } from "./PricingData"
 import { useState } from "react"
 import {FiChevronDown, FiChevronUp} from "react-icons/fi"
@@ -22,12 +22,12 @@ export default function CollapsibleList (){
             <CollapsibleContainer>
                 <CollapsibleHead>
                     <HeadTitle>
-                        <Typography $variant='h2' >
+                        <Typography variant='h2' >
                             {Data.frequentlyTitle}
                         </Typography>
                     </HeadTitle>
                     <HeadParagraph>
-                        <Typography $variant='body3'>
+                        <Typography variant='body3'>
                             {Data.frequentlyParagraph}
                         </Typography>
                     </HeadParagraph>
@@ -36,7 +36,7 @@ export default function CollapsibleList (){
                     {Data.CollapsibleList.map((item, index) => (
                         <ListContainer key={index}>
                             <ListTitle onClick={ () => handelItemClick(index)}>
-                                <Typography $variant='h4'>
+                                <Typography variant='h4'>
                                     {item.title}
                                     
                                 </Typography>
@@ -45,7 +45,7 @@ export default function CollapsibleList (){
                                 </Icons>
                             </ListTitle>
                             <ListContent $isOpen= {index === openIndex}>
-                                <Typography $variant='body2'>
+                                <Typography variant='body2'>
                                     {item.content}
                                 </Typography>
                             </ListContent>
