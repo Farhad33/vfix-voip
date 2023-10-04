@@ -13,13 +13,13 @@ export const Data = {
                     monthly: 32.95,
                     annually: 29.66,
                 },
-                25: {
+                33: {
                     discount_amount: "4.79",
                     discount_percent: 15,
                     monthly: 31.95,
                     annually: 27.16,
                 },
-                50: {
+                66: {
                     discount_amount: "4.19",
                     discount_percent: 15,
                     monthly: 27.95,
@@ -53,13 +53,13 @@ export const Data = {
                     monthly: 37.95,
                     annually: 34.16,
                 },
-                25: {
+                33: {
                     discount_amount: "5.39",
                     discount_percent: 15,
                     monthly: 35.95,
                     annually: 30.56,
                 },
-                50: {
+                66: {
                     discount_amount: "4.94",
                     discount_percent: 15,
                     monthly: 32.95,
@@ -95,13 +95,13 @@ export const Data = {
                     monthly: 47.95,
                     annually: 43.16,
                 },
-                25: {
+                33: {
                     discount_amount: "6.89",
                     discount_percent: 15,
                     monthly: 45.95,
                     annually: 39.06,
                 },
-                50: {
+                66: {
                     discount_amount: "6.44",
                     discount_percent: 15,
                     monthly: 42.95,
@@ -139,11 +139,11 @@ export const Data = {
               label: '1-4',
             },
             {
-              value: 25,
+              value: 33,
               label: '5-19',
             },
             {
-              value: 50,
+              value: 66,
               label: '20-99',
             },
             {

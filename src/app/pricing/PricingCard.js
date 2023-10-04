@@ -94,7 +94,7 @@ const PricingCard = styled.div`
     }
 `
 const CardContent = styled.div`
-
+    padding-bottom: calc(1vw + 6px);
 `
 
 const Title = styled.div`
@@ -113,7 +113,6 @@ const Discount = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: calc(1vw + 6px);
     padding-bottom: calc(1vw + -9px);
 `
 const LeftSide = styled.div`

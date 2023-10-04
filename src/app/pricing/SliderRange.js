@@ -16,7 +16,7 @@ function valuetext(value) {
 
 export default function SliderRange({ setUserQuantity, setContractLength }) {
 
-    const [checked, setChecked] = React.useState(true);
+    const [checked, setChecked] = React.useState(false);
 
     const handleSwitchChange = (event) => {
       setChecked(event.target.checked);
@@ -39,7 +39,6 @@ export default function SliderRange({ setUserQuantity, setContractLength }) {
               getAriaValueText={valuetext}
               step={null}
               marks={Data.Silder.marks}
-              valueLabelDisplay="auto"
               onChange={handleSliderChange}
           />
         </SliderContainer>

@@ -41,8 +41,6 @@ export default function Navbar() {
                                     <>
                                         <StyledLink
                                             href={item.link}
-                                            onMouseEnter={() => setIsSubLinksOpen(true)}
-                                            onMouseLeave={() => setIsSubLinksOpen(false)}
                                             onClick={toggleSubLinks} 
                                         >
                                             <SpanLinks>{item.title}</SpanLinks>
