@@ -79,7 +79,7 @@ export default function PricinCard({
 
 const PricingCard = styled.div`
     width: 100%;
-    height: -webkit-fill-available;; 
+    height: -webkit-fill-available; 
     border: none;
     box-shadow: 0px 6px 30px 0px ${color.Gray900};
     padding-top: calc(2vw + 15px);
