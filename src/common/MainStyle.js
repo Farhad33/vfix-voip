@@ -13,14 +13,11 @@ export const Button = styled.button`
   border-radius: 20px;
   height: 40px;
   font-size: ${({variant}) => Theme.typography.fontSize.button};
-  padding: 0 25px;
-  color: #FFFFFF;
+  padding: 0 calc(1vw + 20px);
+  color: ${color.White};
   &:hover {
     background: ${color.Black};
     transition: all .5s ease;
     
-  }
-  @media (max-width: 640px) {
-    padding: 0 10px;
   }
 `
