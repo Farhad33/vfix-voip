@@ -10,15 +10,15 @@ import { useState } from 'react';
 
 
 export default function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isSubLinksOpen, setIsSubLinksOpen] = useState(false); 
+    const [hamburgerMenu, setHamburgerMenu] = useState(false);
+    const [isSubLinkOpen, setIsSubLinkOpen] = useState(false); 
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
+    const toggleHamburgerMenu = () => {
+        setHamburgerMenu(!hamburgerMenu);
     };
 
     const toggleSubLinks = () => {
-        setIsSubLinksOpen(!isSubLinksOpen);
+        setIsSubLinkOpen(!isSubLinkOpen);
     };
 
     return (
@@ -30,10 +30,10 @@ export default function Navbar() {
                     width={140}
                     height={40}
                 />
-                <MenuButton onClick={toggleMenu}>
-                    {isOpen ? <TfiClose /> : <TfiMenu />}
+                <MenuButton onClick={toggleHamburgerMenu}>
+                    {hamburgerMenu ? <TfiClose /> : <TfiMenu />}
                 </MenuButton>
-                <NavLinks $isOpen={isOpen}>
+                <NavLinks $hamburgerMenu={hamburgerMenu}>
                     <UlList>
                         {Data.navbar.menu.map((item, index) => (
                             <LiItems key={index}>
@@ -46,10 +46,10 @@ export default function Navbar() {
                                             <SpanLinks>{item.title}</SpanLinks>
                                         </StyledLink>
                                         <UlContainer>
-                                            <Ullink style={{ display: isSubLinksOpen ? 'flex' : 'none' }}>
+                                            <Ullink style={{ display: isSubLinkOpen ? 'flex' : 'none' }}>
                                                 {item.subLink.map((subItem, subIndex) => (
                                                     <LiItems key={subIndex}>
-                                                        <StyledLink href={subItem.subLink}>
+                                                        <StyledLink href={subItem.subLink} onClick={toggleSubLinks}>
                                                             <SubLinkIcon width={50} height={50} src={subItem.icon} alt={subItem.subTitle} />
                                                             <SpanLinks>{subItem.subTitle}</SpanLinks>
                                                         </StyledLink>
