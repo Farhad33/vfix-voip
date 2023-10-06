@@ -1,3 +1,4 @@
+'use client'
 import { DownloadCard, Content, Photo, ContentImg, DownloadTitle, DownloadParagraph, DownloadRightSide, DownloadLeftSide, MobileApp } from './DownloadStyle'
 import Image from 'next/image'
 import Typography from '@/common/Typography'
@@ -18,16 +19,18 @@ export default function Downloadcard ({ card })  {
         </DownloadParagraph>
         <MobileApp>
             <Image
-              src= '/Download/AppStore.png'
+              src= {card.img1}
               width={120}
               height={35}
               alt= {card.title}
+              onClick={() => {window.location.assign(card.urlImage1)}}
             />
             <Image
-              src= '/Download/GooglePlay.png'
+              src= {card.img2}
               width={120}
               height={35}
               alt= {card.title}
+              onClick={() => {window.location.assign(card.urlImage2)}}
             />
         </MobileApp>
       </DownloadLeftSide>
