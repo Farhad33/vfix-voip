@@ -22,6 +22,7 @@ export default function Login() {
                                 title={card.title}
                                 urlImage={card.img}
                                 btnText={card.buttonText}
+                                url={card.url}
                             />
                         ))
                     }

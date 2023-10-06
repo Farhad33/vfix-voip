@@ -4,37 +4,37 @@ export const Data = {
         {
             title: 'Help Desk Support',
             buttonText: 'Login',
-            buttonLine: '',
+            url: 'http://portal.vfixmsp.com',
             img: '/Login/HelpDeskSupport.png'
         },
         {
             title: 'Fax Portal',
             buttonText: 'Login',
-            buttonLine: '',
+            url: 'https://myhostedfax.com',
             img: '/Login/FaxPortal.png'
         },
         {
             title: 'Call Recordings',
             buttonText: 'Login',
-            buttonLine: '',
+            url: 'https://vfix.mysiprec.com',
             img: '/Login/CallRecordings.png'
         },
         {
             title: 'Billing & Invoices',
             buttonText: 'Login',
-            buttonLine: '',
+            url: ' https://vfix.mycloudbill.com/selfcare.do?party=vfix',
             img: '/Login/Billing&Invoices.png'
         },
         {
             title: 'VOIP Phone User Portal',
             buttonText: 'Login',
-            buttonLine: '',
+            url: 'https://vfix.uccommportal.com',
             img: '/Login/VOIPPhoneUserPortal.png'
         },
         {
             title: 'Business Group Admin',
             buttonText: 'Login',
-            buttonLine: '',
+            url: 'https://vfix.uccommportal.com/bg',
             img: '/Login/BusinessGroupAdmin.png'
         },
     ]
