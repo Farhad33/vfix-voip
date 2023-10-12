@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { LiItems, StyledLink, SpanLinks, SubLinkIcon, Ullink, UlContainer } from '../navbar/NavbarStyle';
+import SubDropDown from './SubDropDown';
+
 
 export default function Dropdown({ item }) {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false)
@@ -28,6 +30,7 @@ export default function Dropdown({ item }) {
                             />
                             <SpanLinks>{subItem.title}</SpanLinks>
                         </StyledLink>
+                        {subItem.dropdown && <SubDropDown items={subItem.dropdown} /> }
                     </LiItems>
                 ))}
             </Ullink>

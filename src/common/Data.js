@@ -7,7 +7,7 @@ export const Data = {
             },
             {
                 title: 'Services',
-                route: 'services',
+                route: '',
                 dropdown: [
                     {
                         title: 'UCaas',
@@ -51,32 +51,32 @@ export const Data = {
                         dropdown: [
                             {
                                 title: 'Proactive Monitoring and Maintenance',
-                                dropdown: 'proactivemonitoring',
+                                route: 'proactivemonitoring',
                                 icon: '/Services/ITMSP/ProactiveMonitoringandMaintenance.png',
                             },
                             {
                                 title: 'Network Security and Compliance',
-                                dropdown: 'networksecurity',
+                                route: 'networksecurity',
                                 icon: '/Services/ITMSP/NetworkSecurityandCompliance.png',
                             },
                             {
                                 title: 'Data Backup and Disaster Recovery',
-                                dropdown: 'databackup',
+                                route: 'databackup',
                                 icon: '/Services/ITMSP/DataBackupandDisasterRecovery.png',
                             },
                             {
                                 title: 'Help Desk Support',
-                                dropdown: 'helpdesksupport',
+                                route: 'helpdesksupport',
                                 icon: '/Services/ITMSP/HelpDeskSupport.png',
                             },
                             {
                                 title: 'Software and Hardware Management',
-                                dropdown: 'softwarehardware',
+                                route: 'softwarehardware',
                                 icon: '/Services/ITMSP/SoftwareAndHardwareManagement.png',
                             },
                             {
                                 title: 'Cloud Services and Migration',
-                                dropdown: 'cloudservices',
+                                route: 'cloudservices',
                                 icon: '/Services/ITMSP/CloudServicesAndMigration.png',
                             },
                         ],
@@ -87,7 +87,7 @@ export const Data = {
                         dropdown: [
                             {
                                 title: 'IT Consulting paragraph',
-                                dropdown: 'itconsulting',
+                                route: 'itconsulting',
                                 icon: '/Services/ITConsulting/Consulting.png',
                             },
                         ],

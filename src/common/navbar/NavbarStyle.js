@@ -116,7 +116,7 @@ export const LiItems = styled.li`
     position: absolute;
     background: ${color.White};
     box-shadow: 0px 6px 30px 5px ${color.Blue300};
-    gap: 40px;
+    gap: 10px;
     margin-top: 15px;
     padding: 20px;
 
@@ -130,12 +130,12 @@ export const LiItems = styled.li`
     li {
         padding: 5px;
     }
-    a {
+    /* a {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } */
     span {
         margin-top: 10px;
         font-weight: 700;
@@ -179,4 +179,26 @@ export const SpanButton = styled.span`
         font-size: 16px;
         padding: 0 30px;
     }
+`
+export const SubDropDownContainer = styled.div``
+export const SubDropDownList = styled.ul`
+    list-style: none;
+`
+export const SubDropDownLink = styled.li`
+
+`
+export const SubDropDownRoute = styled.a`
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+    &:hover {
+        background-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200});
+        background-clip: text;
+        -webkit-background-clip: text; 
+        color: transparent; 
+    }
+`
+export const SubDropDownIcon = styled(Image)`
+    margin-right: 10px;
 `
