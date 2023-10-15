@@ -7,7 +7,7 @@ import { Button } from '@/common/MainStyle';
 
 
 
-export default function Card({ title, btnText, urlImage })  {
+export default function Card({ title, btnText, urlImage, url })  {
   return (
     <CardContainer>
         <CardImage>
@@ -19,7 +19,7 @@ export default function Card({ title, btnText, urlImage })  {
                 {title}
               </Typography>
             </CardTitle>
-                <Button>
+                <Button onClick={ () => {window.location.assign(url)}}>
                     <Typography variant='body4'>
                         {btnText}
                     </Typography>
