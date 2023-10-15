@@ -15,6 +15,7 @@ export const Button = styled.button`
   font-size: ${({variant}) => Theme.typography.fontSize.button};
   padding: 0 calc(1vw + 20px);
   color: ${color.White};
+  cursor: pointer;
   &:hover {
     background: ${color.Black};
     transition: all .5s ease;
