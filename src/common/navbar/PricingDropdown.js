@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { LiItems, StyledLink, SpanLinks, SubLinkIcon, Ullink, UlContainer } from '../navbar/NavbarStyle';
-import SubDropDown from './SubDropDown';
+import { LiItems, StyledLink, SpanLinks, SubLinkIcon, Ullink, UlContainer } from './NavbarStyle';
+import SubDropDown from './ServicesSubDropdown';
 
 
-export default function Dropdown({ item }) {
+export default function PricingDropdown({ item }) {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 
 

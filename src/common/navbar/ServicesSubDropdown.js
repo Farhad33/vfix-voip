@@ -1,13 +1,12 @@
-import Image from "next/image";
 import { SubDropDownContainer, SubDropDownList, SubDropDownLink, SubDropDownRoute, SubDropDownIcon} from './NavbarStyle'
-export default function SubDropDown({ items }) {
+export default function ServicesSubDropDown({ items }) {
   return(
     <SubDropDownContainer>
       <SubDropDownList>
         {
           items.map((item, index) => (
             <SubDropDownLink key={index}>
-              <SubDropDownRoute hred={item.route}>
+              <SubDropDownRoute href={item.route}>
                 {
                   item.icon && ( 
                     <SubDropDownIcon src={item.icon} alt={item.title} width={17} height={17} />
@@ -15,7 +14,7 @@ export default function SubDropDown({ items }) {
                   {item.title}
               </SubDropDownRoute>
               {item.dropdown && (
-                <SubDropDown item={item.dropdown} />
+                <ServicesSubDropDown item={item.dropdown} />
               )}
             </SubDropDownLink>
           ))

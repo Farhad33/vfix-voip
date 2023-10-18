@@ -5,7 +5,8 @@ import { TfiMenu, TfiClose } from "react-icons/tfi";
 import { Data } from '../Data';
 import { Button } from '../MainStyle';
 import { NavContainer, NavLinks, UlList, LiItems, StyledLink, Container, SpanLinks, MenuButton, SpanButton, SubLinkIcon, Ullink, UlContainer } from '../navbar/NavbarStyle';
-import Dropdown from './Dropdown'
+import PricingDropdown from './PricingDropdown';
+import ServicesDropDown from './ServicesDropdown';
 
 
 
@@ -33,9 +34,12 @@ export default function Navbar() {
                     <UlList>
                         {Data.navbar.menu.map((item, index) => (
                             <LiItems key={index}>
-                                {item.dropdown ? (
-                                    <Dropdown item={item} />
-                                ) : (
+                                {item.dropdown && item.title === 'Princing & FAQs ˅' ? (
+                                    <PricingDropdown item={item} />
+                                ) : item.dropdown && item.title === 'Services' ? (
+                                    <ServicesDropDown item={item} />
+                                )
+                                : (
                                     <StyledLink href={item.route}>
                                         <SpanLinks>{item.title}</SpanLinks>
                                     </StyledLink>
