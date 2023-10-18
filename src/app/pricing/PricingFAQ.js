@@ -1,7 +1,7 @@
 'use client'
 import Typography from "@/common/Typography"
 import { CollapsibleContainer, ListContainer, ListTitle, ListContent, CollapsibleListContainer, HeadTitle, CollapsibleHead, HeadParagraph, Icons} from './PricingFAQStyle'
-import { Data } from "./PricingData"
+import { Data } from "./voip/PricingData"
 import { useState } from "react"
 import {FiChevronDown, FiChevronUp} from "react-icons/fi"
 

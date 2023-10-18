@@ -104,12 +104,12 @@ export const Data = {
                 dropdown: [
                     {
                         title: 'IT MSP & Consulting',
-                        route: 'pricing',
+                        route: '/pricing/msp',
                         icon: '/Pricing/ITMSPConsulting.png'
                     },
                     {
                         title: 'Business Comminucations',
-                        route: 'business',
+                        route: '/pricing/voip',
                         icon: '/Pricing/BusinessComminucation.png'
                     }
                 ]
