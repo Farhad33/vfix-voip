@@ -81,17 +81,20 @@ export const Data = {
                             },
                         ],
                     },
-                    {
-                        title: 'IT Consulting',
-                        route: '',
-                        dropdown: [
-                            {
-                                title: 'IT Consulting paragraph',
-                                route: 'itconsulting',
-                                icon: '/Services/ITConsulting/Consulting.png',
-                            },
-                        ],
-                    },
+                    // {
+                        // title: 'IT Consulting',
+                        // route: 'itconsulting',
+                        // dropdown: [
+                        //     {
+                        //         title: 'IT Consulting paragraph',
+                        //         route: 'itconsulting',
+                        //         icon: '/Services/ITConsulting/Consulting.png',
+                        //         paragraph: 'Harness the Dynamic Potential of Cutting-Edge Technology with Expert IT Consulting. Seamlessly navigate the ever-evolving landscape of digital innovation and empower your organization with a bespoke IT strategy and roadmap.',
+                        //         icon: '/Services/ITConsulting/Consulting.png',
+                        //         button: 'Learn More',
+                        //     },
+                        // ],
+                    // },
                 ],
             },
             {
@@ -383,4 +386,12 @@ export const Data = {
             list: ['Privacy Policy', 'Terms & Conditions', 'End-user Licence Agreement', 'Website Terms of Use', 'Security', 'Privacy FAQs', 'DPA', 'Integration terms', 'Sitemap', 'Cookies Preferences']
         }
     }
+}
+
+export const ItConsultingData = {
+    title: 'IT Consulting',
+    route: 'itconsulting',
+    paragraph: 'Harness the Dynamic Potential of Cutting-Edge Technology with Expert IT Consulting. Seamlessly navigate the ever-evolving landscape of digital innovation and empower your organization with a bespoke IT strategy and roadmap.',
+    icon: '/Services/ITConsulting/Consulting.png',
+    button: 'Learn More',
 }

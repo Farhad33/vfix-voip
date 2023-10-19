@@ -3,6 +3,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import { color } from "../Theme"
 import Image from "next/image";
+import { Button } from "../MainStyle";
 
 
 export const Container = styled.div`
@@ -51,7 +52,7 @@ export const MenuButton = styled.button`
     }
 `
 
-export const UlContainer = styled.div`
+export const DropdownContainer = styled.div`
     display: flex;
     justify-content: center;
 
@@ -59,7 +60,7 @@ export const UlContainer = styled.div`
 export const SubLinkIcon = styled(Image)`
 `
 
-export const UlList = styled.ul`
+export const NavList = styled.ul`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,7 +73,7 @@ export const UlList = styled.ul`
     }
 `
 
-export const LiItems = styled.li`
+export const DropdownItem = styled.li`
     color: ${color.Black};
     text-decoration: none;
     font-size: 16px;
@@ -80,9 +81,7 @@ export const LiItems = styled.li`
     letter-spacing:0.15px;
     padding-left: 65px;
     cursor: pointer;
-
    
-
     @media (max-width: 1310px) {
         padding-left:calc(0.5vw + 45px);
     }
@@ -109,7 +108,30 @@ export const LiItems = styled.li`
         color: ${color.White};
     }
 `
- export const Ullink = styled.ul`
+export const PricingDropdownItem = styled(DropdownItem)`
+     a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+`
+export const ServicesDropdownItem = styled(DropdownItem)`
+  
+     a {
+        text-decoration: none;
+        color: ${color.Black};
+        span {
+            background-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200});
+            background-clip: text;
+            -webkit-background-clip: text; 
+            color: transparent;
+        }
+    }
+`
+
+
+ export const DropdownList = styled.ul`
+    display: ${(props) => props.isDropdownOpen ? 'flex' : 'none'};
     list-style: none;
     justify-content: center;
     align-items: center;
@@ -119,23 +141,22 @@ export const LiItems = styled.li`
     gap: 10px;
     margin-top: 15px;
     padding: 20px;
+    z-index: 1;
+    @media (max-width: 1000px) {
+        left: 5px;
 
+    }
     @media (max-width: 768px) {
         position: relative;
         flex-direction: column;
         background: linear-gradient(to bottom, ${color.Green50}, ${color.Blue200});
         gap: 0;
-        
+        left: 5px;
     }
     li {
-        padding: 5px;
+        padding: calc(0.5vw + 8px) 0;
+        align-self: flex-start;
     }
-    /* a {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } */
     span {
         margin-top: 10px;
         font-weight: 700;
@@ -146,6 +167,11 @@ export const LiItems = styled.li`
 export const StyledLink = styled(Link)`
     color: ${color.Black};
     text-decoration: none;
+    span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     &:hover {
         background-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200});
         background-clip: text;
@@ -161,7 +187,13 @@ export const StyledLink = styled(Link)`
 `;
 
 export const SpanLinks = styled.span`
-    
+
+    &:hover {
+        background-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200});
+        background-clip: text;
+        -webkit-background-clip: text; 
+        color: transparent; 
+    }
     
     @media  (max-width: 768px) {
         padding:10px 0 ; 
@@ -203,4 +235,39 @@ export const SubDropDownIcon = styled(Image)`
     margin-right: 10px;
 `
 
-export const ItConsultingContainer = styled.div``
+export const ItConsultingContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
+
+export const ItConsultingTitle = styled.span`
+  
+`
+export const ItConsultingImage = styled(Image)`
+    margin: 20px 0 ;
+`
+export const ItConsultingParagraph = styled.p`
+    width: 190px;
+    font-size: 11px;
+    padding-bottom: calc(0.5vw + 5px);
+`
+export const ItConsultingButton = styled(Button)`
+    font-size: calc(0.5vw + 5px);
+    height: 30px;
+    padding: 0 calc(0.5vw + 2px);
+`
+
+export const RoutConsulting = styled.a`
+    background-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200});
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent; 
+    text-decoration: none;
+`
+
+export const ButtonConsultingRoute = styled.a`
+    text-decoration: none;
+    color: ${color.White};
+`

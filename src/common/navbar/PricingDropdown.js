@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { LiItems, StyledLink, SpanLinks, SubLinkIcon, Ullink, UlContainer } from './NavbarStyle';
+import { PricingDropdownItem, StyledLink, SpanLinks, SubLinkIcon, DropdownList, DropdownContainer } from './NavbarStyle';
 import SubDropDown from './ServicesSubDropdown';
 
 
@@ -14,10 +14,10 @@ export default function PricingDropdown({ item }) {
         >
             <SpanLinks>{item.title}</SpanLinks>
         </StyledLink>
-        <UlContainer>
-            <Ullink style={{ display: isDropdownOpen ? 'flex' : 'none' }}>
+        <DropdownContainer>
+            <DropdownList isDropdownOpen={isDropdownOpen} >
                 {item.dropdown.map((subItem, subIndex) => (
-                    <LiItems key={subIndex}>
+                    <PricingDropdownItem key={subIndex}>
                         <StyledLink 
                             href={subItem.route} 
                             onClick={() => setIsDropdownOpen(false)}
@@ -31,9 +31,9 @@ export default function PricingDropdown({ item }) {
                             <SpanLinks>{subItem.title}</SpanLinks>
                         </StyledLink>
                         {subItem.dropdown && <SubDropDown items={subItem.dropdown} /> }
-                    </LiItems>
+                    </PricingDropdownItem>
                 ))}
-            </Ullink>
-        </UlContainer>
+            </DropdownList>
+        </DropdownContainer>
     </>
 }

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { TfiMenu, TfiClose } from "react-icons/tfi";
 import { Data } from '../Data';
 import { Button } from '../MainStyle';
-import { NavContainer, NavLinks, UlList, LiItems, StyledLink, Container, SpanLinks, MenuButton, SpanButton, SubLinkIcon, Ullink, UlContainer } from '../navbar/NavbarStyle';
+import { NavContainer, NavLinks, NavList, DropdownItem, StyledLink, Container, SpanLinks, MenuButton, SpanButton } from '../navbar/NavbarStyle';
 import PricingDropdown from './PricingDropdown';
 import ServicesDropDown from './ServicesDropdown';
 
@@ -31,9 +31,9 @@ export default function Navbar() {
                     {hamburgerMenu ? <TfiClose /> : <TfiMenu />}
                 </MenuButton>
                 <NavLinks $hamburgerMenu={hamburgerMenu}>
-                    <UlList>
+                    <NavList>
                         {Data.navbar.menu.map((item, index) => (
-                            <LiItems key={index}>
+                            <DropdownItem key={index}>
                                 {item.dropdown && item.title === 'Princing & FAQs ˅' ? (
                                     <PricingDropdown item={item} />
                                 ) : item.dropdown && item.title === 'Services' ? (
@@ -44,14 +44,14 @@ export default function Navbar() {
                                         <SpanLinks>{item.title}</SpanLinks>
                                     </StyledLink>
                                 )}
-                            </LiItems>
+                            </DropdownItem>
                         ))}
-                        <LiItems>
+                        <DropdownItem>
                             <StyledLink href={Data.navbar.login}>
                                 <Button><SpanButton>Login</SpanButton></Button>
                             </StyledLink>
-                        </LiItems>
-                    </UlList>
+                        </DropdownItem>
+                    </NavList>
                 </NavLinks>
             </NavContainer>
         </Container>
