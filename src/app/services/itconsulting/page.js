@@ -1,6 +1,6 @@
 import Typography from "@/common/Typography"
 import { Data } from "./Data"
-import { Page } from "../pagestyle"
+import { Page } from "../../pagestyle"
 import { Button } from "@/common/MainStyle"
 import { PageContainer, LeftSide, RightSide, HeadTitle, Title, Paragraph, ImageRiteSide, ParagraphContainer,OverviewContainer, VfixCaontainer, VfixHeadTitle, VfixCardContainer, VfixHead, ServicesContainer, ServicesHead, VfixParagraph, ServicesTitle,ServicesParagraph, ServicesCardContainer} from './PageStyle'
 import VfixCards from './VfixCard'

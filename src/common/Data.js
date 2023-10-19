@@ -15,32 +15,32 @@ export const Data = {
                         dropdown: [
                             {
                                 title: 'CLOUD PHONE SYSTEM',
-                                route: 'cloudphonesystem',
+                                route: '/services/cloudphonesystem',
                                 icon: '/Services/UCaas/CloudPhoneSystem.png',
                             },
                             {
                                 title: 'CLOUD CONTACT CENTER',
-                                route: 'cloudcontentcenter',
+                                route: '/services/cloudcontentcenter',
                                 icon: '/Services/UCaas/CloudContactCenter.png',
                             },
                             {
                                 title: 'BUSINESS MESSAGING',
-                                route: 'businessmessaging',
+                                route: '/services/businessmessaging',
                                 icon: '/Services/UCaas/BussinessMessaging.png',
                             },
                             {
                                 title: 'TEAM & WEB COLLABORATION',
-                                route: 'teamwebcollaboration',
+                                route: '/services/teamwebcollaboration',
                                 icon: '/Services/UCaas/Team&WebCollaboration.png',
                             },
                             {
                                 title: 'DIRECT ROUTING FOR MICROSOFT TEAMS',
-                                route: 'directrouting',
+                                route: '/services/directrouting',
                                 icon: '/Services/UCaas/DirectRoutingForMicrosoftTeam.png',
                             },
                             {
                                 title: 'MOBILE & DESKTOP APPS',
-                                route: 'mobiledesktopapp',
+                                route: '/services/mobiledesktopapp',
                                 icon: '/Services/UCaas/Mobile&DesktopApps.png',
                             },
                         ],
@@ -51,32 +51,32 @@ export const Data = {
                         dropdown: [
                             {
                                 title: 'Proactive Monitoring and Maintenance',
-                                route: 'proactivemonitoring',
+                                route: '/services/proactivemonitoring',
                                 icon: '/Services/ITMSP/ProactiveMonitoringandMaintenance.png',
                             },
                             {
                                 title: 'Network Security and Compliance',
-                                route: 'networksecurity',
+                                route: '/services/networksecurity',
                                 icon: '/Services/ITMSP/NetworkSecurityandCompliance.png',
                             },
                             {
                                 title: 'Data Backup and Disaster Recovery',
-                                route: 'databackup',
+                                route: '/services/databackup',
                                 icon: '/Services/ITMSP/DataBackupandDisasterRecovery.png',
                             },
                             {
                                 title: 'Help Desk Support',
-                                route: 'helpdesksupport',
+                                route: '/services/helpdesksupport',
                                 icon: '/Services/ITMSP/HelpDeskSupport.png',
                             },
                             {
                                 title: 'Software and Hardware Management',
-                                route: 'softwarehardware',
+                                route: '/services/softwarehardware',
                                 icon: '/Services/ITMSP/SoftwareAndHardwareManagement.png',
                             },
                             {
                                 title: 'Cloud Services and Migration',
-                                route: 'cloudservices',
+                                route: '/services/cloudservices',
                                 icon: '/Services/ITMSP/CloudServicesAndMigration.png',
                             },
                         ],
@@ -390,7 +390,7 @@ export const Data = {
 
 export const ItConsultingData = {
     title: 'IT Consulting',
-    route: 'itconsulting',
+    route: '/services/itconsulting',
     paragraph: 'Harness the Dynamic Potential of Cutting-Edge Technology with Expert IT Consulting. Seamlessly navigate the ever-evolving landscape of digital innovation and empower your organization with a bespoke IT strategy and roadmap.',
     icon: '/Services/ITConsulting/Consulting.png',
     button: 'Learn More',

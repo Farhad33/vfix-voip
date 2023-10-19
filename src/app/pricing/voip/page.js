@@ -1,9 +1,10 @@
 import { Page } from "../../pagestyle"
 import { Data } from "./PricingData"
-import FAQ from "../PricingFAQ"
+import PricingFAQ from "../PricingFAQ"
 import PricingPage from "./PricingPage"
 import Typography from "@/common/Typography"
 import { PricingTitle } from './PricingPageStyle'
+import { dataVoip } from "./dataVoip"
 
 export const metadata = {
     title: 'Business Communications',
@@ -19,7 +20,7 @@ export default function BusinessCommunications() {
                 </Typography>
             </PricingTitle>
             <PricingPage />
-            <FAQ />
+            <PricingFAQ data={dataVoip} />
         </Page>
     )
 }

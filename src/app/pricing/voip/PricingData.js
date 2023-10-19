@@ -153,54 +153,54 @@ export const Data = {
           ]
     },
 
-    CollapsibleList: [
-        {
-            title: 'What is an MSP service?',
-            content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute. Officia in ullamco in labore exercitation tempor do mollit Lorem et deserunt irure. Deserunt quis fugiat mollit aliquip ad sint labore.',
-        },
-        {
-            title: 'What MSP plans are available?',
-            content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute. Officia in ullamco in labore exercitation tempor do mollit Lorem et deserunt irure. Deserunt quis fugiat mollit aliquip ad sint labore.',
-        },
-        {
-            title: 'How does an MSP service help my business?',
-            content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute. Officia in ullamco in labore exercitation tempor do mollit Lorem et deserunt irure. Deserunt quis fugiat mollit aliquip ad sint labore.',
-        },
-        {
-            title: 'What kind of support is available with MSP services?',
-            content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute. Officia in ullamco in labore exercitation tempor do mollit Lorem et deserunt irure. Deserunt quis fugiat mollit aliquip ad sint labore.',
-        },
-        {
-            title: 'What kind of businesses can benefit from MSP services?',
-            content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute.',
-        },
-        {
-            title: 'How much do MSP services cost?',
-            content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute.',
-        },
-        {
-            title: 'How do I choose the right MSP service provider for my business?',
-            content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute.',
-        },
-        {
-            title: 'Can I customize an MSP service plan to meet my business needs?',
-            content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute.',
-        },
-        {
-            title: 'What happens if theres an issue outside of normal business hours?',
-            content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute.',
-        },
-        {
-            title: 'How does an MSP service provider ensure the security of my business data?',
-            content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute.',
-        },
-        {
-            title: 'What happens if I need additional IT services outside of the MSP service plan?',
-            content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute.',
-        },
-        {
-            title: 'How does an MSP service help my business with compliance and regulatory requirements?',
-            content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute.',
-        },
-    ],
+    // CollapsibleList: [
+    //     {
+    //         title: 'What is an MSP service?',
+    //         content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute. Officia in ullamco in labore exercitation tempor do mollit Lorem et deserunt irure. Deserunt quis fugiat mollit aliquip ad sint labore.',
+    //     },
+    //     {
+    //         title: 'What MSP plans are available?',
+    //         content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute. Officia in ullamco in labore exercitation tempor do mollit Lorem et deserunt irure. Deserunt quis fugiat mollit aliquip ad sint labore.',
+    //     },
+    //     {
+    //         title: 'How does an MSP service help my business?',
+    //         content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute. Officia in ullamco in labore exercitation tempor do mollit Lorem et deserunt irure. Deserunt quis fugiat mollit aliquip ad sint labore.',
+    //     },
+    //     {
+    //         title: 'What kind of support is available with MSP services?',
+    //         content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute. Officia in ullamco in labore exercitation tempor do mollit Lorem et deserunt irure. Deserunt quis fugiat mollit aliquip ad sint labore.',
+    //     },
+    //     {
+    //         title: 'What kind of businesses can benefit from MSP services?',
+    //         content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute.',
+    //     },
+    //     {
+    //         title: 'How much do MSP services cost?',
+    //         content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute.',
+    //     },
+    //     {
+    //         title: 'How do I choose the right MSP service provider for my business?',
+    //         content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute.',
+    //     },
+    //     {
+    //         title: 'Can I customize an MSP service plan to meet my business needs?',
+    //         content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute.',
+    //     },
+    //     {
+    //         title: 'What happens if theres an issue outside of normal business hours?',
+    //         content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute.',
+    //     },
+    //     {
+    //         title: 'How does an MSP service provider ensure the security of my business data?',
+    //         content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute.',
+    //     },
+    //     {
+    //         title: 'What happens if I need additional IT services outside of the MSP service plan?',
+    //         content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute.',
+    //     },
+    //     {
+    //         title: 'How does an MSP service help my business with compliance and regulatory requirements?',
+    //         content: 'Incididunt laborum consequat minim dolor laboris deserunt anim sit anim. Est dolor eu et reprehenderit pariatur cillum. Incididunt adipisicing deserunt non adipisicing quis. Laborum excepteur exercitation do culpa et sit aute.',
+    //     },
+    // ],
 }
