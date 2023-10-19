@@ -1,7 +1,6 @@
 'use client'
 import Typography from "@/common/Typography"
-import { CollapsibleContainer, ListContainer, ListTitle, ListContent, CollapsibleListContainer, HeadTitle, CollapsibleHead, HeadParagraph, Icons} from './PricingFAQStyle'
-// import { Data } from "./voip/PricingData"
+import { CollapsibleContainer, ListContainer, ListTitle, ListContent, CollapsibleListContainer, HeadTitle, CollapsibleHead, HeadParagraph, Icons, FAQList, FAQListItem} from './PricingFAQStyle'
 import { useState } from "react"
 import {FiChevronDown, FiChevronUp} from "react-icons/fi"
 
@@ -44,11 +43,24 @@ export default function PricingFAQ ({data}){
                                 {index === openIndex ? <FiChevronUp /> : <FiChevronDown />}
                                 </Icons>
                             </ListTitle>
-                            <ListContent $isOpen= {index === openIndex}>
-                                <Typography variant='body2'>
+                            {item.list ? (
+                                <ListContent $isOpen={index === openIndex}>
+                                <Typography variant="body2">
                                     {item.paragraph}
                                 </Typography>
-                            </ListContent>
+                                <FAQList>
+                                    {item.list.map((listItem, listIndex) => (
+                                    <FAQListItem key={listIndex}>
+                                        {listItem}
+                                    </FAQListItem>
+                                    ))}
+                                </FAQList>
+                                </ListContent>
+                            ) : (
+                                <ListContent $isOpen={index === openIndex}>
+                                <Typography variant="body2">{item.paragraph}</Typography>
+                                </ListContent>
+                            )}
                         </ListContainer>
                     ))}
                 </CollapsibleListContainer>

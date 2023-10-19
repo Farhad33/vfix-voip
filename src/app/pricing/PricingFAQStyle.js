@@ -76,3 +76,12 @@ export const ListContent = styled.div`
         font-weight: 500;
     }
 `
+
+export const FAQList = styled.ul`
+    list-style: none;
+    padding-top: 8px;
+    padding-left: 15px;
+`
+export const FAQListItem = styled.li`
+    padding: 5px 0;
+`
