@@ -16,6 +16,7 @@ export const  Data = {
                 paragraph:'As a cloud-based solution, our service can be implemented across multiple locations without any additional hardware costs, making it a cost-effective option.',
             },
         ],
+        list: [],
         button: 'Contact Us Today',
         buttonLink: '',
         img: '/Services/UCaas/CloudContentCenter/Overview.png',

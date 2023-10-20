@@ -10,6 +10,7 @@ export const  Data = {
                 paragraph:'In an ever-evolving market, team collaboration is rapidly growing in importance as companies strive to enhance internal productivity and collaboration. MaX Meeting is fully integrated with our Metaswitch-based network, and is designed to offer a unified communications solution that caters to your needs, either as a part of a complete Hosted PBX solution or as a standalone service. Regardless of the physical location of your team members, MaX Meeting allows seamless communication, fostering an efficient and collaborative work environment.',
             },
         ],
+        list:[],
         button: 'Contact Us Today',
         buttonLink: '',
         img: '/Services/UCaas/Team&WebCollaboration/Team&WebCollaboration.png',

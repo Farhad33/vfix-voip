@@ -69,7 +69,7 @@ export const ListContainer = styled.ul`
 export const ListItems = styled.li``
 
 
-export const ImageRiteSide = styled(Image)`
+export const ImageRightSide = styled(Image)`
     max-width: 100%;
 `
 export const RightSide = styled.div`

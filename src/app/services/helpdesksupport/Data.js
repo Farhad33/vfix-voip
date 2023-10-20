@@ -10,6 +10,7 @@ export const  Data = {
                 paragraph:'Our help desk support covers a wide range of IT-related issues, from simple software glitches to more complex hardware problems. Our team is skilled in various aspects of IT support and equipped with the tools necessary to resolve your issues quickly and professionally.',
             },
         ],
+        list: [],
         button: 'Contact Us Today',
         buttonLink: '',
         img: '/Services/ITMSP/HelpDeskSupport/HelpDeskSupport.png',

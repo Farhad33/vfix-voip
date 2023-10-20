@@ -10,6 +10,7 @@ export const  Data = {
                 paragraph:'Our team of experts handles all aspects of software and hardware management, from managing licenses and ensuring software is regularly updated, to maintaining hardware and coordinating necessary upgrades or replacements. This not only enhances the performance and reliability of your IT systems but also reduces the risk of security vulnerabilities.',
             },
         ],
+        list: [],
         button: 'Contact Us Today',
         buttonLink: '',
         img: '/Services/ITMSP/SoftwareandHardwareManagement/SoftwareandHardwareManagement.png',

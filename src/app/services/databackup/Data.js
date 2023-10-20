@@ -10,6 +10,7 @@ export const  Data = {
                 paragraph:'We perform regular backups of your critical data and systems, ensuring that an up-to-date copy is always available for restoration. We also implement comprehensive disaster recovery strategies, so in the event of a system failure or data loss, your business can be up and running with minimal downtime.',
             },
         ],
+        list: [],
         button: 'Contact Us Today',
         buttonLink: '',
         img: '/Services/ITMSP/DataBackupandDisasterRecovery/DataBackupandDisasterRecovery.png',

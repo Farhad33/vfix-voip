@@ -16,6 +16,7 @@ export const  Data = {
 // Process
 
         ],
+        list: [],
         button: 'Contact Us Today',
         buttonLink: '',
         img: '/Services/UCaas/DirectRoutingforMicrosoftteams/DirectRoutingforMicrosoftteams.png',

@@ -10,6 +10,7 @@ export const  Data = {
                 paragraph:'Our experts continually monitor your servers, network, and devices to detect any anomalies or potential threats. This approach allows us to identify and resolve issues before they escalate, ensuring your IT systems continue to perform optimally. Regular maintenance also extends the lifespan of your hardware and optimizes software performance, helping you derive maximum value from your IT investments.',
             },
         ],
+        list: [],
         button: 'Contact Us Today',
         buttonLink: '',
         img: '/Services/ITMSP/ProactiveMonitoringandMaintenance/ProactiveMonitoringandMaintenance.png',

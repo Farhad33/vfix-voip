@@ -10,6 +10,7 @@ export const  Data = {
                 paragraph:'Our MaX UC Mobile application ensures you stay connected no matter your location. This fully-featured softphone lets you send and receive calls, instant messages, or video calls from any internet-connected device. This comprehensive solution caters to all your communication needs.',
             },
         ],
+        list: [],
         button: 'Contact Us Today',
         buttonLink: '',
         img: '/Services/UCaas/Mobile&DesktopApps/Mobile&DesktopApps.png',

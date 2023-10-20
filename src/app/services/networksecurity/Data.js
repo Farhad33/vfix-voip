@@ -10,6 +10,7 @@ export const  Data = {
                 paragraph:'We offer a robust suite of security services, including the implementation of firewalls, intrusion detection systems, antivirus solutions, and more. We also keep abreast of the latest security threats and trends, ensuring your systems are always equipped with the most recent and effective defenses.',
             },
         ],
+        list: [],
         button: 'Contact Us Today',
         buttonLink: '',
         img: '/Services/ITMSP/NetworkSecurityandCompliance/NetworkSecurityandCompliance.png',

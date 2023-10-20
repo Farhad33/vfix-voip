@@ -10,6 +10,7 @@ export const  Data = {
                 paragraph:'Whether you\'re looking to migrate to a public, private, or hybrid cloud environment, our team of experts will guide you every step of the way. We ensure that your migration to the cloud is seamless, efficient, and causes minimal disruption to your business operations.',
             },
         ],
+        list:[],
         button: 'Contact Us Today',
         buttonLink: '',
         img: '/Services/ITMSP/CloudServicesandMigration/CloudServicesandMigration.png',
