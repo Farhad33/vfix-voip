@@ -1,24 +1,21 @@
 'use client'
-import { Data } from '../Data';
-import { Button } from '../MainStyle';
-import { NavContainer, NavLinks, UlList, LiItems, StyledLink, Container, SpanLinks, MenuButton, SpanButton, SubLinkIcon, Ullink, UlContainer } from '../navbar/NavbarStyle';
+import { useState } from 'react';
 import Image from 'next/image'
 import { TfiMenu, TfiClose } from "react-icons/tfi";
-import { useState } from 'react';
+import { Data } from '../Data';
+import { Button } from '../MainStyle';
+import { NavContainer, NavLinks, NavList, DropdownItem, StyledLink, Container, SpanLinks, MenuButton, SpanButton } from '../navbar/NavbarStyle';
+import PricingDropdown from './PricingDropdown';
+import ServicesDropDown from './ServicesDropdown';
 
 
 
 
 export default function Navbar() {
     const [hamburgerMenu, setHamburgerMenu] = useState(false);
-    const [isSubLinkOpen, setIsSubLinkOpen] = useState(false); 
 
     const toggleHamburgerMenu = () => {
         setHamburgerMenu(!hamburgerMenu);
-    };
-
-    const toggleSubLinks = () => {
-        setIsSubLinkOpen(!isSubLinkOpen);
     };
 
     return (
@@ -34,43 +31,27 @@ export default function Navbar() {
                     {hamburgerMenu ? <TfiClose /> : <TfiMenu />}
                 </MenuButton>
                 <NavLinks $hamburgerMenu={hamburgerMenu}>
-                    <UlList>
+                    <NavList>
                         {Data.navbar.menu.map((item, index) => (
-                            <LiItems key={index}>
-                                {item.subLink ? (
-                                    <>
-                                        <StyledLink
-                                            href={item.link}
-                                            onClick={toggleSubLinks} 
-                                        >
-                                            <SpanLinks>{item.title}</SpanLinks>
-                                        </StyledLink>
-                                        <UlContainer>
-                                            <Ullink style={{ display: isSubLinkOpen ? 'flex' : 'none' }}>
-                                                {item.subLink.map((subItem, subIndex) => (
-                                                    <LiItems key={subIndex}>
-                                                        <StyledLink href={subItem.subLink} onClick={toggleSubLinks}>
-                                                            <SubLinkIcon width={50} height={50} src={subItem.icon} alt={subItem.subTitle} />
-                                                            <SpanLinks>{subItem.subTitle}</SpanLinks>
-                                                        </StyledLink>
-                                                    </LiItems>
-                                                ))}
-                                            </Ullink>
-                                        </UlContainer>
-                                    </>
-                                ) : (
-                                    <StyledLink href={item.link}>
+                            <DropdownItem key={index}>
+                                {item.dropdown && item.title === 'Princing & FAQs ˅' ? (
+                                    <PricingDropdown item={item} />
+                                ) : item.dropdown && item.title === 'Services' ? (
+                                    <ServicesDropDown item={item} />
+                                )
+                                : (
+                                    <StyledLink href={item.route}>
                                         <SpanLinks>{item.title}</SpanLinks>
                                     </StyledLink>
                                 )}
-                            </LiItems>
+                            </DropdownItem>
                         ))}
-                        <LiItems>
+                        <DropdownItem>
                             <StyledLink href={Data.navbar.login}>
                                 <Button><SpanButton>Login</SpanButton></Button>
                             </StyledLink>
-                        </LiItems>
-                    </UlList>
+                        </DropdownItem>
+                    </NavList>
                 </NavLinks>
             </NavContainer>
         </Container>

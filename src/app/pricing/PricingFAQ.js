@@ -1,13 +1,12 @@
 'use client'
 import Typography from "@/common/Typography"
-import { CollapsibleContainer, ListContainer, ListTitle, ListContent, CollapsibleListContainer, HeadTitle, CollapsibleHead, HeadParagraph, Icons} from './PricingFAQStyle'
-import { Data } from "./PricingData"
+import { CollapsibleContainer, ListContainer, ListTitle, ListContent, CollapsibleListContainer, HeadTitle, CollapsibleHead, HeadParagraph, Icons, FAQList, FAQListItem} from './PricingFAQStyle'
 import { useState } from "react"
 import {FiChevronDown, FiChevronUp} from "react-icons/fi"
 
 
 
-export default function CollapsibleList (){
+export default function PricingFAQ ({data}){
     const [openIndex, setOpenIndex] = useState(null)
 
     const handelItemClick = (index) => {
@@ -23,32 +22,45 @@ export default function CollapsibleList (){
                 <CollapsibleHead>
                     <HeadTitle>
                         <Typography variant='h2' >
-                            {Data.frequentlyTitle}
+                            {data.frequentlyTitle}
                         </Typography>
                     </HeadTitle>
                     <HeadParagraph>
                         <Typography variant='body3'>
-                            {Data.frequentlyParagraph}
+                            {data.frequentlyParagraph}
                         </Typography>
                     </HeadParagraph>
                 </CollapsibleHead>
                 <CollapsibleListContainer>
-                    {Data.CollapsibleList.map((item, index) => (
+                    {data.faqItems.map((item, index) => (
                         <ListContainer key={index}>
                             <ListTitle onClick={ () => handelItemClick(index)}>
                                 <Typography variant='h4'>
                                     {item.title}
-                                    
+                                
                                 </Typography>
                                 <Icons>
                                 {index === openIndex ? <FiChevronUp /> : <FiChevronDown />}
                                 </Icons>
                             </ListTitle>
-                            <ListContent $isOpen= {index === openIndex}>
-                                <Typography variant='body2'>
-                                    {item.content}
+                            {item.list ? (
+                                <ListContent $isOpen={index === openIndex}>
+                                <Typography variant="body2">
+                                    {item.paragraph}
                                 </Typography>
-                            </ListContent>
+                                <FAQList>
+                                    {item.list.map((listItem, listIndex) => (
+                                    <FAQListItem key={listIndex}>
+                                        {listItem}
+                                    </FAQListItem>
+                                    ))}
+                                </FAQList>
+                                </ListContent>
+                            ) : (
+                                <ListContent $isOpen={index === openIndex}>
+                                <Typography variant="body2">{item.paragraph}</Typography>
+                                </ListContent>
+                            )}
                         </ListContainer>
                     ))}
                 </CollapsibleListContainer>

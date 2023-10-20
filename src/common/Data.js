@@ -1,128 +1,134 @@
 export const Data = {
     navbar: {
         menu: [
-                {
-                    title: 'Home',
-                    link: '/',
-                },
-                {
-                    title: 'Services',
-                    link: 'services',
-                    // subLink: [
-                    //   {
-                    //     headTitle: 'UCaas',
-                    //     subLinks: [
-                    //       {
-                    //         subTitle: 'CLOUD PHONE SYSTEM',
-                    //         subLink: 'cloudphonesystem',
-                    //         icon: '/Services/UCaas/CloudPhoneSystem.png',
-                    //       },
-                    //       {
-                    //         subTitle: 'CLOUD CONTACT CENTER',
-                    //         subLink: 'cloudcontentcenter',
-                    //         icon: '/Services/UCaas/CloudContactCenter.png',
-                    //       },
-                    //       {
-                    //         subTitle: 'BUSINESS MESSAGING',
-                    //         subLink: 'businessmessaging',
-                    //         icon: '/Services/UCaas/BussinessMessaging.png',
-                    //       },
-                    //       {
-                    //         subTitle: 'TEAM & WEB COLLABORATION',
-                    //         subLink: 'teamwebcollaboration',
-                    //         icon: '/Services/UCaas/Team&WebCollaboration.png',
-                    //       },
-                    //       {
-                    //         subTitle: 'DIRECT ROUTING FOR MICROSOFT TEAMS',
-                    //         subLink: 'directrouting',
-                    //         icon: '/Services/UCaas/DirectRoutingForMicrosoftTeam.png',
-                    //       },
-                    //       {
-                    //         subTitle: 'MOBILE & DESKTOP APPS',
-                    //         subLink: 'mobiledesktopapp',
-                    //         icon: '/Services/UCaas/Mobile&DesktopApps.png',
-                    //       },
-                    //     ],
-                    //   },
-                    //   {
-                    //     headTitle: 'IT MSP',
-                    //     subLinks: [
-                    //       {
-                    //         subTitle: 'Proactive Monitoring and Maintenance',
-                    //         subLink: 'proactivemonitoring',
-                    //         icon: '/Services/ITMSP/ProactiveMonitoringandMaintenance.png',
-                    //       },
-                    //       {
-                    //         subTitle: 'Network Security and Compliance',
-                    //         subLink: 'networksecurity',
-                    //         icon: '/Services/ITMSP/NetworkSecurityandCompliance.png',
-                    //       },
-                    //       {
-                    //         subTitle: 'Data Backup and Disaster Recovery',
-                    //         subLink: 'databackup',
-                    //         icon: '/Services/ITMSP/DataBackupandDisasterRecovery.png',
-                    //       },
-                    //       {
-                    //         subTitle: 'Help Desk Support',
-                    //         subLink: 'helpdesksupport',
-                    //         icon: '/Services/ITMSP/HelpDeskSupport.png',
-                    //       },
-                    //       {
-                    //         subTitle: 'Software and Hardware Management',
-                    //         subLink: 'softwarehardware',
-                    //         icon: '/Services/ITMSP/SoftwareAndHardwareManagement.png',
-                    //       },
-                    //       {
-                    //         subTitle: 'Cloud Services and Migration',
-                    //         subLink: 'cloudservices',
-                    //         icon: '/Services/ITMSP/CloudServicesAndMigration.png',
-                    //       },
-                    //     ],
-                    //   },
-                    //   {
-                    //     headTitle: 'IT Consulting',
-                    //     subLinks: [
-                    //       {
-                    //         subTitle: 'IT Consulting paragraph',
-                    //         subLink: 'itconsulting',
-                    //         icon: '/Services/ITConsulting/Consulting.png',
-                    //       },
-                    //     ],
-                    //   },
-                    // ],
-                  },
-                {
-                    title: 'Why Vfix',
-                    link: 'whyvfix',
-                },
-                {
-                    title: 'Princing & FAQs ˅',
-                    link: '',
-                    subLink: [
-                        {
-                            subTitle: 'IT MSP & Consulting',
-                            subLink: 'pricing',
-                            icon: '/Pricing/ITMSPConsulting.png'
-                        },
-                        {
-                            subTitle: 'Business Comminucations',
-                            subLink: 'business',
-                            icon: '/Pricing/BusinessComminucation.png'
-                        }
-                    ]
-                },
-                {
-                    title: 'Company',
-                    link: 'company',
-                   
-                },
-                {
-                    title: 'Downloadds',
-                    link: 'download',
-                },
-            
-            ],
-        login:'/login',
+            {
+                title: 'Home',
+                route: '/',
+            },
+            {
+                title: 'Services',
+                route: '',
+                dropdown: [
+                    {
+                        title: 'UCaas',
+                        route: '',
+                        dropdown: [
+                            {
+                                title: 'CLOUD PHONE SYSTEM',
+                                route: '/services/cloudphonesystem',
+                                icon: '/Services/UCaas/CloudPhoneSystem.png',
+                            },
+                            {
+                                title: 'CLOUD CONTACT CENTER',
+                                route: '/services/cloudcontentcenter',
+                                icon: '/Services/UCaas/CloudContactCenter.png',
+                            },
+                            {
+                                title: 'BUSINESS MESSAGING',
+                                route: '/services/businessmessaging',
+                                icon: '/Services/UCaas/BussinessMessaging.png',
+                            },
+                            {
+                                title: 'TEAM & WEB COLLABORATION',
+                                route: '/services/teamwebcollaboration',
+                                icon: '/Services/UCaas/Team&WebCollaboration.png',
+                            },
+                            {
+                                title: 'DIRECT ROUTING FOR MICROSOFT TEAMS',
+                                route: '/services/directrouting',
+                                icon: '/Services/UCaas/DirectRoutingForMicrosoftTeam.png',
+                            },
+                            {
+                                title: 'MOBILE & DESKTOP APPS',
+                                route: '/services/mobiledesktopapp',
+                                icon: '/Services/UCaas/Mobile&DesktopApps.png',
+                            },
+                        ],
+                    },
+                    {
+                        title: 'IT MSP',
+                        route: '',
+                        dropdown: [
+                            {
+                                title: 'Proactive Monitoring and Maintenance',
+                                route: '/services/proactivemonitoring',
+                                icon: '/Services/ITMSP/ProactiveMonitoringandMaintenance.png',
+                            },
+                            {
+                                title: 'Network Security and Compliance',
+                                route: '/services/networksecurity',
+                                icon: '/Services/ITMSP/NetworkSecurityandCompliance.png',
+                            },
+                            {
+                                title: 'Data Backup and Disaster Recovery',
+                                route: '/services/databackup',
+                                icon: '/Services/ITMSP/DataBackupandDisasterRecovery.png',
+                            },
+                            {
+                                title: 'Help Desk Support',
+                                route: '/services/helpdesksupport',
+                                icon: '/Services/ITMSP/HelpDeskSupport.png',
+                            },
+                            {
+                                title: 'Software and Hardware Management',
+                                route: '/services/softwarehardware',
+                                icon: '/Services/ITMSP/SoftwareAndHardwareManagement.png',
+                            },
+                            {
+                                title: 'Cloud Services and Migration',
+                                route: '/services/cloudservices',
+                                icon: '/Services/ITMSP/CloudServicesAndMigration.png',
+                            },
+                        ],
+                    },
+                    // {
+                        // title: 'IT Consulting',
+                        // route: 'itconsulting',
+                        // dropdown: [
+                        //     {
+                        //         title: 'IT Consulting paragraph',
+                        //         route: 'itconsulting',
+                        //         icon: '/Services/ITConsulting/Consulting.png',
+                        //         paragraph: 'Harness the Dynamic Potential of Cutting-Edge Technology with Expert IT Consulting. Seamlessly navigate the ever-evolving landscape of digital innovation and empower your organization with a bespoke IT strategy and roadmap.',
+                        //         icon: '/Services/ITConsulting/Consulting.png',
+                        //         button: 'Learn More',
+                        //     },
+                        // ],
+                    // },
+                ],
+            },
+            {
+                title: 'Why Vfix',
+                route: 'whyvfix',
+            },
+            {
+                title: 'Princing & FAQs ˅',
+                route: '',
+                dropdown: [
+                    {
+                        title: 'IT MSP & Consulting',
+                        route: '/pricing/msp',
+                        icon: '/Pricing/ITMSPConsulting.png'
+                    },
+                    {
+                        title: 'Business Comminucations',
+                        route: '/pricing/voip',
+                        icon: '/Pricing/BusinessComminucation.png'
+                    }
+                ]
+            },
+            {
+                title: 'Company',
+                route: 'company',
+
+            },
+            {
+                title: 'Downloadds',
+                route: 'download',
+            },
+
+        ],
+        login: '/login',
         img: '/Navbar/vfixlogo.png',
         alt: 'Vfix Voip Logo'
     },
@@ -130,7 +136,7 @@ export const Data = {
         title: 'We help our Customers transform and grow their businesses with confidence.',
         paragraph: 'VFIX Communications IT Managed Services, IT consulting, and business communications solutions such as VoIP, Unified Communications (UC), Hosted PBX Contact Center and Business Messaging services are designed to enhance productivity, streamline operations, and drive digital transformation. Partner with us to unlock the full potential of your organization and achieve sustainable growth.',
         button: 'Learn More',
-        img:'/Header/header.png',
+        img: '/Header/header.png',
         alt: 'Man'
     },
     success: {
@@ -169,7 +175,7 @@ export const Data = {
                 title: 'Hosted PBX',
                 paragraph: 'Experience the transformative power of our advanced Hosted VoIP service. Save money, increase productivity, and stay ahead in the changing workplace with IP-based cloud communications.',
                 img: '/ViewOur/view01.png'
-            }, 
+            },
             {
                 title: 'Direct Routing for Microsoft Teams ',
                 paragraph: 'Direct Routing service enables you with a cost effective way to connect this popular communications and collaboration hub to the outside world by enabling calling to the public switched telephone network (PSTN) and more.',
@@ -191,7 +197,7 @@ export const Data = {
                 img: '/ViewOur/view05.png'
             },
         ]
-      
+
     },
     itmanaged: {
         title: 'Your Trusted IT Managed Service Provider and IT Consulting Partner',
@@ -206,14 +212,14 @@ export const Data = {
             {
                 title: 'Proactive Monitoring and Maintenance',
                 paragraph: 'We monitor your network, servers, and devices 24/7, detecting and resolving potential issues before they impact your operations. Our proactive approach ensures optimal performance, minimizes downtime, and improves overall system reliability.',
-                button: 'Learn More' ,
-                img: '/ITManagedServices/ITManagedServices01.png' 
+                button: 'Learn More',
+                img: '/ITManagedServices/ITManagedServices01.png'
             },
             {
                 title: 'Network Security and Compliance',
                 paragraph: 'We implement robust security measures to protect your sensitive data from cyber threats. Our team ensures compliance with industry standards and regulations, such as HIPAA, GDPR, and PCI-DSS, providing you with peace of mind and mitigating risks.',
                 button: 'Learn More',
-                img: '/ITManagedServices/ITManagedServices02.png' 
+                img: '/ITManagedServices/ITManagedServices02.png'
             },
             {
                 title: 'Data Backup and Disaster Recovery',
@@ -247,18 +253,18 @@ export const Data = {
         cards: [
             {
                 title: 'Technology Strategy',
-                paragraph:'We collaborate with you to develop a technology roadmap aligned with your business objectives. Our consultants assess your current ITlandscape, identify gaps, and recommend solutions to optimize your technology investments.',
-                img:'/ITConsultingServices/ITConsultingServices01.png'
+                paragraph: 'We collaborate with you to develop a technology roadmap aligned with your business objectives. Our consultants assess your current ITlandscape, identify gaps, and recommend solutions to optimize your technology investments.',
+                img: '/ITConsultingServices/ITConsultingServices01.png'
             },
             {
                 title: 'Digital Transformation',
                 paragraph: 'Embrace digital technologies to streamline operations and unlocknew opportunities. We help you harness the power of automation, data analytics, artificial intelligence, and Internet of Things (IoT) to drive innovation efficiency, and customer engagement.',
-                img:'/ITConsultingServices/ITConsultingServices02.png'
+                img: '/ITConsultingServices/ITConsultingServices02.png'
             },
             {
                 title: 'Industry-Specific Solutions',
-                paragraph: 'We understand the unique challenges and requirements of different industries. With expertise in sectors such as healthcare, finance, retail, and more, we deliver tailored IT solutions that address industry-specificregulations, compliance, and best practices..', 
-                img:'/ITConsultingServices/ITConsultingServices03.png'                                         
+                paragraph: 'We understand the unique challenges and requirements of different industries. With expertise in sectors such as healthcare, finance, retail, and more, we deliver tailored IT solutions that address industry-specificregulations, compliance, and best practices..',
+                img: '/ITConsultingServices/ITConsultingServices03.png'
             },
         ]
     },
@@ -320,7 +326,7 @@ export const Data = {
                 img: '/PartnerWithVfix/PartnerWithVfix05.png'
             },
         ]
-    }, 
+    },
     learnMore: {
         headTitle: 'Learn more about our network and what makes it different ',
         headContent: 'Learn more about our network and what makes it different from other unified communications providers. Most cloud unified communications providers run off a softswitch in a data center.We’re not most cloud unified communications providers. Here are 7 reasons why:',
@@ -336,7 +342,7 @@ export const Data = {
                 paragraph: 'Midwest Presence in Chicago',
             },
         ]
-    }, 
+    },
     footer: {
         address: 'San Francisco CA Toll Free: 888.888.5854',
         social: 'Follow us',
@@ -344,15 +350,15 @@ export const Data = {
         logoFooter: '/Footer/LogoFooter.png',
         logoName: 'Vfix Logo',
         imgs: [
-            {img:'/Footer/facebook.png', alt:'facebook'},
-            {img:'/Footer/tiwtter.png', alt: 'tiwter'},
-            {img:'/Footer/linkdin.png', alt: 'linkdin'},
-            {img:'/Footer/instagram.png', alt: 'instagram'},
-            {img:'/Footer/youtub.png', alt: 'youtub'},
+            { img: '/Footer/facebook.png', alt: 'facebook' },
+            { img: '/Footer/tiwtter.png', alt: 'tiwter' },
+            { img: '/Footer/routedin.png', alt: 'routedin' },
+            { img: '/Footer/instagram.png', alt: 'instagram' },
+            { img: '/Footer/youtub.png', alt: 'youtub' },
         ],
         appImges: [
-            {img:'/Footer/apple.png', alt: 'Apple Store'},
-            {img:'/Footer/android.png', alt: 'Android Store'}
+            { img: '/Footer/apple.png', alt: 'Apple Store' },
+            { img: '/Footer/android.png', alt: 'Android Store' }
         ],
 
         lists: [
@@ -360,24 +366,32 @@ export const Data = {
                 title1: 'Solutions',
                 list1: ['Call Center', 'Support', 'Sales', 'Phone System', 'Ecommerce', 'Non-profits'],
                 title2: 'Downloads',
-                list2: ['Blog', 'Knowledge Base', 'Customer Stories', 'Partner Stories', 'Become a Partner', 'Build an Integration', 'VoIP', 'Glossary', 'Speed Test', ]
+                list2: ['Blog', 'Knowledge Base', 'Customer Stories', 'Partner Stories', 'Become a Partner', 'Build an Integration', 'VoIP', 'Glossary', 'Speed Test',]
             },
             {
                 title1: 'Technology',
                 list1: ['Integrations', 'Quality and reliability', 'Apps', 'Pricing', 'Country coverage', 'Request a demo'],
                 title2: 'Company',
-                list2: ['Contact Us', 'About Us', 'Careers', 'Press', 'Uptime', 'Brand' ] 
+                list2: ['Contact Us', 'About Us', 'Careers', 'Press', 'Uptime', 'Brand']
             },
             {
                 title1: 'Why VFIX',
                 list1: ['PowerDialer', 'IVR', 'Call Routing', 'Call Center Analytics', 'CTI Integration', 'Click to Dial'],
                 title2: 'Pricing & FAQs',
-                list2: ['Contact Us', 'About Us', 'Careers', 'Press', 'Uptime', 'Brand' ] 
+                list2: ['Contact Us', 'About Us', 'Careers', 'Press', 'Uptime', 'Brand']
             },
         ],
         footerEnd: {
             copyRight: 'Copyright VFIX 2023',
-            list:['Privacy Policy', 'Terms & Conditions', 'End-user Licence Agreement', 'Website Terms of Use', 'Security', 'Privacy FAQs', 'DPA', 'Integration terms', 'Sitemap', 'Cookies Preferences']
+            list: ['Privacy Policy', 'Terms & Conditions', 'End-user Licence Agreement', 'Website Terms of Use', 'Security', 'Privacy FAQs', 'DPA', 'Integration terms', 'Sitemap', 'Cookies Preferences']
         }
     }
+}
+
+export const ItConsultingData = {
+    title: 'IT Consulting',
+    route: '/services/itconsulting',
+    paragraph: 'Harness the Dynamic Potential of Cutting-Edge Technology with Expert IT Consulting. Seamlessly navigate the ever-evolving landscape of digital innovation and empower your organization with a bespoke IT strategy and roadmap.',
+    icon: '/Services/ITConsulting/Consulting.png',
+    button: 'Learn More',
 }
