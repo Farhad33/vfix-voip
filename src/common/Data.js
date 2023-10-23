@@ -119,12 +119,12 @@ export const Data = {
             },
             {
                 title: 'Company',
-                route: 'company',
+                route: '/company',
 
             },
             {
                 title: 'Downloadds',
-                route: 'download',
+                route: '/download',
             },
 
         ],
