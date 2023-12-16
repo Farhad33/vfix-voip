@@ -131,7 +131,7 @@ export const ServicesDropdownItem = styled(DropdownItem)`
 
 
  export const DropdownList = styled.ul`
-    display: ${(props) => props.isDropdownOpen ? 'flex' : 'none'};
+    display: ${({$isDropdownOpen}) => $isDropdownOpen ? 'flex' : 'none'};
     list-style: none;
     justify-content: center;
     align-items: center;

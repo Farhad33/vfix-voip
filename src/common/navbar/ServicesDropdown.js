@@ -16,7 +16,7 @@ export default function ServicesDropdown({ item }) {
             <SpanLinks>{item.title}</SpanLinks>
         </StyledLink>
         <DropdownContainer>
-            <DropdownList isDropdownOpen={isDropdownOpen}>
+            <DropdownList $isDropdownOpen={isDropdownOpen}>
                 {item.dropdown.map((subItem, subIndex) => (
                     <ServicesDropdownItem key={subIndex}>
                         <StyledLink 

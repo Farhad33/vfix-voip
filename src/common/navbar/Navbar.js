@@ -16,9 +16,7 @@ export default function Navbar() {
 
     const toggleHamburgerMenu = () => {
         setHamburgerMenu(!hamburgerMenu);
-        console.log("clicked");
     };
-    // why one click is not working
     
     return (
         <Container>
