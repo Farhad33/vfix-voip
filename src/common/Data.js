@@ -129,7 +129,7 @@ export const Data = {
 
         ],
         login: '/login',
-        img: '/Navbar/vfixlogo.png',
+        img: '/Navbar/vfixlogo.svg',
         alt: 'Vfix Voip Logo'
     },
     header: {

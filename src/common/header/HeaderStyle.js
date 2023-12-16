@@ -2,10 +2,6 @@
 import styled from "styled-components";
 
 
-export const Container = styled.div`
-
-`
-
 export const HeaderContainer = styled.div`
     display: flex;
     justify-content: center;
@@ -23,7 +19,7 @@ export const HeaderLeftSide = styled.div`
     align-items: flex-start;
     width: 40%;
     @media (max-width: 768px) {
-        width: 80%;
+        width: 100%;
     }
 `
 export const HeaderRightSide = styled.div`

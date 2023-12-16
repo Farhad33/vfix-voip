@@ -19,41 +19,39 @@ export default function Navbar() {
     };
     
     return (
-        <Container>
-            <NavContainer>
-                <Image
-                    src={Data.navbar.img}
-                    alt={Data.navbar.alt}
-                    width={140}
-                    height={40}
-                />
-                <MenuButton onClick={toggleHamburgerMenu}>
-                    {hamburgerMenu ? <TfiClose /> : <TfiMenu />}
-                </MenuButton>
-                <NavLinks $isOpen={hamburgerMenu}>
-                    <NavList>
-                        {Data.navbar.menu.map((item, index) => (
-                            <DropdownItem key={index}>
-                                {item.dropdown && item.title === 'Princing & FAQs ˅' ? (
-                                    <PricingDropdown item={item} />
-                                ) : item.dropdown && item.title === 'Services' ? (
-                                    <ServicesDropDown item={item} />
-                                )
-                                : (
-                                    <StyledLink href={item.route}>
-                                        <SpanLinks>{item.title}</SpanLinks>
-                                    </StyledLink>
-                                )}
-                            </DropdownItem>
-                        ))}
-                        <DropdownItem>
-                            <StyledLink href={Data.navbar.login}>
-                                <Button><SpanButton>Login</SpanButton></Button>
-                            </StyledLink>
+        <NavContainer>
+            <Image
+                src={Data.navbar.img}
+                alt={Data.navbar.alt}
+                width={140}
+                height={40}
+            />
+            <MenuButton onClick={toggleHamburgerMenu}>
+                {hamburgerMenu ? <TfiClose /> : <TfiMenu />}
+            </MenuButton>
+            <NavLinks $isOpen={hamburgerMenu}>
+                <NavList>
+                    {Data.navbar.menu.map((item, index) => (
+                        <DropdownItem key={index}>
+                            {item.dropdown && item.title === 'Princing & FAQs ˅' ? (
+                                <PricingDropdown item={item} />
+                            ) : item.dropdown && item.title === 'Services' ? (
+                                <ServicesDropDown item={item} />
+                            )
+                            : (
+                                <StyledLink href={item.route}>
+                                    <SpanLinks>{item.title}</SpanLinks>
+                                </StyledLink>
+                            )}
                         </DropdownItem>
-                    </NavList>
-                </NavLinks>
-            </NavContainer>
-        </Container>
+                    ))}
+                    <DropdownItem>
+                        <StyledLink href={Data.navbar.login}>
+                            <Button><SpanButton>Login</SpanButton></Button>
+                        </StyledLink>
+                    </DropdownItem>
+                </NavList>
+            </NavLinks>
+        </NavContainer>
     );
 }

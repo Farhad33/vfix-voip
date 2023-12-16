@@ -6,17 +6,13 @@ import Image from "next/image";
 import { Button } from "../MainStyle";
 
 
-export const Container = styled.div`
-    width: 100%;
-    padding: 0 5%;
-`
 
 export const NavContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 25px;
-    @media (max-width: 1000px) {
+    height: 100px;
+    @media (max-width: 1010px) {
         flex-direction: column;
     }
     @media (max-width: 768px) {
@@ -45,10 +41,7 @@ export const MenuButton = styled.button`
         border: none;
         cursor: pointer;
         font-size: 24px;
-        position: absolute;
-        top: 20px;
-        right: 60px;
-        z-index: 2; 
+        z-index: 2;
     }
 `
 
