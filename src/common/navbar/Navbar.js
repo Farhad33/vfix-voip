@@ -16,8 +16,10 @@ export default function Navbar() {
 
     const toggleHamburgerMenu = () => {
         setHamburgerMenu(!hamburgerMenu);
+        console.log("clicked");
     };
-
+    // why one click is not working
+    
     return (
         <Container>
             <NavContainer>
@@ -30,7 +32,7 @@ export default function Navbar() {
                 <MenuButton onClick={toggleHamburgerMenu}>
                     {hamburgerMenu ? <TfiClose /> : <TfiMenu />}
                 </MenuButton>
-                <NavLinks $hamburgerMenu={hamburgerMenu}>
+                <NavLinks $isOpen={hamburgerMenu}>
                     <NavList>
                         {Data.navbar.menu.map((item, index) => (
                             <DropdownItem key={index}>
