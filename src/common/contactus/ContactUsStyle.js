@@ -42,16 +42,19 @@ export const ContactFormContainer = styled.div`
 
 export const ContactLeftSide = styled.div`
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 50%;
-    margin-top: calc(2vw + 40px);
-    margin-bottom: calc(2vw + 40px);
+    justify-content: center;
     z-index: 3;
+    width: 50%;
     @media (max-width: 1000px) {
         width: 100%;
-        row-gap: calc(2vmin + 25px);
+    }
+    @media (max-width: 470px) {
+        img {
+            width: 300px;
+            height: 300px;
+        }
+        /* width: 100%;
+        row-gap: calc(2vmin + 25px); */
     }
 `
 const GeneraContactStyle = styled.div`
@@ -94,6 +97,9 @@ export const ContactRightSide = styled.div`
     margin-bottom: calc(2vw + 18px);
     width: 50%;
     z-index: 3;
+    @media (max-width: 470px) {
+        margin-top: 0;
+    }
     @media (max-width: 1000px) {
         width: 100%;
     }
@@ -121,7 +127,7 @@ export const ContactRightSide = styled.div`
                 width:100%;
             }
             @media (max-width: 600px) {
-                width: 80%;
+                width: 90%;
             }
         }
         textarea {

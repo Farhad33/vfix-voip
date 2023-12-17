@@ -1,12 +1,10 @@
 'use client'
 import React, { useRef, useEffect, useState } from 'react';
-import emailjs from '@emailjs/browser';
 import { Page } from '@/app/pagestyle';
 import { ContactContainer, ContactFormContainer, ContactRightSide, ContactLeftSide, Shadow, Message, ContactTitle, ContactParagraph, ContentAddress, Address, ContentPhone, Phones, ContentMail, Emails, FormTitle } from './ContactUsStyle'
 import { Data } from './ContactUsData';
 import Typography from '../Typography';
-import { FaLocationDot, FaRegEnvelope } from "react-icons/fa6";
-import { BsTelephone } from "react-icons/bs";
+import Image from "next/image";
 
 
 export default function Contact() {
@@ -61,10 +59,10 @@ export default function Contact() {
                 <ContactFormContainer>
                     <Shadow />
                     <ContactLeftSide>
-
+                        <Image src={Data.contact.image} width={500} height={500} />
                     </ContactLeftSide>
                     <ContactRightSide>
-                        <form ref={form}>
+                        <form ref={form} onSubmit={handleOnSubmit}>
                             <FormTitle>
                                 <Typography variant='h4'>
                                     {Data.contact.subject}
@@ -76,7 +74,7 @@ export default function Contact() {
                                 required />
                             <input type="text" name="telephone" placeholder={Data.contact.telephone} required />
                             <textarea name="message" placeholder={Data.contact.message} rows="10" cols="50" />
-                            <button type="submit" name="button" value="submit" onSubmit={handleOnSubmit}>Publish</button>
+                            <input type="submit" name="button" />
                             {message && <Message err={message == 'Your message was not sent' || message == 'Meldingen din ble ikke sendt'}>{message}</Message>}
                         </form>
                     </ContactRightSide>

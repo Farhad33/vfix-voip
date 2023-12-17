@@ -327,22 +327,6 @@ export const Data = {
             },
         ]
     },
-    learnMore: {
-        headTitle: 'Learn more about our network and what makes it different ',
-        headContent: 'Learn more about our network and what makes it different from other unified communications providers. Most cloud unified communications providers run off a softswitch in a data center.We’re not most cloud unified communications providers. Here are 7 reasons why:',
-        img: '/LearnMore/LearnMore.png',
-        button: 'Learn More',
-        cards: [
-            {
-                title: '01',
-                paragraph: 'Diverse & Redundant Core Central Offices'
-            },
-            {
-                title: '02',
-                paragraph: 'Midwest Presence in Chicago',
-            },
-        ]
-    },
     footer: {
         address: 'San Francisco CA Toll Free: 888.888.5854',
         social: 'Follow us',
@@ -351,10 +335,10 @@ export const Data = {
         logoName: 'Vfix Logo',
         imgs: [
             { img: '/Footer/facebook.png', alt: 'facebook' },
-            { img: '/Footer/tiwtter.png', alt: 'tiwter' },
-            { img: '/Footer/routedin.png', alt: 'routedin' },
+            { img: '/Footer/x.png', alt: 'x' },
+            { img: '/Footer/linkedin.png', alt: 'linkedin' },
             { img: '/Footer/instagram.png', alt: 'instagram' },
-            { img: '/Footer/youtub.png', alt: 'youtub' },
+            { img: '/Footer/youtube.png', alt: 'youtube' },
         ],
         appImges: [
             { img: '/Footer/apple.png', alt: 'Apple Store' },
