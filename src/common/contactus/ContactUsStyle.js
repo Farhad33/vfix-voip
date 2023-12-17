@@ -110,7 +110,7 @@ export const ContactRightSide = styled.div`
         input::placeholder, textarea::placeholder {
             color: ${color.White};
         }
-        input[type=text], input[type=email], textarea {
+        input[type=text], input[type=tel], input[type=email], textarea {
             width: 100%;
             height: 30px;
             margin-bottom: 20px;
@@ -154,9 +154,10 @@ export const FormTitle = styled.div`
     padding-bottom: calc(1vw + 5px);
 `
 export const Message = styled.p`
-    color: ${({err}) => err ? 'red' : 'green'};
-    font-size: 18px;
-    margin-top: 10px;
+    color: #00d0a1;
+    font-size: 21px;
+    margin: 10px;
+    text-align: center;
 `
 
 export const Shadow = styled.div`

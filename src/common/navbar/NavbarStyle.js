@@ -52,6 +52,9 @@ export const DropdownContainer = styled.div`
 `
 export const SubLinkIcon = styled(Image)`
 `
+export const Logo = styled(Image)`
+    cursor: pointer;
+`
 
 export const NavList = styled.ul`
     display: flex;

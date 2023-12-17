@@ -8,23 +8,8 @@ import Image from "next/image"
 import axios from 'axios'
 
 export default function Contact() {
-
+    const [message, setMessage] = useState(false)
     const form = useRef()
-
-    const [message, setMessage] = useState('')
-
-    useEffect(() => {
-        if (message) {
-            const timer = setTimeout(() => {
-                setMessage('')
-            }, 4000)
-
-            return () => {
-                clearTimeout(timer)
-            }
-        }
-    }, [message])
-
 
     const handleOnSubmit = async (e) => {
         e.preventDefault()
@@ -33,13 +18,20 @@ export default function Contact() {
             "Lastname": form.current.lastName.value,
             "Phone": form.current.phone.value,
             "Email" : form.current.email.value,
-            "IsContactPerson": true
+            "IsContactPerson": true,
+            "Description": form.current.message.value,
+            "TicketType": "Request",
+            "TicketTitle": "Vfix MSP Website Request"
         }
         console.log('contactPayload => ', contactPayload);
-        // const contact = await ateraAPI.post('/contacts', contactPayload)
         const contact = await axios.post('/api/atera', contactPayload);
-        console.log('front contact => ', contact)
+        setMessage(true)
+        console.log('response => ', contact)
     }
+
+    const handleInvalid = (event) => {
+        event.target.setCustomValidity("Phone number must be 10 digits long.")
+      };
 
 
     return (
@@ -61,20 +53,29 @@ export default function Contact() {
                         <Image src={Data.contact.image} width={500} height={500} alt={Data.contact.contactALT} />
                     </ContactLeftSide>
                     <ContactRightSide>
-                        <form ref={form} onSubmit={handleOnSubmit}>
-                            <FormTitle>
-                                <Typography variant='h4'>
-                                    {Data.contact.subject}
-                                </Typography>
-                            </FormTitle>
-                            <input type="text" name="firstName" placeholder={Data.contact.firstName} required />
-                            <input type="text" name="lastName" placeholder={Data.contact.lastName} required />
-                            <input type="email" name="email" placeholder={Data.contact.email} required />
-                            <input type="text" name="phone" placeholder={Data.contact.phone} required />
-                            <textarea name="message" placeholder={Data.contact.message} rows="10" cols="50" />
-                            <input type="submit" name="button" />
-                            {message && <Message err={message == 'Your message was not sent' || message == 'Meldingen din ble ikke sendt'}>{message}</Message>}
-                        </form>
+                        {message ? <Message>Your response has been sent. One of our representatives will contact you shortly.</Message> :
+                            <form ref={form} onSubmit={handleOnSubmit}>
+                                <FormTitle>
+                                    <Typography variant='h4'>
+                                        {Data.contact.subject}
+                                    </Typography>
+                                </FormTitle>
+                                <input type="text" name="firstName" placeholder={Data.contact.firstName} required />
+                                <input type="text" name="lastName" placeholder={Data.contact.lastName} required />
+                                <input type="email" name="email" placeholder={Data.contact.email} required />
+                                <input 
+                                    type="text" 
+                                    name="phone" 
+                                    placeholder={Data.contact.phone} 
+                                    required 
+                                    pattern="[0-9]{10}"
+                                    onInvalid={handleInvalid}
+                                    maxLength={10}
+                                />
+                                <textarea name="message" placeholder={Data.contact.message} rows="10" cols="50" required></textarea>
+                                <input type="submit" name="button" />
+                            </form>
+                        }
                     </ContactRightSide>
                 </ContactFormContainer>
             </ContactContainer>

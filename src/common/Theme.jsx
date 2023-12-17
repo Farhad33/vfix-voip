@@ -55,7 +55,7 @@ export const Theme ={
             body1: "calc(1vw + 9px)",
             body2: "calc(0.5vw + 12px)",
             body3: "calc(0.4vw + 15px)",
-            body4: "calc(0.5vw + 7px)",
+            body4: "calc(0.5vw + 11px)",
             button: "calc(0.5vw + 12px)",
             caption: "14px",
             overLine: "calc(1vw + -1px)",

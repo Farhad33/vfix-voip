@@ -60,7 +60,7 @@ export const BackgroundImage = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    cursor: pointer;
 `
 export const FollowUs = styled.div`
     padding-bottom: 15px;

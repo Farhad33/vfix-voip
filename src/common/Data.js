@@ -334,15 +334,14 @@ export const Data = {
         logoFooter: '/Footer/LogoFooter.png',
         logoName: 'Vfix Logo',
         imgs: [
-            { img: '/Footer/facebook.png', alt: 'facebook' },
-            { img: '/Footer/x.png', alt: 'x' },
-            { img: '/Footer/linkedin.png', alt: 'linkedin' },
-            { img: '/Footer/instagram.png', alt: 'instagram' },
-            { img: '/Footer/youtube.png', alt: 'youtube' },
+            { img: '/Footer/facebook.png', alt: 'vfix communications facebook', link: 'https://www.facebook.com/vfixmsp' },
+            { img: '/Footer/x.png', alt: 'vfix communications x', link: 'https://x.com/vfixmsp' },
+            { img: '/Footer/linkedin.png', alt: 'vfix communications linkedin', link:   'https://www.linkedin.com/company/vfixmsp/' },
+            { img: '/Footer/instagram.png', alt: 'vfix communications instagram', link: 'https://www.instagram.com/vfixmsp/' }
         ],
         appImges: [
-            { img: '/Footer/apple.png', alt: 'Apple Store' },
-            { img: '/Footer/android.png', alt: 'Android Store' }
+            { img: '/Footer/apple.png', alt: 'App Store', link: 'https://apps.apple.com/us/app/max-uc/id546673632'},
+            { img: '/Footer/android.png', alt: 'Google Play', link: 'https://play.google.com/store/apps/details?id=com.metaswitch.cp.Accession&hl=en&gl=US'}
         ],
 
         lists: [
