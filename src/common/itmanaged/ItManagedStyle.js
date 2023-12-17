@@ -20,7 +20,7 @@ export const ItManagedLeftSide = styled.div`
     @media (max-width: 768px) {
         align-items: center;
         justify-content: center;
-        width: 80%;
+        width: 100%;
         margin-bottom: 30px;
     }
 `
@@ -28,7 +28,7 @@ export const ItManagedLeftSide = styled.div`
 export const ItManagedRightSide = styled.div`
     width: 50%;
     @media (max-width: 768px) {
-        width: 80%;
+        width: 100%;
     }
 `
 

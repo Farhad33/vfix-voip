@@ -1,9 +1,6 @@
 'use client'
 import styled from "styled-components";
 
-export const Container = styled.div`
-
-`
 
 export const SuccessContainer = styled.div`
     display: grid;
@@ -24,8 +21,8 @@ export const SuccessLeftSide = styled.div`
     justify-content: center;
     align-items: flex-start;
     @media (max-width: 768px) {
-        flex-direction: row; 
-        gap: 20px;
+        flex-direction: row;
+        justify-content: space-between;
     }
 `
 export const SuccessCenterSide = styled.div`
@@ -35,7 +32,7 @@ export const SuccessCenterSide = styled.div`
     align-items: center;
     @media (max-width: 768px) {
         flex-direction: row; 
-        gap: 20px;
+        justify-content: space-between;
     }
 `
 
@@ -47,6 +44,7 @@ export const SuccessRightSide = styled.div`
     @media (max-width: 768px) {
         align-items: center;
         justify-content: center;
+        /* justify-content: space-between; */
     }
 `
 
@@ -59,7 +57,7 @@ export const SuccessTitle = styled.div`
     @media (max-width: 768px) {
         align-items: center;
         justify-content: center;
-        width: 80%;
+        width: 100%;
         margin-top: 30px;
     }
 `

@@ -17,7 +17,7 @@ export default function SuccessCard ({ title, content, urlImage })  {
         </Typography>
       </CardTitle>
       <CardContent>
-        <Typography variant='subline4'>
+        <Typography variant='body2'>
           {content}
         </Typography>
       </CardContent>
@@ -31,8 +31,7 @@ const CardContainer = styled.div`
   width: 85%;
   margin-bottom: 35px;
   @media (max-width: 768px) {
-       width: 40%;
-
+       width: 47%;
     }
 `;
 

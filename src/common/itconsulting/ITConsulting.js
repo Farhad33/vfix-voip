@@ -8,28 +8,22 @@ export default function ITConsulting() {
     return(
         <ITConsultingContainer>
             <ITConsultingHead>
-                <HeadTitle>
-                    <Typography variant='h3'>
-                        {Data.ITConsultingServices.headTitle}
-                    </Typography>
-                </HeadTitle>
-                <HeadParagraph>
-                    <Typography variant='subline3'>
-                        {Data.ITConsultingServices.headContent}
-                    </Typography>
-                </HeadParagraph>
+                <Typography variant='h3'>
+                    {Data.ITConsultingServices.headTitle}
+                </Typography>
+                <Typography variant='body3'>
+                    {Data.ITConsultingServices.headContent}
+                </Typography>
             </ITConsultingHead>
             <ITConsultingCardContainer>
-                {
-                    Data.ITConsultingServices.cards.map((card, index) =>(
-                        <ITConsultingCard
-                            key={index} 
-                            title={card.title}
-                            content={card.paragraph}
-                            urlImage={card.img}
-                        />
-                    ))
-                }
+                {Data.ITConsultingServices.cards.map((card, index) =>(
+                    <ITConsultingCard
+                        key={index} 
+                        title={card.title}
+                        content={card.paragraph}
+                        urlImage={card.img}
+                    />
+                ))}
             </ITConsultingCardContainer>
         </ITConsultingContainer>
     )

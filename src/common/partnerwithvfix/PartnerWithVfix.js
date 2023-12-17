@@ -8,41 +8,23 @@ export default function PartnerWithVfix() {
     return (
         <PartnerWithVfixContainer>
             <PartnerWithVfixHead>
-                <HeadTitle>
-                    <Typography variant='h3'>
-                        {Data.PartnerWithVfix.headTitle}
-                    </Typography>
-                </HeadTitle>
-                <HeadParagraph>
-                    <Typography variant='body2'>
-                        {Data.PartnerWithVfix.headContent}
-                    </Typography>
-                </HeadParagraph>
+                <Typography variant='h3'>
+                    {Data.PartnerWithVfix.headTitle}
+                </Typography>
+                <Typography variant='body3'>
+                    {Data.PartnerWithVfix.headContent}
+                </Typography>
             </PartnerWithVfixHead>
             <PartnerWithVfixContainerCard>
-                {
-                    Data.PartnerWithVfix.cards.map((card, index) => (
-                        <PartnerWithVfixCard 
-                            key={index}
-                            title={card.title}
-                            content={card.paragraph}
-                            urlImage={card.img}
-                        />
-                    ))
-                }
+                {Data.PartnerWithVfix.cards.map((card, index) => (
+                    <PartnerWithVfixCard 
+                        key={index}
+                        title={card.title}
+                        content={card.paragraph}
+                        urlImage={card.img}
+                    />
+                ))}
             </PartnerWithVfixContainerCard>
-            <PartnerWithVfixContactUs>
-                <ContactUsParagraph>
-                    <Typography variant='overLine'>
-                        {Data.PartnerWithVfix.contactUsText}
-                    </Typography>
-                </ContactUsParagraph>
-                <Button>
-                    <Typography variant='button'>
-                        {Data.PartnerWithVfix.contactUsBtn}
-                    </Typography>
-                </Button>
-            </PartnerWithVfixContactUs>
         </PartnerWithVfixContainer>
     )
 }   

@@ -10,20 +10,28 @@ export default function ServicesCard({title, content, urlImage}) {
             <CardImage>
                 <Image src={urlImage} alt={title} width={50} height={55} />
             </CardImage>
-            <CardTitle>{title}</CardTitle>
-            <CardContent>{content}</CardContent>
+            <Typography variant='h4'>{title}</Typography>
+            <Typography variant='body2'>{content}</Typography>
         </CardContainer>
     )
 
 }
 
 const CardContainer = styled.div`
-    width: 240px;
-    height: 310px;
+    min-width: 200px;
+    width: 300px;
+    height: 475px;
+
     border: 1px solid ${color.Blue100};
     border-radius: 10px;
-    padding: 30px 10px 30px 30px;
-;
+    padding: 20px;
+    @media (max-width: 700px) {
+        width: 100%;
+        height: unset;
+    }
+    h4 {
+        padding-bottom: 15px;
+    }
 `
 const CardImage = styled.div`
     padding-bottom: 25px;
@@ -35,8 +43,4 @@ const CardTitle = styled.h2`
     font-weight: 700;
     color: ${color.Black} ;
     padding-bottom: 15px;
-`
-const CardContent = styled.p`
-    padding-bottom: 15px;
-    font-size: 12px;
 `

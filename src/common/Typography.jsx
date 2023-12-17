@@ -1,5 +1,6 @@
-import { TypographyRoot } from "./GeneralStyle";
-import { Theme } from "./Theme";
+'use client'
+import { Theme } from "./Theme"
+import styled from "styled-components"
 
 export default function Typography({ variant , component, children}) { 
     return (
@@ -12,3 +13,8 @@ export default function Typography({ variant , component, children}) {
     );
 }
 
+const TypographyRoot = styled.span`
+  font-size: ${({$variant}) => Theme.typography.fontSize[$variant]};
+  line-height: ${({$variant}) => Theme.typography.lineHeight[$variant]};
+  font-weight: ${({$variant}) => Theme.typography.fontWeight[$variant]};
+`

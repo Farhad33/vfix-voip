@@ -9,20 +9,20 @@ import {color} from '../Theme'
 export default function ItServicesCard({urlImage, title, content, btnText, btnUrl}) {
     return(
         <CardContainer>
-            <CardImage>
-                <Image src={urlImage} width={400} height={400} alt={title}  style={{width: '100%', height: 'auto'}} />
-            </CardImage>
+            <Image src={urlImage} width={400} height={400} alt={title}  style={{width: '100%', height: 'auto'}} />
             <CardContentContainer>
-                <CardTitle>
-                    <Typography variant='h3'>
-                        {title}
-                    </Typography>
-                </CardTitle>
-                <CardContent>
-                    <Typography variant='subline4'>
-                        {content}
-                    </Typography>
-                </CardContent>
+                <div>
+                    <CardTitle>
+                        <Typography variant='h4'>
+                            {title}
+                        </Typography>
+                    </CardTitle>
+                    <CardContent>
+                        <Typography variant='body2'>
+                            {content}
+                        </Typography>
+                    </CardContent>
+                </div>
                 <CardButton>
                     <ButtonLink href={btnUrl}>
                         <Typography variant='button'>
@@ -39,34 +39,33 @@ const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     border: 1px solid ${color.Gray100};    
     border-radius: 10px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-`
-
-const CardImage = styled.div`
+    height: 670px;
     padding: calc(1vw + 5px);
+    max-width: 400px;
+    @media (max-width: 922px) {
+        height: unset;
+    }
 `
 const CardContentContainer = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 80%;
-    @media (max-width: 440px) {
-        width: 80%;
-    }
+    justify-content: space-between;
+    height: 100%;
 `
 const CardTitle = styled.div`
-    padding: calc(1vw + -1px);
+    margin-bottom: 10px;
+    margin-top: 20px;
 `
 const CardContent = styled.div`
-    padding: calc(1vw + -2px);
 `
 const CardButton = styled(Button)`
     align-self: flex-end;
-    margin: calc(1vw + 4px);
+    @media (max-width: 922px) {
+        margin: 10px 0;
+    }
 `
 const ButtonLink = styled.a`
     align-self: flex-end;

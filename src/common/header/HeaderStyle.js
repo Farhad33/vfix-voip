@@ -1,5 +1,5 @@
 'use client'
-import styled from "styled-components";
+import styled from "styled-components"
 
 
 export const HeaderContainer = styled.div`
@@ -27,6 +27,9 @@ export const HeaderRightSide = styled.div`
     justify-content: center;
     align-items: center;
     width: 60%;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `
 export const HeadTitle = styled.div`
     margin-bottom: 25px;

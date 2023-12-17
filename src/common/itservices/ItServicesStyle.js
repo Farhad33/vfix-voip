@@ -9,25 +9,15 @@ export const ItServicesHead = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
-    
+    margin-bottom: 30px;
+    h3 {
+        margin-bottom: 20px;
+    }   
 `
-export const HeadTitle = styled.div`
-    text-align: center;
-    padding-bottom: 15px;
-`
-export const HeadParagraph = styled.div`
-    text-align: center;
-    width: 60%;
-`
-
 export const ItServicesCardContainer = styled.div`
-    display: grid;
-    grid-template-columns: 40% 40%;
-    gap: 30px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: 440px) {
-        grid-template-columns: 60%;
-    }
+    flex-wrap: wrap;
+    gap: 30px;
 `

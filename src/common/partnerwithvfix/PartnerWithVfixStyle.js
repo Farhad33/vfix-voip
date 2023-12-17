@@ -16,8 +16,11 @@ export const PartnerWithVfixHead = styled.div`
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    margin: 45px 0;
-
+    margin-top: 80px;
+    margin-bottom: 30px;
+    h3 {
+        margin-bottom: 20px;
+    }
 `
 
 export const HeadTitle = styled.div`
@@ -33,16 +36,12 @@ export const HeadParagraph = styled.div`
 `
 
 export const PartnerWithVfixContainerCard = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 35px;
-    @media (max-width: 768px) {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
 `
 export const PartnerWithVfixContactUs = styled.div`
     display: flex;

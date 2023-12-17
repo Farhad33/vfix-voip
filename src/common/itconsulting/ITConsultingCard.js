@@ -8,20 +8,14 @@ import Typography from "../Typography";
 export default function ITConsultingCard({title, content, urlImage}) {
     return(
         <CardContainer>
-            <CardImage>
-                <Image src={urlImage} alt={title} width={70} height={70} />
-            </CardImage>
+            <CardImage src={urlImage} alt={title} width={70} height={70} />
             <CardContetnContainer>
-                <CardTitle>
-                    <Typography variant='h3'>
-                        {title}
-                    </Typography>
-                </CardTitle>
-                <CardContetn>
-                    <Typography variant='subline4'>
-                        {content}
-                    </Typography>
-                </CardContetn>
+                <Typography variant='h4'>
+                    {title}
+                </Typography>
+                <Typography variant='body2'>
+                    {content}
+                </Typography>
             </CardContetnContainer>
         </CardContainer>
     )
@@ -35,22 +29,20 @@ const CardContainer = styled.div`
     border: none;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border-radius: 10px;
-    width: 43%;
-    padding: 45px;
-    @media (max-width: 640px) {
-        width: 75%;
+    width: 410px;
+    height: 450px;
+    padding: 40px;
+    @media (max-width: 944px) {
+        height: unset;
+        padding: 30px;
     }
 `
-const CardImage = styled.div`
+const CardImage = styled(Image)`
     margin-bottom: calc(1vw + 6px);
 `
 const CardContetnContainer = styled.div`
-
-`
-const CardTitle = styled.div`
-    margin-bottom: calc(1vw + -1px);
-`
-
-const CardContetn = styled.div`
+    h4 {
+        margin-bottom: calc(1vw + 6px);
+    }
 
 `

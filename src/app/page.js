@@ -7,7 +7,6 @@ import ItServices from '@/common/itservices/ItServices'
 import ITConsulting from '@/common/itconsulting/ITConsulting'
 import Industries from '@/common/industries/Industries'
 import PartnerWithVfix from '@/common/partnerwithvfix/PartnerWithVfix'
-import LearnMore from '@/common/learnmore/LearnMore'
 
 export const metadata = {
   title: 'Vfix Viop',
@@ -26,7 +25,6 @@ export default function Home() {
       <ITConsulting />
       <Industries />
       <PartnerWithVfix />
-      <LearnMore />
     </Page> 
     
   )

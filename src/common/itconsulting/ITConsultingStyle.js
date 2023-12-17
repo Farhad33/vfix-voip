@@ -11,9 +11,10 @@ export const ITConsultingHead = styled.div`
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    margin: 40px 0;
-    @media (max-width: 64px) {
-        flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    h3 {
+        margin-bottom: 20px;
     }
 `
 
@@ -24,7 +25,6 @@ export const HeadTitle = styled.div`
 
 export const HeadParagraph = styled.div`
     text-align: center;
-    width: 60%;
 `
 
 export const ITConsultingCardContainer = styled.div`
@@ -33,5 +33,4 @@ export const ITConsultingCardContainer = styled.div`
     justify-content: center;
     align-items: center;
     gap: 50px;
-
 `
