@@ -1,46 +1,45 @@
 'use client'
-import React, { useRef, useEffect, useState } from 'react';
-import { Page } from '@/app/pagestyle';
+import React, { useRef, useEffect, useState } from 'react'
+import { Page } from '@/app/pagestyle'
 import { ContactContainer, ContactFormContainer, ContactRightSide, ContactLeftSide, Shadow, Message, ContactTitle, ContactParagraph, ContentAddress, Address, ContentPhone, Phones, ContentMail, Emails, FormTitle } from './ContactUsStyle'
-import { Data } from './ContactUsData';
-import Typography from '../Typography';
-import Image from "next/image";
-
+import { Data } from './ContactUsData'
+import Typography from '../Typography'
+import Image from "next/image"
+import axios from 'axios'
 
 export default function Contact() {
 
-    const form = useRef();
+    const form = useRef()
 
-    const [message, setMessage] = useState('');
+    const [message, setMessage] = useState('')
 
     useEffect(() => {
         if (message) {
             const timer = setTimeout(() => {
-                setMessage('');
-            }, 4000);
+                setMessage('')
+            }, 4000)
 
             return () => {
-                clearTimeout(timer);
-            };
+                clearTimeout(timer)
+            }
         }
-    }, [message]);
+    }, [message])
 
 
-    const handleOnSubmit = (e) => {
-        e.preventDefault();
-        console.log("Form submitted");
-        // emailjs.sendForm('service_znsyjev', 'template_4f1qfpu', form.current, 'A6zWxwdubwFpZ1fy0')
-        //     .then((result) => {
-        //         form.current.name.value = '';
-        //         form.current.email.value = '';
-        //         form.current.message.value = '';
-        //         console.log(result.text);
-        //         setMessage(Data.contact.sent);
-        //     }, (error) => {
-        //         console.log(error.text);
-        //         setMessage(Data.contact.err);
-        //     });
-    };
+    const handleOnSubmit = async (e) => {
+        e.preventDefault()
+        const contactPayload = {
+            "Firstname": form.current.firstName.value,
+            "Lastname": form.current.lastName.value,
+            "Phone": form.current.phone.value,
+            "Email" : form.current.email.value,
+            "IsContactPerson": true
+        }
+        console.log('contactPayload => ', contactPayload);
+        // const contact = await ateraAPI.post('/contacts', contactPayload)
+        const contact = await axios.post('/api/atera', contactPayload);
+        console.log('front contact => ', contact)
+    }
 
 
     return (
@@ -59,7 +58,7 @@ export default function Contact() {
                 <ContactFormContainer>
                     <Shadow />
                     <ContactLeftSide>
-                        <Image src={Data.contact.image} width={500} height={500} />
+                        <Image src={Data.contact.image} width={500} height={500} alt={Data.contact.contactALT} />
                     </ContactLeftSide>
                     <ContactRightSide>
                         <form ref={form} onSubmit={handleOnSubmit}>
@@ -68,11 +67,10 @@ export default function Contact() {
                                     {Data.contact.subject}
                                 </Typography>
                             </FormTitle>
-                            <input type="text" name="name" placeholder={Data.contact.name} required />
-                            <input type="text" name="company" placeholder={Data.contact.company} required />
-                            <input type="email" name="email" placeholder={Data.contact.emailmassage}
-                                required />
-                            <input type="text" name="telephone" placeholder={Data.contact.telephone} required />
+                            <input type="text" name="firstName" placeholder={Data.contact.firstName} required />
+                            <input type="text" name="lastName" placeholder={Data.contact.lastName} required />
+                            <input type="email" name="email" placeholder={Data.contact.email} required />
+                            <input type="text" name="phone" placeholder={Data.contact.phone} required />
                             <textarea name="message" placeholder={Data.contact.message} rows="10" cols="50" />
                             <input type="submit" name="button" />
                             {message && <Message err={message == 'Your message was not sent' || message == 'Meldingen din ble ikke sendt'}>{message}</Message>}
