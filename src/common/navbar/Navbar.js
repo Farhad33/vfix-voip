@@ -6,8 +6,7 @@ import { Button } from '../MainStyle';
 import { Logo, NavContainer, NavLinks, NavList, DropdownItem, StyledLink, Container, SpanLinks, MenuButton, SpanButton } from '../navbar/NavbarStyle';
 import PricingDropdown from './PricingDropdown';
 import ServicesDropDown from './ServicesDropdown';
-import { useRouter } from 'next/navigation';
-
+import { useRouter } from 'next/navigation'
 
 export default function Navbar() {
     const [hamburgerMenu, setHamburgerMenu] = useState(false);

@@ -19,3 +19,7 @@ export const Button = styled.button`
     
   }
 `
+
+export const PagePaddingWrapper = styled.div`
+    padding: 0 5%;
+`

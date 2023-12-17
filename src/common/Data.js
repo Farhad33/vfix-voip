@@ -118,12 +118,7 @@ export const Data = {
                 ]
             },
             {
-                title: 'Company',
-                route: '/company',
-
-            },
-            {
-                title: 'Downloadds',
+                title: 'Downloads',
                 route: '/download',
             },
 
@@ -328,10 +323,11 @@ export const Data = {
         ]
     },
     footer: {
-        address: 'San Francisco CA Toll Free: 888.888.5854',
+        address: 'San Francisco CA',
+        phone: 'Toll Free: 888.888.5854',
         social: 'Follow us',
         app: 'Mobile app',
-        logoFooter: '/Footer/LogoFooter.png',
+        logoFooter: '/Footer/LogoFooter.svg',
         logoName: 'Vfix Logo',
         imgs: [
             { img: '/Footer/facebook.png', alt: 'vfix communications facebook', link: 'https://www.facebook.com/vfixmsp' },
@@ -346,27 +342,60 @@ export const Data = {
 
         lists: [
             {
-                title1: 'Solutions',
-                list1: ['Call Center', 'Support', 'Sales', 'Phone System', 'Ecommerce', 'Non-profits'],
-                title2: 'Downloads',
-                list2: ['Blog', 'Knowledge Base', 'Customer Stories', 'Partner Stories', 'Become a Partner', 'Build an Integration', 'VoIP', 'Glossary', 'Speed Test',]
+                title: 'Cloud Phone System',
+                list: [
+                    { name: 'PowerDialer', link: '/services/cloudphonesystem' },
+                    { name: 'IVR', link: '/services/cloudcontentcenter' },
+                    { name: 'Call Routing', link: '/services/directrouting' },
+                    { name: 'Call Center Analytics', link: '/services/cloudcontentcenter' },
+                    { name: 'CTI Integration', link: '/services/teamwebcollaboration' },
+                    { name: 'Click to Dial', link: '/services/mobiledesktopapp' },
+                ]
             },
             {
-                title1: 'Technology',
-                list1: ['Integrations', 'Quality and reliability', 'Apps', 'Pricing', 'Country coverage', 'Request a demo'],
-                title2: 'Company',
-                list2: ['Contact Us', 'About Us', 'Careers', 'Press', 'Uptime', 'Brand']
+                title: 'Solutions',
+                list: [
+                    { name: 'Call Center', link: '/services/cloudcontentcenter' },
+                    { name: 'IT Consulting', link: '/services/itconsulting' },
+                    { name: 'IT Managed Services', link: '/pricing/msp' },
+                    { name: 'Cloud Phone System', link: '/services/cloudphonesystem' },
+                    { name: 'Cloud Services', link: '/services/cloudservices' },
+                    { name: 'Business Messaging', link: '/services/businessmessaging' }
+                ]
             },
             {
-                title1: 'Why VFIX',
-                list1: ['PowerDialer', 'IVR', 'Call Routing', 'Call Center Analytics', 'CTI Integration', 'Click to Dial'],
-                title2: 'Pricing & FAQs',
-                list2: ['Contact Us', 'About Us', 'Careers', 'Press', 'Uptime', 'Brand']
+                title: 'Portals',
+                list: [
+                    { name: 'Service Desk Portal', link: 'http://portal.vfixmsp.com' },
+                    { name: 'Fax Portal', link: 'https://myhostedfax.com' },
+                    { name: 'Call Recordings', link: 'https://vfix.mysiprec.com' },
+                    { name: 'Phone System End User Portal ', link: 'https://vfix.uccommportal.com' },
+                    { name: 'Business Group Admin Portal ', link: 'https://vfix.uccommportal.com/bg' },
+                    { name: 'Self Serve Billing', link: 'https://vfix.mycloudbill.com/selfcare.do?party=vfix' }
+                ]
+            },
+            {
+                title: 'Managed IT Services',
+                list: [
+                    { name: 'Cloud Integrations', link: '/services/cloudservices' },
+                    { name: 'Network Security', link: '/services/networksecurity' },
+                    { name: 'IT Help Desk', link: '/services/helpdesksupport' },
+                    { name: 'Proactive Monitoring & Maintenance ', link: '/services/proactivemonitoring' },
+                    { name: 'Software & Hardware Mangement', link: '/services/softwarehardware' },
+                    { name: 'Backup and disaster recovery', link: '/services/databackup' },
+                ]
+            },
+            {
+                title: 'Pricing & FAQs',
+                list: [
+                    { name: 'Managed Services', link: '/pricing/msp' },
+                    { name: 'Business Comminucations', link: '/pricing/voip' },
+                    { name: 'Status', link: 'status.vfixmsp.com' }
+                ]
             },
         ],
         footerEnd: {
-            copyRight: 'Copyright VFIX 2023',
-            list: ['Privacy Policy', 'Terms & Conditions', 'End-user Licence Agreement', 'Website Terms of Use', 'Security', 'Privacy FAQs', 'DPA', 'Integration terms', 'Sitemap', 'Cookies Preferences']
+            list: ['Copyright VFIX 2023', 'Privacy Policy', 'Terms & Conditions']
         }
     }
 }

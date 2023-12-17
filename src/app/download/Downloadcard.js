@@ -2,35 +2,42 @@
 import { DownloadCard, Content, Photo, ContentImg, DownloadTitle, DownloadParagraph, DownloadRightSide, DownloadLeftSide, MobileApp } from './DownloadStyle'
 import Image from 'next/image'
 import Typography from '@/common/Typography'
-
+import { useRouter } from 'next/navigation'
 
 
 
 export default function Downloadcard ({ card })  {
+  const { push } = useRouter()
+
   return (
     <DownloadCard color={card.color} >
       <DownloadLeftSide color={card.color}>
         <DownloadTitle>
-          <Typography $variant='h1'>{card.title}</Typography>
+          <Typography variant='h1'>{card.title}</Typography>
         </DownloadTitle>
-        <DownloadParagraph>
-          <Typography $variant='body2'>{card.paragraph1}</Typography>
-          <Typography $variant='body2'>{card.paragraph2}</Typography>
-        </DownloadParagraph>
+        <Typography variant='body4'>{card.paragraph}</Typography>
+        <Typography variant='h3'>{card.listTitle}</Typography>
+        <ul>
+          {card.list.map((item, index) => (
+            <li key={index}>
+              <Typography variant='body4'>{item}</Typography>
+            </li>
+          ))}
+        </ul>
         <MobileApp>
             <Image
               src= {card.img1}
               width={120}
               height={35}
               alt= {card.title}
-              onClick={() => {window.location.assign(card.urlImage1)}}
+              onClick={() => { push(card.urlImage1) }}
             />
             <Image
               src= {card.img2}
               width={120}
               height={35}
               alt= {card.title}
-              onClick={() => {window.location.assign(card.urlImage2)}}
+              onClick={() => { push(card.urlImage2) }}
             />
         </MobileApp>
       </DownloadLeftSide>
@@ -40,7 +47,6 @@ export default function Downloadcard ({ card })  {
           width={650}
           height={650}
           alt= {card.title}
-          layout="responsive"
           quality={75}
         />
       </DownloadRightSide>

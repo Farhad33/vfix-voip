@@ -6,19 +6,25 @@ import { color } from "@/common/Theme";
 export const DownloadContainer = styled.div`
     display: flex;
     flex-direction: column;
-    gap: calc(3vw + 25px);
-    padding-top: calc(2vw + 20px);
-    padding-bottom: calc(2vw + 20px);
+    gap: calc(2vw + 5px);
+    margin-top: 20px;
    
 `
 export const DownloadCard = styled.div`
     display: flex;
     width: 100%;
-    padding: 50px 20px;
-    border-radius: 60px;
+    padding: calc(2vw + 10px);
+    border-radius: 40px;
     background-color: ${({color}) => color};
-    margin: 10px 0;
+    color: ${color.White};
     ${({color}) => '#00D59C' === color ? 'flex-direction: row-reverse;' : '' }
+    h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    ul {
+        margin-left: 15px;
+    }
     @media (max-width: 900px) {
         flex-direction: column;
         justify-content: center;
@@ -31,18 +37,15 @@ export const DownloadLeftSide = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    ${({color}) => '#00D59C'=== color ? 'padding-right: 5%;' : 'padding-left: 5%;' }
     @media (max-width: 900px) {
-        width: 80%;
-        padding-bottom: calc(2vw + 5px);
+        width: 100%;
+    }
+    @media (min-width: 900px) {
+        ${({color}) => '#00D59C'=== color ? 'padding-left: 3%;' : 'padding-right: 3%;' }
     }
 `
-export const DownloadTitle = styled.h1`
-    padding-bottom: calc(2vw + 10px);
-    color: ${color.White};
-`
-
-export const DownloadParagraph = styled.p`
+export const DownloadTitle = styled.div`
+    padding-bottom: calc(1vw + 10px);
     color: ${color.White};
 `
 export const DownloadRightSide = styled.div`
@@ -50,18 +53,41 @@ export const DownloadRightSide = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    img {
+        width: auto;
+        height: auto;
+    }
     @media (max-width: 900px) {
-        padding-top: calc(3vw + 27px);
+        width: 90%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 `
 export const MobileApp = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-top: calc(2vw + 20px);
-    gap: calc(2vw + -5px);
-    @media (max-width: 900px) {
-        justify-content: center;
-        gap: calc(2vw + 11px);
+    gap: calc(1vw + 11px);
+    margin: 10px 0;
+    img {
+        width: 60%;
+        height: 60%;
     }
+    @media (max-width: 900px) {
+        img {
+            width: 25%;
+            height: 25%;
+        }
+        justify-content: center;
+    }
+    @media (max-width: 700px) {
+        img {
+            width: 35%;
+            height: 35%;
+        }
+        justify-content: center;
+    }
+    cursor: pointer;
 `

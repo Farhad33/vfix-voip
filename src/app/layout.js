@@ -4,6 +4,7 @@ import './Globalstyle.css'
 import Navbar from '@/common/navbar/Navbar'
 import Footer from '@/common/footer/Footer'
 import Contactus from '@/common/contactus/ContactUs'
+import { PagePaddingWrapper } from '@/common/MainStyle'
 
 
 
@@ -21,9 +22,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={quicksand.className}>
         <StyledComponentsRegistry>
-          <Navbar/>
-          {children}
-          <Contactus />
+          <PagePaddingWrapper>
+            <Navbar/>
+            {children}
+            <Contactus />
+          </PagePaddingWrapper>
           <Footer />
         </StyledComponentsRegistry>
       </body>

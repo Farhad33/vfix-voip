@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { Page } from '@/app/pagestyle'
 import { ContactContainer, ContactFormContainer, ContactRightSide, ContactLeftSide, Shadow, Message, ContactTitle, ContactParagraph, ContentAddress, Address, ContentPhone, Phones, ContentMail, Emails, FormTitle } from './ContactUsStyle'
 import { Data } from './ContactUsData'
@@ -23,10 +23,8 @@ export default function Contact() {
             "TicketType": "Request",
             "TicketTitle": "Vfix MSP Website Request"
         }
-        console.log('contactPayload => ', contactPayload);
         const contact = await axios.post('/api/atera', contactPayload);
         setMessage(true)
-        console.log('response => ', contact)
     }
 
     const handleInvalid = (event) => {
@@ -50,7 +48,7 @@ export default function Contact() {
                 <ContactFormContainer>
                     <Shadow />
                     <ContactLeftSide>
-                        <Image src={Data.contact.image} width={500} height={500} alt={Data.contact.contactALT} />
+                        <Image src={Data.contact.image} width={500} height={500} alt={Data.contact.contactALT} priority={false} />
                     </ContactLeftSide>
                     <ContactRightSide>
                         {message ? <Message>Your response has been sent. One of our representatives will contact you shortly.</Message> :

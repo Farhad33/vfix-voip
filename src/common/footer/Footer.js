@@ -1,31 +1,29 @@
 'use client'
 import Typography from "../Typography";
 import { Data } from "../Data";
-import {ContainerFooter, FooreContainer, FooterLeftSide, FooterRightSide,ListContainer, ListColumn, ListTitle, ListUl, ListLi, FooterLogo, Address, FollowUs, FollowUsTitle, FollowUsImages, MobileApp, MobileTitle, MobileImage, FooterEndContainer, CopyRight, Privecy, PrivecyTag, FooterLogoContent, BackgroundImage, ImagStyle} from './FooterStyle'
+import { FooterContainer, FooterTop, FooterLeftSide, FooterRightSide, ListContainer, ListUl, ListLi, FooterLogo, Address, FollowUs, FollowUsTitle, FollowUsImages, MobileApp, MobileTitle, MobileImage, FooterBottom, CopyRight, Privecy, PrivecyTag, FooterLogoContent, BackgroundImage, ImagStyle } from './FooterStyle'
 import Image from "next/image";
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation'
 
 export default function Footer() {
-    const { push } = useRouter();
+    const { push } = useRouter()
 
     return(  
-        <ContainerFooter>
-            <FooreContainer>
+        <FooterContainer>
+            <FooterTop>
                 <FooterLeftSide>
                     <FooterLogo>
-                        <ImagStyle 
+                        <ImagStyle
                             src={Data.footer.logoFooter} 
                             alt={Data.footer.logoName} 
                             width={300}
-                            height={70} 
-                            style={{maxWidth: '100%'}}
+                            height={70}
                         />
                     </FooterLogo>
                     <FooterLogoContent>
                         <Address>
-                            <Typography variant='body2'>
-                                {Data.footer.address}
-                            </Typography>
+                            <Typography variant='body2'>{Data.footer.address}</Typography>
+                            <Typography variant='body2'>{Data.footer.phone}</Typography>
                         </Address>
                         <FollowUs>
                             <FollowUsTitle>
@@ -69,68 +67,27 @@ export default function Footer() {
                     </FooterLogoContent>
                 </FooterLeftSide>
                 <FooterRightSide>
-                    {
-                        Data.footer.lists.map((section, colIndex) => (
-                            <ListContainer key={colIndex} >
-                                <ListColumn>
-                                    <ListTitle>
-                                        <Typography variant='h3'>
-                                            {section.title1}
-                                        </Typography>
-                                    </ListTitle>
-                                    <ListUl>
-                                        {
-                                            section.list1.map((item, itemIndex) => (
-                                                <ListLi key={itemIndex}>
-                                                    <Typography variant='body2'>
-                                                        {item}
-                                                    </Typography>
-                                                </ListLi>
-                                            ))
-                                        }
-                                    </ListUl>
-                                </ListColumn>
-                                <ListColumn>
-                                    <ListTitle>
-                                        <Typography variant='h3'>
-                                                {section.title2}
-                                        </Typography>
-                                    </ListTitle>
-                                    <ListUl>
-                                        {
-                                            section.list2.map((item, itemIndex) => (
-                                                <ListLi key={itemIndex}>
-                                                   <Typography variant='body4'>
-                                                        {item}
-                                                    </Typography>
-                                                </ListLi>
-                                            ))
-                                        }
-                                    </ListUl>
-                                </ListColumn>
-                            </ListContainer>
-                        ))
-                    }
+                    { Data.footer.lists.map((section, colIndex) => (
+                        <ListContainer key={colIndex} >
+                            <Typography variant='h3'>{section.title}</Typography>
+                            <ListUl>
+                                { section.list.map(({ name, link }, itemIndex) => (
+                                    <ListLi key={itemIndex} onClick={() => { push(link) }} >
+                                        <Typography variant='body4'>{name}</Typography>
+                                    </ListLi>
+                                ))}
+                            </ListUl>
+                        </ListContainer>
+                    )) }
                 </FooterRightSide>
-            </FooreContainer>
-            <FooterEndContainer>
-                    <CopyRight>
-                            <Typography variant='overLine'>
-                                {Data.footer.footerEnd.copyRight}
-                            </Typography>
-                    </CopyRight>
-                    <Privecy>
-                        {
-                            Data.footer.footerEnd.list.map((lists, index) => (
-                                <PrivecyTag key={index}>
-                                    <Typography variant='body3'>
-                                        {lists}
-                                    </Typography>
-                                </PrivecyTag>
-                            ))
-                        }
-                    </Privecy>
-                </FooterEndContainer>
-        </ContainerFooter>
+            </FooterTop>
+            <FooterBottom>
+                {Data.footer.footerEnd.list.map((lists, index) => (
+                    <Typography key={index} variant='overLine'>
+                        {lists}
+                    </Typography>
+                ))}
+            </FooterBottom>
+        </FooterContainer>
     )
 }

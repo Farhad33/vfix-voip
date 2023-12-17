@@ -39,7 +39,7 @@ export const Theme ={
             body4: "p",
             button: "span",
             caption: "span",
-            overLine: "span",
+            overLine: "p",
         },
         fontSize: {
             h1: "calc(3vw + 5px)",
@@ -58,7 +58,7 @@ export const Theme ={
             body4: "calc(0.5vw + 11px)",
             button: "calc(0.5vw + 12px)",
             caption: "14px",
-            overLine: "calc(1vw + -1px)",
+            overLine: "calc(0.5vw + 7px)",
         },
         lineHeight: {
             h1: "calc(3vw + 5px)",
@@ -73,6 +73,7 @@ export const Theme ={
             body1: "24px",
             body2: "calc(0.5vw + 16px)",
             body3: "calc(0.5vw + 20px)",
+            body4: "calc(0.5vw + 20px)",
             button: "calc(1vw + 5px)",
             caption: "20px",
             overLine: "calc(1vw + -1px)",
