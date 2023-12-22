@@ -5,7 +5,7 @@ export const Data = {
     cards: [
         {
             title: 'Basic',
-            content: 'This plan is ideal for small businesses that require basic IT support to ensure their systems are up and running. It provides a cost-effective solution to keep systems and devices secure and updated.',
+            content: 'Our Basic Plan is a cost-effective cloud VoIP solution with essential call control features, perfect for small businesses and startups looking to streamline their phone systems efficiently without a hefty price tag.',
             price: {
                 1: {
                     discount_amount: '3.30',
@@ -35,17 +35,17 @@ export const Data = {
             button: 'Subscribe Now',
             buttonLink: '',
             list: [
-                '24/7 help desk support for basic IT issues and inquiries ',
-                'Remote troubleshooting and problem diagnosis',
-                'Remote troubleshooting and problem diagnosis',
-                'Security patch management and antivirus updates',
-                'Ticket tracking and reporting',
+                'Voicemail',
+                'Unlimited internet fax',
+                'Auto attendant (single Level)',
+                'Analytics for IT administrators',
+                'Unlimited Domestic voice calling',
                 'Emergency calling (E911)',
             ]
         },
         {
             title: 'Professional',
-            content: 'This plan is ideal for small businesses that require basic IT support to ensure their systems are up and running. It provides a cost-effective solution to keep systems and devices secure and updated.',
+            content: 'Upgrade to our Professional Plan for advanced cloud VoIP capabilities, including essential call control and collaboration tools like Call Queues and business messaging , tailored for growing businesses.',
             price: {
                 1: {
                     discount_amount: "3.80",
@@ -76,18 +76,18 @@ export const Data = {
             button: 'Subscribe Now',
             buttonLinke: '',
             list: [
-                'Everything in Basic MSP Services plan',
-                'Proactive monitoring of networks, servers, and endpoints',
-                'Remote troubleshooting and problem diagnosis',
-                'Backup and disaster recovery services',
-                'Performance optimization and tuning',
-                'Patch and software update management',
+                'Everything in Basic Service plan Plus',
+                'Auto call recording',
+                'Advanced call monitoring',
+                'Auto attendant (multi-level)',
+                'Mobile and Desktop App',
+                'CRM Integrations',
                 'Call Queues',
             ]
         },
         {
             title: 'Enterprise',
-            content: 'This plan is ideal for small businesses that require basic IT support to ensure their systems are up and running. It provides a cost-effective solution to keep systems and devices secure and updated.',
+            content: 'Experience the best with our Enterprise Plan, offering everything in the professional Plan plus advanced call controls, and team collaboration features, ideal for established businesses seeking comprehensive solutions.',
             price: {
                 1: {
                     discount_amount: "4.80",
@@ -118,12 +118,13 @@ export const Data = {
             button: 'Subscribe Now',
             buttonLinke: '',
             list: [
-                'Everything in Proactive MSP Services plan',
-                'Network design and implementation',
-                'Remote troubleshooting and problem diagnosis',
-                'Virtual CIO/CTO services',
-                'Cloud architecture and migration',
-                'Compliance and regulatory consulting',
+                'Everything in Professional service Plan plus',
+                'Video meetings and participants',
+                'ACD Supervisor',
+                'Pause/Resume call Recording',
+                'Agent Evaluator',
+                'Speech to Text',
+                'Quality Assurance / Score Card',
                 'Cloud Contact center',
             ]
         },
