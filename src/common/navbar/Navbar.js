@@ -33,6 +33,9 @@ export default function Navbar(props) {
         } else if (dropdownOption === 'pricing') {
             setIsServicesDropdownOpen(false)
             setIsPricingDropdownOpen(!isPricingDropdownOpen)
+        } else {
+            setIsServicesDropdownOpen(false)
+            setIsPricingDropdownOpen(false)
         }
     }
 
@@ -69,7 +72,10 @@ export default function Navbar(props) {
                             )
                             : (
                                 <MenuTitle
-                                    onClick={() => { push(item.route) }}
+                                    onClick={() => { 
+                                        push(item.route)
+                                        handleMenuClick()
+                                    }}
                                     $selectedMenu={menuLinks[path] === item.title}
                                 >
                                     {item.title}
