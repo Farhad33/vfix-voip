@@ -5,7 +5,7 @@ import Image from "next/image";
 import Typography from "../Typography";
 import { useRouter } from 'next/navigation'
 
-export default function ServicesSubDropDown({ items }) {
+export default function ServicesSubDropDown({ items, handleMenuClick }) {
   const { push } = useRouter()
 
   return(
@@ -13,7 +13,12 @@ export default function ServicesSubDropDown({ items }) {
       <SubDropDownList>
         {
           items.map((item, index) => (
-            <SubDropDownLink key={index} onClick={() => push(item.route)}>
+            <SubDropDownLink 
+              key={index} 
+              onClick={() => { 
+                push(item.route) 
+                handleMenuClick('services') 
+              }}>
               {item.icon && <SubDropDownIcon src={item.icon} alt={item.title} width={17} height={17} />}
               <Typography variant='subline2' >{item.title}</Typography>
             </SubDropDownLink>
@@ -39,6 +44,9 @@ export const SubDropDownLink = styled.li`
       background-clip: text;
       -webkit-background-clip: text; 
       color: transparent; 
+  }
+  @media (max-width: 768px) {
+        color: ${color.White};
   }
 `
 export const SubDropDownRoute = styled.a`

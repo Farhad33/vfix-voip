@@ -4,38 +4,44 @@ import styled, { css } from 'styled-components'
 import { color } from "../Theme"
 import Link from "next/link"
 import Image from "next/image"
+import { useRouter } from 'next/navigation'
 import SubDropDown from './ServicesSubDropdown'
 
-
-export default function PricingDropdown({ item, $selectedMenu }) {
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false)
-    const menuTitle = isDropdownOpen ? item.title + ' ˄' : item.title + ' ˅'
-
+export default function PricingDropdown({ 
+    item, 
+    selectedMenu, 
+    handleMenuClick, 
+    isPricingDropdownOpen 
+}) {
+    const { push } = useRouter()
+    const menuTitle = isPricingDropdownOpen ? item.title + ' ˄' : item.title + ' ˅'
 
     return <>
-        <StyledLink
-            href={item.route}
-            onClick={() => setIsDropdownOpen(!isDropdownOpen)} 
+        <MenuTitle
+            onClick={() => handleMenuClick('pricing') }
+            $selectedMenu={selectedMenu}
         >
-            <SpanLinks $selectedMenu={$selectedMenu}>{menuTitle}</SpanLinks>
-        </StyledLink>
+            {menuTitle}
+        </MenuTitle>
+
         <DropdownContainer>
-            <DropdownList $isDropdownOpen={isDropdownOpen} >
+            <DropdownList $isDropdownOpen={isPricingDropdownOpen} >
                 {item.dropdown.map((subItem, subIndex) => (
-                    <PricingDropdownItem key={subIndex}>
-                        <StyledLink 
-                            href={subItem.route} 
-                            onClick={() => setIsDropdownOpen(false)}
-                        >
-                            <SubLinkIcon 
-                                width={50} 
-                                height={50} 
-                                src={subItem.icon} 
-                                alt={subItem.title} 
-                            />
-                            <SpanLinks>{subItem.title}</SpanLinks>
-                        </StyledLink>
-                        {subItem.dropdown && <SubDropDown items={subItem.dropdown} /> }
+                    <PricingDropdownItem 
+                        key={subIndex}
+                        onClick={() => {
+                            handleMenuClick('pricing')
+                            console.log('subItem.route => ', subItem.route);
+                            push(subItem.route)
+                        }}
+                    >
+                        <SubLinkIcon
+                            width={50} 
+                            height={50} 
+                            src={subItem.icon} 
+                            alt={subItem.title} 
+                        />
+                        <MenuTitle>{subItem.title}</MenuTitle>
                     </PricingDropdownItem>
                 ))}
             </DropdownList>
@@ -43,47 +49,12 @@ export default function PricingDropdown({ item, $selectedMenu }) {
     </>
 }
 
-export const DropdownItem = styled.li`
-    color: ${color.White};
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing:0.15px;
-    padding-left: 65px;
-    cursor: pointer;
-    @media (max-width: 1310px) {
-        padding-left:calc(0.5vw + 45px);
-    }
-    @media (max-width: 1200px) {
-        padding-left: calc(1vw + 25px);
-    }
-    @media (max-width: 1150px) {
-        padding-left: calc(1vw + 16px);
-    }
-    @media (max-width: 840px) {
-        padding-left: calc(1vw + 8px);
-    }
-    @media (max-width: 768px) {
-        font-size: 25px;
-        color: ${color.White};
-        margin-bottom: 20px;
-        align-self: center;
-    }
-    @media (max-width: 640px) {
-        font-size: 25px;
-        color: ${color.White};
-    }
+const PricingDropdownItem = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
-
-export const PricingDropdownItem = styled(DropdownItem)`
-     a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-`
-export const StyledLink = styled(Link)`
-    color: ${color.Black};
+const StyledLink = styled(Link)`
     text-decoration: none;
 `
 const selectedMenuCSS = css`
@@ -92,7 +63,7 @@ const selectedMenuCSS = css`
     -webkit-background-clip: text; 
     color: transparent;
 `
-export const SpanLinks = styled.span`
+const MenuTitle = styled.span`
     ${({$selectedMenu}) => ($selectedMenu ? selectedMenuCSS : `color: ${color.Black};`)}
     &:hover {
         background-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200});
@@ -103,17 +74,15 @@ export const SpanLinks = styled.span`
     @media (max-width: 768px) {
         padding:10px 0 ; 
         font-size: 18px;
-        color: ${color.White};
+        ${({$selectedMenu}) => ($selectedMenu ? selectedMenuCSS : `color: ${color.White};`)}
     }
     @media (max-width: 640px) {
         padding: 5px 0;
-        font-size: 18px;
-        color: ${color.White};
     }
 `
-export const SubLinkIcon = styled(Image)`
+const SubLinkIcon = styled(Image)`
 `
-export const DropdownList = styled.ul`
+const DropdownList = styled.ul`
     display: ${({$isDropdownOpen}) => $isDropdownOpen ? 'flex' : 'none'};
     list-style: none;
     justify-content: center;
@@ -146,7 +115,7 @@ export const DropdownList = styled.ul`
         /* font-weight: 700; */
     }
 `
-export const DropdownContainer = styled.div`
+const DropdownContainer = styled.div`
     display: flex;
     justify-content: center;
 `

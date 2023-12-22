@@ -223,3 +223,22 @@ export const LoginButton = styled(Button)`
     }
 `
 export const SubDropDownContainer = styled.div``
+
+export const MenuTitle = styled.span`
+    ${({$selectedMenu}) => ($selectedMenu ? selectedMenuCSS : `color: ${color.Black};`)}
+    &:hover {
+        background-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200});
+        background-clip: text;
+        -webkit-background-clip: text; 
+        color: transparent; 
+    }
+    
+    @media (max-width: 768px) {
+        padding:10px 0 ; 
+        font-size: 18px;
+        ${({$selectedMenu}) => ($selectedMenu ? selectedMenuCSS : `color: ${color.White};`)}
+    }
+    @media (max-width: 640px) {
+        padding: 5px 0;
+    }
+`
