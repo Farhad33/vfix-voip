@@ -1,4 +1,6 @@
-export const dataMSP = {
+import { Tulpen_One } from "next/font/google"
+
+export const faqMSP = {
     pricingTitle: 'Our Pricing and FAQs',
     frequentlyTitle: 'Frequently Asked Questions',
     frequentlyParagraph: ' We offer IT services to clients, including proactive support, security management, and consulting. Businesses can choose from various MSP plans to optimize technology systems and enhance productivity. MSPs provide tailored solutions, data security, 24/7 support, and assistance with compliance requirements.',
@@ -66,3 +68,423 @@ export const dataMSP = {
         },
     ]
 }
+
+export const tablePricingData = [
+    {
+        title: 'Node End Pricing (Desktops, Laptops)',
+        table: {
+            thead: [
+                {
+                    title: 'Services',
+                    price: ''
+                },
+                {
+                    title: 'Basic',
+                    price: '$25',
+                    description: 'device/month',
+                },
+                {
+                    title: 'Advanced',
+                    price: '$45',
+                    description: 'device/month',
+                },
+                {
+                    title: 'Premium',
+                    price: '$65',
+                    description: 'device/month',
+                },
+
+            ],
+            tbody: [
+                {
+                    title: 'Remote monitoring and management',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Basic support and troubleshooting',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Patch management',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Software installation and updates',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Hardware and software inventory',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Antivirus and Anti-malware management',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Firewall configuration',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Password management using Keeper',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Regular system optimization',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Advanced security features',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Remote support (Business hours 9-5)',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Remote support (Extended hours 7-7)',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Remote support (24/7)',
+                    basic: false,
+                    advanced: false,
+                    premium: true
+                },
+                {
+                    title: 'Limited on-site support (3 Hours/M)',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Limited on-site support (6 Hours/M)',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Limited on-site support (12 Hours/M)',
+                    basic: false,
+                    advanced: false,
+                    premium: true
+                },
+                {
+                    title: 'After-hours support',
+                    basic: false,
+                    advanced: false,
+                    premium: true
+                },
+                {
+                    title: 'IT asset management',
+                    basic: false,
+                    advanced: false,
+                    premium: true
+                },
+                {
+                    title: 'Data backup and recovery',
+                    basic: false,
+                    advanced: false,
+                    premium: true
+                },
+
+            ]
+        }
+    },
+    {
+        title: 'Server Pricing',
+        table: {
+            thead: [
+                {
+                    title: 'Services',
+                    price: ''
+                },
+                {
+                    title: 'Basic',
+                    price: '$175',
+                    description: 'server/month'
+                },
+                {
+                    title: 'Advanced',
+                    price: '$300',
+                    description: 'server/month'
+                },
+                {
+                    title: 'Premium',
+                    price: '$500',
+                    description: 'server/month',
+                },
+
+            ],
+            tbody: [
+                {
+                    title: 'Server monitoring',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Patch management',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Basic server maintenance',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'User and permission management',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Software and OS updates',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Limited on-site support (3 Hours/M)',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Limited on-site support (6 Hours/M)',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Limited on-site support (12 Hours/M)',
+                    basic: false,
+                    advanced: false,
+                    premium: true
+                },
+                {
+                    title: 'After-hours support',
+                    basic: false,
+                    advanced: false,
+                    premium: true
+                },
+                {
+                    title: 'Server lifecycle management',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Local server backup',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Cloud server backup',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Disaster recovery solutions',
+                    basic: false,
+                    advanced: false,
+                    premium: true
+                },
+                {
+                    title: 'Database management',
+                    basic: false,
+                    advanced: false,
+                    premium: true
+                },
+               
+
+            ]
+
+        }
+    },
+    {
+        title: 'Network Pricing',
+        table: {
+            thead: [
+                {
+                    title: 'Services',
+                    price: ''
+                },
+                {
+                    title: 'Basic',
+                    price: '$150',
+                    description: 'location/month'
+                },
+                {
+                    title: 'Advanced',
+                    price: '$250',
+                    description: 'location/month'
+                },
+                {
+                    title: 'Premium',
+                    price: '$350',
+                    description: 'location/month',
+                },
+
+            ],
+            tbody: [
+                {
+                    title: 'Network monitoring',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Basic network security',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Essential network management',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'DHCP & DNS management',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Wireless network management',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Performance optimization',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Advanced network security',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Firewall management',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Intrusion detection',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Limited on-site support (3 Hours/M)',
+                    basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Limited on-site support (6 Hours/M)',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Limited on-site support (12 Hours/M)',
+                    basic: false,
+                    advanced: false,
+                    premium: true
+                },
+                {
+                    title: 'Network design and planning services',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'After-hours support',
+                    basic: false,
+                    advanced: false,
+                    premium: true
+                },
+                {
+                    title: 'VPN and remote access support',
+                    basic: false,
+                    advanced: false,
+                    premium: true
+                },
+            ]
+        }
+    },
+    {
+        title: 'Printer Pricing',
+        table: {
+            thead: [
+                {
+                    title: 'Services',
+                    price: ''
+                },
+                {
+                    title: 'Basic',
+                    price: '$10',
+                    description: 'printer/month' 
+                },
+            ],
+            tbody: [
+                {
+                    title: 'Printer monitoring and management',
+                    basic: true,
+                },
+                {
+                    title: 'Basic printer troubleshooting',
+                    basic: true,
+                },
+                {
+                    title: 'Printer driver installation and updates',
+                    basic: true,
+                },
+                {
+                    title: 'Limited on-site support (3 Hours/M)',
+                    basic: true,
+                },
+                {
+                    title: 'Remote support',
+                    basic: true,
+                },
+            ]
+        }
+    },
+]

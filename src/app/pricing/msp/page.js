@@ -1,16 +1,13 @@
 import { Page } from "@/app/pagestyle"
-import { MSPContainer } from "./MSPStyle"
-import ItMspConsulting from "./ITMSPConsulting"
 import PricingFAQ from "../PricingFAQ" 
-import { dataMSP } from "./dataMsp"
+import { faqMSP, tablePricingData } from "./dataMsp"
+import MSPTable from "./MSPTable"
 
-export default function MSP() {
+export default function MSPPage() {
     return(
         <Page>
-            <MSPContainer>
-                <ItMspConsulting />
-                <PricingFAQ data={dataMSP} />
-            </MSPContainer>
+            <MSPTable tablePricingData={tablePricingData} />
+            <PricingFAQ data={faqMSP} />
         </Page>
     )
 }

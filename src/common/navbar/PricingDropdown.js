@@ -31,7 +31,6 @@ export default function PricingDropdown({
                         key={subIndex}
                         onClick={() => {
                             handleMenuClick('pricing')
-                            console.log('subItem.route => ', subItem.route);
                             push(subItem.route)
                         }}
                     >
