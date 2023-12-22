@@ -99,10 +99,10 @@ export const Data = {
             },
             {
                 title: 'Why Vfix',
-                route: 'whyvfix',
+                route: '/whyvfix',
             },
             {
-                title: 'Princing & FAQs ˅',
+                title: 'Princing & FAQs',
                 route: '',
                 dropdown: [
                     {

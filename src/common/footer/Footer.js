@@ -56,7 +56,7 @@ export default function Footer() {
                                     Data.footer.appImges.map((app, index) => (
                                         <BackgroundImage 
                                             key={index}
-                                            onClick={() => {window.location.assign(app.link)}}
+                                            onClick={() => {push(app.link)}}
                                         >
                                             <Image  src={app.img} width={15} height={15} alt={app.alt} />
                                         </BackgroundImage>

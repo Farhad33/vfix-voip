@@ -4,10 +4,12 @@ import Image from 'next/image';
 import Typography from '@/common/Typography';
 import { color } from '@/common/Theme';
 import { Button } from '@/common/MainStyle';
-
+import { useRouter } from 'next/navigation'
 
 
 export default function Card({ title, btnText, urlImage, url })  {
+  const { push } = useRouter()
+
   return (
     <CardContainer>
         <CardImage>
@@ -19,7 +21,7 @@ export default function Card({ title, btnText, urlImage, url })  {
                 {title}
               </Typography>
             </CardTitle>
-                <Button onClick={ () => {window.location.assign(url)}}>
+                <Button onClick={ () => {push(url)}}>
                     <Typography variant='body4'>
                         {btnText}
                     </Typography>

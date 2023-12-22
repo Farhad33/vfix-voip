@@ -12,7 +12,6 @@ export const OverviewContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: calc(1vw + 50px);
     @media (max-width: 1000px) {
         flex-direction: column;
     }
@@ -37,6 +36,7 @@ export const HeadTitle = styled.div`
 `
 export const Title = styled.div`
     margin-top: 10px;
+    margin-bottom: 15px;
 `
 export const ParagraphContainer = styled.div`
     display: flex;
@@ -53,8 +53,9 @@ export const ParagraphContainer = styled.div`
 export const Paragraph = styled.div``
 
 
-export const ImageRiteSide = styled(Image)`
-    max-width: 100%;
+export const ImageRightSide = styled(Image)`
+    width: 100%;
+    height: auto;
 `
 export const RightSide = styled.div`
     display: flex;
@@ -115,9 +116,8 @@ export const ServicesHead = styled.div`
 export const ServicesTitle = styled.div``
 export const ServicesParagraph = styled.div``
 export const ServicesCardContainer = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    justify-items: center;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: calc(1vw + 20px);
 `

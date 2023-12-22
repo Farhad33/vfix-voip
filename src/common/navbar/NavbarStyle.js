@@ -1,6 +1,6 @@
 'use client'
 import Link from "next/link";
-import styled from "styled-components";
+import styled, { css } from 'styled-components'
 import { color } from "../Theme"
 import Image from "next/image";
 import { Button } from "../MainStyle";
@@ -14,9 +14,11 @@ export const NavContainer = styled.div`
     height: 100px;
     @media (max-width: 1010px) {
         flex-direction: column;
+        justify-content: end;
     }
     @media (max-width: 768px) {
         flex-direction: row;
+        justify-content: space-between;
     }
 `
 
@@ -27,7 +29,6 @@ export const NavLinks = styled.div`
         top: 0;
         left: 0;
         width: 100%;
-        padding: 20px;
         z-index: 1;
         background:  linear-gradient(to bottom, ${color.Green200}, ${color.Blue200});
     }
@@ -48,7 +49,6 @@ export const MenuButton = styled.button`
 export const DropdownContainer = styled.div`
     display: flex;
     justify-content: center;
-
 `
 export const SubLinkIcon = styled(Image)`
 `
@@ -63,6 +63,8 @@ export const NavList = styled.ul`
     list-style: none;
     @media (max-width: 768px) {
         flex-direction: column;
+        background: #00000095;
+        padding: 20px;
     }
     @media (max-width: 640px) {
         flex-direction: column;
@@ -70,7 +72,7 @@ export const NavList = styled.ul`
 `
 
 export const DropdownItem = styled.li`
-    color: ${color.Black};
+    /* color: ${color.White}; */
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -114,8 +116,14 @@ export const PricingDropdownItem = styled(DropdownItem)`
 export const ServicesDropdownItem = styled(DropdownItem)`
   
      a {
+        color: black;
         text-decoration: none;
-        color: ${color.Black};
+        @media (max-width: 768px) {
+            color: ${color.White};
+            &:hover {
+                color: black;
+            }
+        }
         span {
             background-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200});
             background-clip: text;
@@ -155,15 +163,20 @@ export const ServicesDropdownItem = styled(DropdownItem)`
     }
     span {
         margin-top: 10px;
-        font-weight: 700;
+        /* font-weight: 700; */
     }
-   
  `
+const selectedMenuCSS = css`
+    background-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200});
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+`
 
 export const StyledLink = styled(Link)`
-    color: ${color.Black};
     text-decoration: none;
     span {
+        ${({$selectedMenu}) => ($selectedMenu ? selectedMenuCSS : `color: ${color.Black};`)}
         display: flex;
         justify-content: center;
         align-items: center;
@@ -172,7 +185,7 @@ export const StyledLink = styled(Link)`
         background-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200});
         background-clip: text;
         -webkit-background-clip: text; 
-        color: transparent; 
+        color: transparent;
     }
     &:active {
         background-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200});
@@ -180,7 +193,7 @@ export const StyledLink = styled(Link)`
         -webkit-background-clip: text; 
         color: transparent; 
     }
-`;
+`
 
 export const SpanLinks = styled.span`
 
@@ -191,7 +204,7 @@ export const SpanLinks = styled.span`
         color: transparent; 
     }
     
-    @media  (max-width: 768px) {
+    @media (max-width: 768px) {
         padding:10px 0 ; 
         font-size: 18px;
         color: ${color.White};
@@ -202,68 +215,11 @@ export const SpanLinks = styled.span`
         color: ${color.White};
     }
 `
-export const SpanButton = styled.span`
-  @media (max-width: 640px) {
+export const LoginButton = styled(Button)`
+    color: ${color.White};
+    @media (max-width: 640px) {
         font-size: 16px;
         padding: 0 30px;
     }
 `
 export const SubDropDownContainer = styled.div``
-export const SubDropDownList = styled.ul`
-    list-style: none;
-`
-export const SubDropDownLink = styled.li`
-
-`
-export const SubDropDownRoute = styled.a`
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 12px;
-    &:hover {
-        background-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200});
-        background-clip: text;
-        -webkit-background-clip: text; 
-        color: transparent; 
-    }
-`
-export const SubDropDownIcon = styled(Image)`
-    margin-right: 10px;
-`
-
-export const ItConsultingContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-`
-
-export const ItConsultingTitle = styled.span`
-  
-`
-export const ItConsultingImage = styled(Image)`
-    margin: 20px 0 ;
-`
-export const ItConsultingParagraph = styled.p`
-    width: 190px;
-    font-size: 11px;
-    padding-bottom: calc(0.5vw + 5px);
-`
-export const ItConsultingButton = styled(Button)`
-    font-size: calc(0.5vw + 5px);
-    height: 30px;
-    padding: 0 calc(0.5vw + 2px);
-`
-
-export const RoutConsulting = styled.a`
-    background-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200});
-    background-clip: text;
-    -webkit-background-clip: text; 
-    color: transparent; 
-    text-decoration: none;
-`
-
-export const ButtonConsultingRoute = styled.a`
-    text-decoration: none;
-    color: ${color.White};
-`

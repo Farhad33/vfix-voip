@@ -1,21 +1,21 @@
-import { SubDropDownContainer, SubDropDownList, SubDropDownLink, SubDropDownRoute, SubDropDownIcon} from './NavbarStyle'
+'use client'
+import styled from "styled-components";
+import { color } from "../Theme"
+import Image from "next/image";
+import Typography from "../Typography";
+import { useRouter } from 'next/navigation'
+
 export default function ServicesSubDropDown({ items }) {
+  const { push } = useRouter()
+
   return(
     <SubDropDownContainer>
       <SubDropDownList>
         {
           items.map((item, index) => (
-            <SubDropDownLink key={index}>
-              <SubDropDownRoute href={item.route}>
-                {
-                  item.icon && ( 
-                    <SubDropDownIcon src={item.icon} alt={item.title} width={17} height={17} />
-                  )} 
-                  {item.title}
-              </SubDropDownRoute>
-              {item.dropdown && (
-                <ServicesSubDropDown item={item.dropdown} />
-              )}
+            <SubDropDownLink key={index} onClick={() => push(item.route)}>
+              {item.icon && <SubDropDownIcon src={item.icon} alt={item.title} width={17} height={17} />}
+              <Typography variant='subline2' >{item.title}</Typography>
             </SubDropDownLink>
           ))
         }
@@ -23,3 +23,26 @@ export default function ServicesSubDropDown({ items }) {
     </SubDropDownContainer>
   )
 }
+
+export const SubDropDownContainer = styled.div``
+export const SubDropDownList = styled.ul`
+    list-style: none;
+`
+export const SubDropDownLink = styled.li`
+  color: ${color.Black};
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &:hover {
+      background-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200});
+      background-clip: text;
+      -webkit-background-clip: text; 
+      color: transparent; 
+  }
+`
+export const SubDropDownRoute = styled.a`
+`
+export const SubDropDownIcon = styled(Image)`
+    margin-right: 10px;
+`

@@ -1,15 +1,14 @@
+'use client'
+import styled from "styled-components";
+import { color } from "../Theme"
+import Image from "next/image";
+import { Button } from "../MainStyle";
+import Typography from "../Typography";
 import { ItConsultingData } from '../Data';
-import {
-    ItConsultingContainer,
-    ItConsultingTitle,
-    ItConsultingImage,
-    ItConsultingParagraph,
-    ItConsultingButton,
-    RoutConsulting,
-    ButtonConsultingRoute
-} from './NavbarStyle';
+import { useRouter } from 'next/navigation'
 
 export default function ServicesItConsulting() {
+    const { push } = useRouter();
 
     return (
         <ItConsultingContainer>
@@ -19,12 +18,40 @@ export default function ServicesItConsulting() {
                 </RoutConsulting>
             </ItConsultingTitle>
             <ItConsultingImage src={ItConsultingData.icon} width={160} height={100} alt='image' />
-            <ItConsultingParagraph>{ItConsultingData.paragraph}</ItConsultingParagraph>
-            <ItConsultingButton>
-                <ButtonConsultingRoute href={ItConsultingData.route}>
-                    {ItConsultingData.button}
-                </ButtonConsultingRoute>
-            </ItConsultingButton>
+            <Typography variant='subline2'>{ItConsultingData.paragraph}</Typography>
+            <ItConsultingButton onClick={() => { push(ItConsultingData.route) }}>{ItConsultingData.button}</ItConsultingButton>
         </ItConsultingContainer>
     );
 }
+
+
+const ItConsultingButton = styled(Button)`
+    margin-top: 20px;
+`
+const ItConsultingContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 272px;
+    @media (max-width: 768px) {
+        a {
+            color: ${color.White};
+        }
+    }
+`
+const ItConsultingTitle = styled.span`
+  
+`
+const ItConsultingImage = styled(Image)`
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+`
+const RoutConsulting = styled.a`
+    background-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200});
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent; 
+    text-decoration: none;
+`

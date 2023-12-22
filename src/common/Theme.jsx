@@ -49,7 +49,7 @@ export const Theme ={
             h5: "calc(0.5vw + 7px)",
             h6: "14px",
             subline1: "21px",
-            subline2: "18px",
+            subline2: "12px",
             subline3: "calc(1vw + 5px)",
             subline4: "calc(0.5vw + 9px)",
             body1: "calc(1vw + 9px)",
@@ -68,7 +68,7 @@ export const Theme ={
             h5: "calc(0.5vw + 7px)",
             h6: "12px",
             subline1: "24px",
-            subline2: "20px",
+            subline2: "25px",
             subline3: "calc(1vw + 5px)",
             body1: "24px",
             body2: "calc(0.5vw + 16px)",
@@ -80,6 +80,8 @@ export const Theme ={
         },
         fontWeight: {
             body3: 400,
+            button: 400,
+            subline2: 600,
         },
     },
 }

@@ -2,7 +2,25 @@ import Typography from "@/common/Typography"
 import { Data } from "./Data"
 import { Page } from "../../pagestyle"
 import { Button } from "@/common/MainStyle"
-import { PageContainer, LeftSide, RightSide, HeadTitle, Title, Paragraph, ImageRiteSide, ParagraphContainer,OverviewContainer, VfixCaontainer, VfixHeadTitle, VfixCardContainer, VfixHead, ServicesContainer, ServicesHead, VfixParagraph, ServicesTitle,ServicesParagraph, ServicesCardContainer} from './PageStyle'
+import {
+    PageContainer,
+    LeftSide,
+    RightSide,
+    HeadTitle,
+    Title,
+    Paragraph,
+    ImageRightSide,
+    ParagraphContainer,OverviewContainer,
+    VfixCaontainer,
+    VfixHeadTitle,
+    VfixCardContainer,
+    VfixHead,
+    ServicesContainer,
+    ServicesHead,
+    VfixParagraph,
+    ServicesTitle,ServicesParagraph,
+    ServicesCardContainer
+} from './PageStyle'
 import VfixCards from './VfixCard'
 import ServicesCard from "./ServicesCard"
 
@@ -19,16 +37,14 @@ export default function ITConsulting() {
             <PageContainer>
                 <OverviewContainer>
                     <LeftSide>
-                        <HeadTitle>
-                            <Typography variant='h5'>
-                                {Data.Overview.headTitle}
-                            </Typography>
-                        </HeadTitle>
                         <Title>
                             <Typography variant='h2'>
                                 {Data.Overview.title}
                             </Typography>
                         </Title>
+                        <Typography variant='h5'>
+                            {Data.Overview.subTitle}
+                        </Typography>
                         <ParagraphContainer>
                             <Paragraph >
                                 <Typography variant='body4'>
@@ -40,7 +56,7 @@ export default function ITConsulting() {
                         <Button>{Data.Overview.button}</Button>
                     </LeftSide>
                     <RightSide>
-                        <ImageRiteSide src={Data.Overview.img} width={700} height={700} alt={Data.Overview.title}/>
+                        <ImageRightSide src={Data.Overview.img} width={700} height={700} alt={Data.Overview.title}/>
                     </RightSide>
                 </OverviewContainer>
                 <ServicesContainer>

@@ -1,7 +1,7 @@
 export const  Data = {
     Overview: {
-        title: 'Direct Routing for Microsoft teams',
-        subTitle:'IT Consulting Service',
+        title: 'IT Consulting Service',
+        subTitle:'Navigating the Digital Future: Strategic. Simplified. Successful.',
         paragraph: 'Navigating the future can be complex, especially when technology is rapidly evolving and changing the landscape of business. That\'s where we come in. VFIX Communications is a leading IT consulting firm dedicated to empowering your business by devising an effective IT strategy and roadmap.',
         button: 'Contact Us Today',
         buttonLink: '',

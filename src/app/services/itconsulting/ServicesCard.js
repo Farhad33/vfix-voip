@@ -9,9 +9,7 @@ import { color } from '@/common/Theme';
 export default function Cards({ title, content, urlImage })  {
   return (
     <CardContainer>
-        <CardImage>
-            <ImageStyle src={urlImage} alt={title} width={280} height={150}/>
-        </CardImage>
+        <ImageStyle src={urlImage} alt={title} width={280} height={150}/>
         <CardContent>
             <CardTitle>
               <Typography variant='h4'>
@@ -31,27 +29,18 @@ export default function Cards({ title, content, urlImage })  {
 const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 100%;
-  height: -webkit-fill-available;
+  max-width: 300px;
+  min-height: 550px;
   margin-bottom: calc(2vw + 25px);
   box-shadow: 0px 6px 30px 5px ${color.Blue300};
-   @media (max-width: 800px) {
-       width: 80%;
-    }
-`;
+  border-radius: 20px;
+`
 
 const ImageStyle = styled(Image)`
-  max-width: 100%;
-  
-`
-const CardImage = styled.div`
-  margin-bottom: 10px;
-    @media (max-width: 800px) {
-      margin-bottom: 8px;
-    }
-
+  width: 100%;
+  height: auto;
 `
 
 export const CardContent = styled.div`

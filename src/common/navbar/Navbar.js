@@ -1,21 +1,31 @@
 'use client'
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { TfiMenu, TfiClose } from "react-icons/tfi";
 import { Data } from '../Data';
-import { Button } from '../MainStyle';
-import { Logo, NavContainer, NavLinks, NavList, DropdownItem, StyledLink, Container, SpanLinks, MenuButton, SpanButton } from '../navbar/NavbarStyle';
+import { Logo, NavContainer, NavLinks, NavList, DropdownItem, StyledLink, SpanLinks, MenuButton, LoginButton } from '../navbar/NavbarStyle';
 import PricingDropdown from './PricingDropdown';
 import ServicesDropDown from './ServicesDropdown';
-import { useRouter } from 'next/navigation'
+import { useRouter, usePathname } from 'next/navigation'
 
-export default function Navbar() {
-    const [hamburgerMenu, setHamburgerMenu] = useState(false);
-    const { push } = useRouter();
+const menuLinks = {
+    '': 'Home',
+    'whyvfix': 'Why Vfix',
+    'services': 'Services',
+    'pricing': 'Princing & FAQs',
+    'download': 'Downloads',
+}
+export default function Navbar(props) {
+    const [hamburgerMenu, setHamburgerMenu] = useState(false)
+    const { push } = useRouter()
+    const pathname = usePathname()
+    const path = pathname.split('/')[1]
+
+
 
     const toggleHamburgerMenu = () => {
-        setHamburgerMenu(!hamburgerMenu);
+        setHamburgerMenu(!hamburgerMenu)
     };
-    
+
     return (
         <NavContainer>
             <Logo
@@ -32,22 +42,20 @@ export default function Navbar() {
                 <NavList>
                     {Data.navbar.menu.map((item, index) => (
                         <DropdownItem key={index}>
-                            {item.dropdown && item.title === 'Princing & FAQs ˅' ? (
-                                <PricingDropdown item={item} />
+                            {item.dropdown && item.title === 'Princing & FAQs' ? (
+                                <PricingDropdown item={item} $selectedMenu={menuLinks[path] === item.title}/>
                             ) : item.dropdown && item.title === 'Services' ? (
-                                <ServicesDropDown item={item} />
+                                <ServicesDropDown item={item} $selectedMenu={menuLinks[path] === item.title}/>
                             )
                             : (
-                                <StyledLink href={item.route}>
+                                <StyledLink href={item.route} $selectedMenu={menuLinks[path] === item.title}>
                                     <SpanLinks>{item.title}</SpanLinks>
                                 </StyledLink>
                             )}
                         </DropdownItem>
                     ))}
                     <DropdownItem>
-                        <StyledLink href={Data.navbar.login}>
-                            <Button><SpanButton>Login</SpanButton></Button>
-                        </StyledLink>
+                        <LoginButton onClick={() => { push(Data.navbar.login) }}>Login</LoginButton>
                     </DropdownItem>
                 </NavList>
             </NavLinks>
