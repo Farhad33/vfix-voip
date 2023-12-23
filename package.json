@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@lottiefiles/lottie-player": "^2.0.2",
@@ -23,8 +22,5 @@
     "react-icons": "^4.11.0",
     "sharp": "^0.33.0",
     "styled-components": "^6.0.7"
-  },
-  "devDependencies": {
-    "@svgr/webpack": "^8.1.0"
   }
 }

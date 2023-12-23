@@ -1,5 +1,13 @@
-import { ateraAPI } from '@/lib/api'
+import axios from 'axios'
 import { NextResponse } from 'next/server'
+
+export const ateraAPI = axios.create({
+    baseURL: 'https://app.atera.com/api/v3',
+    headers: {
+        'Content-Type': 'application/json',
+        'X-API-KEY': '574885c4c38244d9875ec811ff469da4'
+    }
+})
 
 export async function POST(request) {
     let EndUserID;
