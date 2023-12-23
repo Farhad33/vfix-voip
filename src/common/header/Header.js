@@ -1,10 +1,17 @@
+'use client'
 import Image from 'next/image'
 import { Button } from '../MainStyle'
 import { HeaderContainer, HeaderLeftSide, HeadTitle, Paragraph, HeaderRightSide } from '../header/HeaderStyle'
 import Typography from '../Typography'
 import { Data } from '../Data'
+import { useEffect } from 'react'
 
 export default function Header() {
+
+    useEffect(() => {
+        import("@lottiefiles/lottie-player")
+    });
+
     return (
         <HeaderContainer>
             <HeaderLeftSide>
@@ -19,7 +26,12 @@ export default function Header() {
                 <Button>{Data.header.button}</Button>
             </HeaderLeftSide>
             <HeaderRightSide>
-                <Image src={Data.header.img} alt={Data.header.alt} width={700} height={700} sizes='100vw' style={{ width: '100%', height: 'auto' }} />
+                <lottie-player
+                    autoplay
+                    loop
+                    mode="normal"
+                    src={Data.header.img}
+                ></lottie-player>
             </HeaderRightSide>
         </HeaderContainer>
     )

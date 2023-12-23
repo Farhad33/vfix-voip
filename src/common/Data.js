@@ -131,7 +131,7 @@ export const Data = {
         title: 'We help our Customers transform and grow their businesses with confidence.',
         paragraph: 'VFIX Communications IT Managed Services, IT consulting, and business communications solutions such as VoIP, Unified Communications (UC), Hosted PBX Contact Center and Business Messaging services are designed to enhance productivity, streamline operations, and drive digital transformation. Partner with us to unlock the full potential of your organization and achieve sustainable growth.',
         button: 'Learn More',
-        img: '/Header/header.png',
+        img: '/Header/header.json',
         alt: 'Man'
     },
     success: {

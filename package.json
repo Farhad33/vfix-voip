@@ -12,6 +12,7 @@
     "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@lottiefiles/lottie-player": "^2.0.2",
     "@mui/material": "^5.14.11",
     "axios": "^1.6.2",
     "eslint": "8.49.0",
