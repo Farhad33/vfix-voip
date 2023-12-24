@@ -1,7 +1,7 @@
 'use client'
-import styled from "styled-components";
-import { color } from "@/common/Theme";
-import Image from "next/image";
+import styled from "styled-components"
+import { color } from "@/common/Theme"
+import Image from "next/image"
 
 
 export const PageContainer = styled.div`
@@ -100,7 +100,6 @@ export const FeatureHeadTitle = styled.div`
 export const FeatureCardContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* justify-content: center; */
     justify-items: center;
     align-items: center;
     @media (max-width: 800px) {

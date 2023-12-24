@@ -1,15 +1,14 @@
 'use client'
-import styled from 'styled-components';
-import Image from 'next/image';
-import Typography from '@/common/Typography';
+import styled from 'styled-components'
+import Image from 'next/image'
+import Typography from '@/common/Typography'
 
 
-
-export default function Cards({ title, content, urlImage })  {
+export default function PageCard({ title, content, urlImage })  {
   return (
     <CardContainer>
         <CardImage>
-            <ImageStyle src={urlImage} alt={title} width={60} height={60}/>
+            <ImageStyle src={urlImage} alt={title} width={100} height={100}/>
         </CardImage>
       <CardTitle>
         <Typography variant='h4'>
