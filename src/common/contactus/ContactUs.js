@@ -33,7 +33,7 @@ export default function Contact() {
 
 
     return (
-        <Page>
+        <Page id='contact-us'>
             <ContactContainer>
                 <ContactTitle>
                     <Typography variant='h2'>

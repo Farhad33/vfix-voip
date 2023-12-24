@@ -38,7 +38,7 @@ const CardContainer = styled.div`
 `;
 
 const ImageStyle = styled(Image)`
-    max-width: 100%;
+    width: auto;
     height: auto;
 `
 const CardImage = styled.div`

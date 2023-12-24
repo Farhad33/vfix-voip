@@ -71,6 +71,7 @@ export const ListItems = styled.li``
 
 export const ImageRightSide = styled(Image)`
     max-width: 100%;
+    max-height: auto;
 `
 export const RightSide = styled.div`
     display: flex;

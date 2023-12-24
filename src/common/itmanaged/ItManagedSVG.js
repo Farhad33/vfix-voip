@@ -2,6 +2,7 @@
 import styled, { css } from "styled-components"
 import * as React from "react"
 
+
 const SVGComponent = (props) => (
   <SVGStyle
     className="animated"

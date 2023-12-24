@@ -1,6 +1,6 @@
+'use client'
 import Typography from "@/common/Typography"
-// import { Data } from "./Data"
-// import { Page } from "../../pagestyle"
+import { useRouter } from 'next/navigation'
 import { Page } from "../pagestyle"
 import { Button } from "@/common/MainStyle"
 import { PageContainer, LeftSide, RightSide, HeadTitle, Title, Paragraph, ImageRightSide, ParagraphContainer,OverviewContainer, FeatureContainer, FeatureHeadTitle, FeatureCardContainer, ListContainer, ListItems } from  './PageServicesStyle'
@@ -12,6 +12,8 @@ export const metadata = {
   }
   
 export default function PageServices({data}) {
+    const { push } = useRouter()
+
     return (
         <Page>
             <PageContainer>
@@ -57,7 +59,7 @@ export default function PageServices({data}) {
                                 </ListItems>
                             ))}
                         </ListContainer>
-                        <Button>{data.Overview.button}</Button>
+                        <Button onClick={() => push('#contact-us')}>{data.Overview.button}</Button>
                     </LeftSide>
                     <RightSide>
                         <ImageRightSide src={data.Overview.img} width={600} height={400} alt={data.Overview.title} />
