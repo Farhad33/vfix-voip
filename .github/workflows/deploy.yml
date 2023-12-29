@@ -46,7 +46,7 @@ jobs:
             rm -rf vfixmsp &&
             mv vfixmsp-temp vfixmsp &&
             cd vfixmsp &&
-            pm2 delete vfixmsp --silent &&
+            pm2 delete VFix-msp --silent &&
             pm2 start npm --name 'VFix-msp' -- start
           "
         
