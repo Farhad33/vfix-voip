@@ -121,6 +121,10 @@ export const Data = {
                 title: 'Downloads',
                 route: '/download',
             },
+            {
+                title: 'Blog',
+                route: '/blog',
+            },
 
         ],
         login: '/login',
