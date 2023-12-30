@@ -82,6 +82,10 @@ export const RightSide = styled.div`
         width: 90%;
         margin: calc(2vw + 30px) 0;
     }
+    svg {
+        width: 100%;
+        height: 100%;
+    }
 `
 
 export const FeatureContainer = styled.div`

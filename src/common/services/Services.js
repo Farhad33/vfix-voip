@@ -1,4 +1,3 @@
-import {Container, Button} from '../MainStyle'
 import { Data } from '../Data'
 import Typography from '../Typography'
 import {ServicesContainer, ServicesTitle, ServicesCardContainer} from './ServicesStyle'
@@ -13,12 +12,12 @@ export default function Services() {
             </ServicesTitle>
             <ServicesCardContainer>
                 {
-                    Data.services.cards.map((card, index) => (
+                    Data.services.cards.map(({ title, paragraph, Svg}, index) => (
                         <ServicesCard 
                             key={index}
-                            title={card.title} 
-                            content={card.paragraph} 
-                            urlImage={card.img}  
+                            title={title} 
+                            content={paragraph} 
+                            Svg={Svg}  
                         />
                     )
                     )

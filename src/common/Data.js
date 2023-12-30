@@ -1,3 +1,27 @@
+import SVGProactive from '@/app/services/proactivemonitoring/SVGComponent'
+import SVGNetworkSecurity from '@/app/services/networksecurity/SVGComponent'
+import SVGDataBackup from '@/app/services/databackup/SVGComponent'
+import SVGHelpDesk from '@/app/services/helpdesksupport/SVGComponent'
+import SVGHardwareManagement from '@/app/services/softwarehardware/SVGComponent'
+import SVGCloudServices from '@/app/services/cloudservices/SVGComponent'
+
+import Tailored from '@/common/success/Tailored'
+import CarrierGrade from '@/common/success/CarrierGrade'
+import EndToEnd from '@/common/success/EndToEnd'
+import Expertise from '@/common/success/Expertise'
+
+import CloudContactCenter from '@/common/services/CloudContactCenter'
+import DirecRouting from '@/common/services/DirecRouting'
+import HostedPBX from '@/common/services/HostedPBX'
+import MobileDesktop from '@/common/services/MobileDesktop'
+import TeamWeb from '@/common/services/TeamWeb'
+
+import ExpertisePro from '@/common/partnerwithvfix/ExpertisePro'
+import CustomerCentric from '@/common/partnerwithvfix/CustomerCentric'
+import CuttingEdge from '@/common/partnerwithvfix/CuttingEdge'
+import LongTerm from '@/common/partnerwithvfix/LongTerm'
+import ProactiveSupport from '@/common/partnerwithvfix/ProactiveSupport'
+
 export const Data = {
     navbar: {
         menu: [
@@ -146,24 +170,24 @@ export const Data = {
             {
                 title: 'Carrier Grade Network',
                 paragraph: 'Carrier-Grade Network -25 years experience delivering TDM and Cloud Services',
-                img: '/SuccessWithVfix/SuccessWithVfix01.png'
+                Svg: CarrierGrade
             },
             {
                 title: 'Tailored Solutions',
                 paragraph: 'We provide personalized, customized solutions that cater to your specific business needs, ensuring maximum efficiency and effectiveness.',
-                img: '/SuccessWithVfix/SuccessWithVfix02.png'
+                Svg: Tailored
             },
         ],
         cards2: [
             {
                 title: 'Expertise and Support',
                 paragraph: 'Our experienced team of certified professionals offers comprehensive support and guidance, ensuring seamless implementation and ongoing management of your IT infrastructure.',
-                img: '/SuccessWithVfix/SuccessWithVfix03.png'
+                Svg: Expertise
             },
             {
                 title: 'End-to-End Services',
                 paragraph: 'From IT Managed Services to cloud solutions and business communications, we offer a complete suite of services, simplifying your technology needs by having a single, trusted partner.',
-                img: '/SuccessWithVfix/SuccessWithVfix04.png'
+                Svg: EndToEnd
             },
         ]
     },
@@ -173,27 +197,27 @@ export const Data = {
             {
                 title: 'Hosted PBX',
                 paragraph: 'Experience the transformative power of our advanced Hosted VoIP service. Save money, increase productivity, and stay ahead in the changing workplace with IP-based cloud communications.',
-                img: '/ViewOur/view01.png'
+                Svg: HostedPBX
             },
             {
                 title: 'Direct Routing for Microsoft Teams ',
                 paragraph: 'Direct Routing service enables you with a cost effective way to connect this popular communications and collaboration hub to the outside world by enabling calling to the public switched telephone network (PSTN) and more.',
-                img: '/ViewOur/view02.png'
+                Svg: DirecRouting
             },
             {
                 title: 'Mobile & Desktop Apps',
                 paragraph: 'Users  working life constantly moves from desk to laptop to smart phone to tablet. Now they can use all the features of their Hosted PBX solution from almost any device',
-                img: '/ViewOur/view03.png'
+                Svg: MobileDesktop
             },
             {
                 title: 'Cloud Contact Center',
                 paragraph: 'Our Cloud Contact Center is the next step to delivering superior customer experience to our customers by enabling them to use the tools they need to thrive in an ever-changing world.',
-                img: '/ViewOur/view04.png'
+                Svg: CloudContactCenter
             },
             {
                 title: 'Team & and  Web Collaboration',
                 paragraph: 'Enabling customers to improve their productivity with a rich set of video conferencing, presentation and screen sharing features.',
-                img: '/ViewOur/view05.png'
+                Svg: TeamWeb
             },
         ]
 
@@ -212,37 +236,43 @@ export const Data = {
                 title: 'Proactive Monitoring and Maintenance',
                 paragraph: 'We monitor your network, servers, and devices 24/7, detecting and resolving potential issues before they impact your operations. Our proactive approach ensures optimal performance, minimizes downtime, and improves overall system reliability.',
                 button: 'Learn More',
-                img: '/ITManagedServices/ITManagedServices01.png'
+                Svg: SVGProactive,
+                btnUrl: '/services/proactivemonitoring'
             },
             {
                 title: 'Network Security and Compliance',
                 paragraph: 'We implement robust security measures to protect your sensitive data from cyber threats. Our team ensures compliance with industry standards and regulations, such as HIPAA, GDPR, and PCI-DSS, providing you with peace of mind and mitigating risks.',
                 button: 'Learn More',
-                img: '/ITManagedServices/ITManagedServices02.png'
+                Svg: SVGNetworkSecurity,
+                btnUrl: '/services/networksecurity'
             },
             {
                 title: 'Data Backup and Disaster Recovery',
                 paragraph: 'We safeguard your critical data through regular backups and implement comprehensive disaster recovery solutions. In the event of data loss or system failure, we ensure quick restoration and minimal disruption to your business operations.',
                 button: 'Learn More',
-                img: '/ITManagedServices/ITManagedServices03.png'
+                Svg: SVGDataBackup,
+                btnUrl: '/services/databackup'
             },
             {
                 title: 'Help Desk Support',
                 paragraph: 'Our dedicated help desk team is available to resolve your IT-related issues promptly. From troubleshooting software glitches to addressing hardware concerns, we provide efficient support, enabling your employees to stay productive.',
                 button: 'Learn More',
-                img: '/ITManagedServices/ITManagedServices04.png'
+                Svg: SVGHelpDesk,
+                btnUrl: '/services/helpdesksupport'
             },
             {
                 title: 'Software and Hardware Management',
                 paragraph: 'We handle all aspects of software and hardware management, including license management, updates, and upgrades. Our experts ensure that your technology environment is up-to-date, secure, and optimized for performance.',
                 button: 'Learn More',
-                img: '/ITManagedServices/ITManagedServices05.png'
+                Svg: SVGHardwareManagement,
+                btnUrl: '/services/softwarehardware'
             },
             {
                 title: 'Cloud Services and Migration',
                 paragraph: 'We assist you in leveraging the benefits of cloud computing, from strategic planning to seamless migration. Whether you need private, public, or hybrid cloud solutions, we help you optimize costs, enhance scalability, and improve collaboration.',
                 button: 'Learn More',
-                img: '/ITManagedServices/ITManagedServices06.png'
+                Svg: SVGCloudServices,
+                btnUrl: '/services/cloudservices'
             },
         ]
     },
@@ -302,27 +332,27 @@ export const Data = {
             {
                 title: 'Expertise',
                 paragraph: 'Our team of certified IT professionals brings extensive industry knowledge and technical expertise to deliver reliable solutions tailored to your unique needs.',
-                img: '/PartnerWithVfix/PartnerWithVfix01.png'
+                Svg: ExpertisePro
             },
             {
                 title: 'Customer-Centric Approach',
                 paragraph: 'We prioritize understanding your business goals and challenges, enabling us to provide personalized solutions and exceptional customer service.',
-                img: '/PartnerWithVfix/PartnerWithVfix02.png'
+                Svg: CustomerCentric
             },
             {
                 title: 'Cutting-Edge Solutions',
                 paragraph: 'We stay updated with the latest advancements in technology to offer innovative solutions that drive your business forward.',
-                img: '/PartnerWithVfix/PartnerWithVfix03.png'
+                Svg: CuttingEdge
             },
             {
                 title: 'Proactive Support',
                 paragraph: 'We take a proactive approach to IT management, monitoring your systems and resolving issues before they impact your operations. Our goal is to minimize downtime and maximize productivity.',
-                img: '/PartnerWithVfix/PartnerWithVfix04.png'
+                Svg: ProactiveSupport
             },
             {
                 title: 'Long-Term Partnership',
                 paragraph: 'We strive to build long-term partnerships based on trust, integrity, and mutual growth. We are dedicated to your success and continuously seek opportunities to optimize your technology investments.',
-                img: '/PartnerWithVfix/PartnerWithVfix05.png'
+                Svg: LongTerm
             },
         ]
     },

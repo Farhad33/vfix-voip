@@ -1,5 +1,6 @@
 import { Data } from "./Data"
 import PageServices from "../PageServices"
+import SVGComponent from "./SVGComponent"
 
 export const metadata = {
     title: 'Network Security and Compliance',
@@ -7,9 +8,5 @@ export const metadata = {
   }
   
 export default function NetworkSecurity() {
-    return (
-        <>
-            <PageServices data={Data} />
-        </>
-    )
+    return <PageServices data={Data} SVGComponent={SVGComponent} />
 }

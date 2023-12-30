@@ -1,6 +1,6 @@
 import Typography from '../Typography'
 import { Data } from '../Data'
-import {ItServicesContainer, ItServicesHead, ItServicesCardContainer, HeadTitle, HeadParagraph} from './ItServicesStyle'
+import {ItServicesContainer, ItServicesHead, ItServicesCardContainer } from './ItServicesStyle'
 import ItServicesCard from './ItServicesCard'
 
 export default function ItServices() {
@@ -16,13 +16,14 @@ export default function ItServices() {
             </ItServicesHead>
             <ItServicesCardContainer>
                 {
-                    Data.ITManagedServices.cards.map((card, index) => (
+                    Data.ITManagedServices.cards.map(({ Svg, title, paragraph, button, btnUrl}, index) => (
                         <ItServicesCard 
                             key={index}
-                            title={card.title}
-                            content={card.paragraph}
-                            urlImage={card.img}
-                            btnText={card.button}
+                            title={title}
+                            content={paragraph}
+                            Svg={Svg}
+                            btnText={button}
+                            btnUrl={btnUrl}
                         />
                     ))
                 }

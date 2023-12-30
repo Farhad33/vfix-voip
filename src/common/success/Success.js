@@ -11,12 +11,12 @@ export default function Success() {
         <SuccessContainer>
             <SuccessLeftSide>
                 {
-                    Data.success.cards1.map((card, index) => (
+                    Data.success.cards1.map(({ title, paragraph, Svg }, index) => (
                         <SuccessCard 
                             key={index}
-                            title={card.title}
-                            content={card.paragraph}
-                            urlImage={card.img}
+                            title={title}
+                            content={paragraph}
+                            Svg={Svg}
                         />
                     ))
                 }
@@ -28,7 +28,7 @@ export default function Success() {
                             key={index}
                             title={card.title}
                             content={card.paragraph}
-                            urlImage={card.img}
+                            Svg={card.Svg}
                         />
                     ))
                 }

@@ -1,14 +1,13 @@
 'use client'
 import styled from "styled-components";
-import Image from "next/image";
 import Typography from "../Typography";
 import { color } from "../Theme";
 
-export default function ServicesCard({title, content, urlImage}) {
+export default function ServicesCard({title, content, Svg}) {
     return (
         <CardContainer>
             <CardImage>
-                <Image src={urlImage} alt={title} width={50} height={55} />
+                <Svg />
             </CardImage>
             <Typography variant='h4'>{title}</Typography>
             <Typography variant='body2'>{content}</Typography>

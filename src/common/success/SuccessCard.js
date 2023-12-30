@@ -1,15 +1,14 @@
 'use client'
 import styled from 'styled-components';
-import Image from 'next/image';
 import Typography from '../Typography';
 
 
 
-export default function SuccessCard ({ title, content, urlImage })  {
+export default function SuccessCard ({ title, content, Svg })  {
   return (
     <CardContainer>
         <CardImage>
-            <Image src={urlImage} alt={title} width={100} height={100}  style={{width: '40%', height: 'auto'}}/>
+            <Svg />
         </CardImage>
       <CardTitle>
         <Typography variant='h4'>

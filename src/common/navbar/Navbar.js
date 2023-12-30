@@ -1,5 +1,5 @@
 'use client'
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import { TfiMenu, TfiClose } from "react-icons/tfi";
 import { Data } from '../Data';
 import { Logo, NavContainer, NavLinks, NavList, DropdownItem, MenuButton, LoginButton, MenuTitle } from '../navbar/NavbarStyle';
@@ -13,6 +13,7 @@ const menuLinks = {
     'services': 'Services',
     'pricing': 'Princing & FAQs',
     'download': 'Downloads',
+    'blog': 'Blog',
 }
 export default function Navbar(props) {
     const [hamburgerMenu, setHamburgerMenu] = useState(false)

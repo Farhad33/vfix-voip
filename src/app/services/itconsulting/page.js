@@ -6,10 +6,8 @@ import {
     PageContainer,
     LeftSide,
     RightSide,
-    HeadTitle,
     Title,
     Paragraph,
-    ImageRightSide,
     ParagraphContainer,OverviewContainer,
     VfixCaontainer,
     VfixHeadTitle,
@@ -23,6 +21,7 @@ import {
 } from './PageStyle'
 import VfixCards from './VfixCard'
 import ServicesCard from "./ServicesCard"
+import SVGComponent from "./SVGComponent"
 
 
 
@@ -56,7 +55,7 @@ export default function ITConsulting() {
                         <Button>{Data.Overview.button}</Button>
                     </LeftSide>
                     <RightSide>
-                        <ImageRightSide src={Data.Overview.img} width={700} height={700} alt={Data.Overview.title}/>
+                        <SVGComponent />
                     </RightSide>
                 </OverviewContainer>
                 <ServicesContainer>

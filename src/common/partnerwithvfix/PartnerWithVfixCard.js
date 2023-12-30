@@ -3,10 +3,10 @@ import styled from "styled-components";
 import Image from "next/image";
 import Typography from "../Typography";
 
-export default function PartnerWithVfixCard({title, content, urlImage}) {
+export default function PartnerWithVfixCard({title, content, Svg}) {
     return(
         <CardContainer>
-            <CardImage src={urlImage} alt={title} width={50} height={50} />
+            <Svg />
             <Typography variant='h4'>
                 {title}
             </Typography>
@@ -26,7 +26,7 @@ const CardContainer = styled.div`
     @media (max-width: 927px) {
         width: 100%;
     }
-`
-const CardImage = styled(Image)`
-    margin-bottom: 20px;
+    svg {
+        margin-bottom: 20px;
+    }
 `

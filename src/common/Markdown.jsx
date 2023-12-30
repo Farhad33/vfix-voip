@@ -42,11 +42,11 @@ const StyledMarkdown = styled(ReactMarkdown)`
 const Markdown = ({ children }) => {
     const components = {
       img: ({node, ...props}) => {
-        return <Image {...props} width={300} height={300} />
+        return <Image {...props} width={300} height={300} alt={props.alt} />
       },
     };
   
-    return <StyledMarkdown components={components} remarkPlugins={[gfm]} children={children} />;
+    return <StyledMarkdown components={components} remarkPlugins={[gfm]}>{children}</StyledMarkdown>
 };
   
 

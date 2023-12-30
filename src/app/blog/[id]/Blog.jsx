@@ -18,7 +18,7 @@ export default function Blog({ id }) {
         .then(response => setData(response.data.data))
         .catch(error => console.log('error => ', error))
     }
-  }, [id])
+  }, [id, endPoint])
 
   if(data.length === 0) return <h1>loading ...</h1>
 

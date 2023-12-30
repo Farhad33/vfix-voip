@@ -9,7 +9,7 @@ export default function ItManaged() {
         <ItManagedContainer>
             <ItManagedLeftSide>
                 <LeftSideTitle>
-                    <Typography variant='h2'>{Data.itmanaged.title}XXX</Typography>
+                    <Typography variant='h2'>{Data.itmanaged.title}</Typography>
                 </LeftSideTitle>
                 <LeftSideParagraph>
                     <Typography variant='body3'>{Data.itmanaged.paragraph}</Typography>

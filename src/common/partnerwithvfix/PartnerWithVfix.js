@@ -1,5 +1,4 @@
 import Typography from '../Typography'
-import { Button } from '../MainStyle'
 import { Data } from '../Data'
 import {PartnerWithVfixContainer, PartnerWithVfixHead, HeadTitle, HeadParagraph, PartnerWithVfixContainerCard,PartnerWithVfixContactUs, ContactUsParagraph} from './PartnerWithVfixStyle'
 import PartnerWithVfixCard from './PartnerWithVfixCard'
@@ -16,12 +15,12 @@ export default function PartnerWithVfix() {
                 </Typography>
             </PartnerWithVfixHead>
             <PartnerWithVfixContainerCard>
-                {Data.PartnerWithVfix.cards.map((card, index) => (
+                {Data.PartnerWithVfix.cards.map(({ title, paragraph, Svg}, index) => (
                     <PartnerWithVfixCard 
                         key={index}
-                        title={card.title}
-                        content={card.paragraph}
-                        urlImage={card.img}
+                        title={title}
+                        content={paragraph}
+                        Svg={Svg}
                     />
                 ))}
             </PartnerWithVfixContainerCard>
