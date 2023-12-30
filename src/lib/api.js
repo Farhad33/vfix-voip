@@ -1,5 +1,7 @@
 import axios from 'axios'
 
+export const strapiBaseURL = 'https://strapi.myvfix.com'
+
 export const ateraAPI = axios.create({
     baseURL: 'https://app.atera.com/api/v3',
     headers: {

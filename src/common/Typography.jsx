@@ -2,11 +2,12 @@
 import { Theme } from "./Theme"
 import styled from "styled-components"
 
-export default function Typography({ variant , component, children}) { 
+export default function Typography({ variant , component, children, className }) { 
     return (
         <TypographyRoot
             as={component || Theme.typography.component[variant]}
             $variant={variant}
+            className={className}
         >
             {children}
         </TypographyRoot>
