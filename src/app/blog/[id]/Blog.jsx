@@ -20,7 +20,6 @@ export default function Blog({ id }) {
     }
   }, [id])
 
-  console.log('data => ', data);
   if(data.length === 0) return <h1>loading ...</h1>
 
   return (
@@ -44,6 +43,9 @@ const BlogsContainer = Styled.div`
     align-items: center;
     margin: 50px auto;
     width: 80%;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
     img {
         margin: auto;
         width: calc(25vw + 250px);
