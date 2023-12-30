@@ -5,6 +5,7 @@ import { HeaderContainer, HeaderLeftSide, HeadTitle, Paragraph, HeaderRightSide 
 import Typography from '../Typography'
 import { Data } from '../Data'
 import { useEffect } from 'react'
+import { DotLottiePlayer, Controls } from '@dotlottie/react-player'
 
 export default function Header() {
 
@@ -26,12 +27,13 @@ export default function Header() {
                 <Button>{Data.header.button}</Button>
             </HeaderLeftSide>
             <HeaderRightSide>
-                <lottie-player
-                    autoplay
-                    loop
-                    mode="normal"
-                    src={Data.header.img}
-                ></lottie-player>
+            <DotLottiePlayer
+                src='/Header/nikan.lottie'
+                autoplay
+                loop
+                mode="normal"
+            >
+            </DotLottiePlayer>
             </HeaderRightSide>
         </HeaderContainer>
     )

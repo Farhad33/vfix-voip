@@ -30,6 +30,10 @@ export const HeaderRightSide = styled.div`
     @media (max-width: 768px) {
         width: 100%;
     }
+    img {
+        width: 100%;
+        height: auto;
+    }
 `
 export const HeadTitle = styled.div`
     margin-bottom: 25px;

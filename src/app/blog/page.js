@@ -1,12 +1,12 @@
+import Blogs from './Blogs'
+
 export const metadata = {
   title: 'Vfix blog',
   description: 'vfix blog',
 }
 
 
-export default function Blog() {
-  return (
-    <h1>blog</h1>
-  )
+export default function page() {
+  return <Blogs />
 }
 
