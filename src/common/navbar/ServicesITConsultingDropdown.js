@@ -7,7 +7,7 @@ import Typography from "../Typography";
 import { ItConsultingData } from '../Data';
 import { useRouter } from 'next/navigation'
 
-export default function ServicesItConsulting() {
+export default function ServicesItConsulting({ handleMenuClick }) {
     const { push } = useRouter();
 
     return (
@@ -19,7 +19,10 @@ export default function ServicesItConsulting() {
             </ItConsultingTitle>
             <ItConsultingImage src={ItConsultingData.icon} width={160} height={100} alt='image' />
             <Typography variant='subline2'>{ItConsultingData.paragraph}</Typography>
-            <ItConsultingButton onClick={() => { push(ItConsultingData.route) }}>{ItConsultingData.button}</ItConsultingButton>
+            <ItConsultingButton onClick={() => { 
+                push(ItConsultingData.route)
+                handleMenuClick()
+            }}>{ItConsultingData.button}</ItConsultingButton>
         </ItConsultingContainer>
     );
 }

@@ -20,10 +20,14 @@ const CardContainer = styled.div`
     min-width: 200px;
     width: 300px;
     height: 475px;
-
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border: 1px solid ${color.Blue100};
     border-radius: 10px;
     padding: 20px;
+    svg {
+        width: 70px;
+        height: 70px;
+    }
     @media (max-width: 700px) {
         width: 100%;
         height: unset;

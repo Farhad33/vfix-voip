@@ -16,13 +16,8 @@ export default function ITConsulting() {
                 </Typography>
             </ITConsultingHead>
             <ITConsultingCardContainer>
-                {Data.ITConsultingServices.cards.map((card, index) =>(
-                    <ITConsultingCard
-                        key={index} 
-                        title={card.title}
-                        content={card.paragraph}
-                        urlImage={card.img}
-                    />
+                {Data.ITConsultingServices.cards.map((props, index) =>(
+                    <ITConsultingCard key={index} {...props} />
                 ))}
             </ITConsultingCardContainer>
         </ITConsultingContainer>

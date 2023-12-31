@@ -17,7 +17,7 @@ export default function Cards({ title, content, urlImage })  {
               </Typography>
             </CardTitle>
             <Cardparagraph>
-              <Typography variant='body4'>
+              <Typography variant='body3'>
                 {content}
               </Typography>
             </Cardparagraph>
@@ -31,9 +31,9 @@ const CardContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  max-width: 300px;
-  min-height: 550px;
-  margin-bottom: calc(2vw + 25px);
+  max-width: 340px;
+  min-height: calc(2vw + 25px);
+  margin-bottom: calc(2.1vw + 25px);
   box-shadow: 0px 6px 30px 5px ${color.Blue300};
   border-radius: 20px;
 `

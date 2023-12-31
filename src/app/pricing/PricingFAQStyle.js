@@ -38,6 +38,7 @@ export const CollapsibleListContainer = styled.div`
 export const ListContainer = styled.div`
     box-shadow: 0px 6px 30px 5px ${color.Blue300};
     border-radius: 8px;
+    margin-bottom: 10px;
 `
 
 export const ListTitle = styled.div`
@@ -48,7 +49,6 @@ export const ListTitle = styled.div`
     user-select: none;
     cursor: pointer;
     border-radius: 8px;
-    margin-bottom: calc(1vw + 2px);
     padding-top: calc(1vw + 2px);
     padding-bottom: calc(1vw + 2px);
     padding-left: calc(1vw + 6px);
@@ -72,6 +72,8 @@ export const ListContent = styled.div`
     padding-bottom: calc(1vw + 2px);
     padding-left: calc(1vw + 6px);
     padding-right: calc(2vw + 6px);
+    margin-bottom: calc(1vw + 2px);
+    border-radius: 8px;
     p {
         font-weight: 500;
     }

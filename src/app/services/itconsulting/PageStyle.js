@@ -66,6 +66,10 @@ export const RightSide = styled.div`
         width: 90%;
         margin: calc(2vw + 30px) 0;
     }
+    svg {
+        width: 100%;
+        height: 100%;
+    }
 `
 
 export const VfixCaontainer = styled.div`
@@ -113,7 +117,9 @@ export const ServicesHead = styled.div`
     margin-bottom: calc(1vw + 35px);
 
 `
-export const ServicesTitle = styled.div``
+export const ServicesTitle = styled.div`
+    margin-bottom: 20px;
+`
 export const ServicesParagraph = styled.div``
 export const ServicesCardContainer = styled.div`
     display: flex;

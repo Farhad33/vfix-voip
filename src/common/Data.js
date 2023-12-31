@@ -22,6 +22,28 @@ import CuttingEdge from '@/common/partnerwithvfix/CuttingEdge'
 import LongTerm from '@/common/partnerwithvfix/LongTerm'
 import ProactiveSupport from '@/common/partnerwithvfix/ProactiveSupport'
 
+import Strategy from '@/common/itconsulting/Strategy'
+import DigitalTransformation from '@/common/itconsulting/DigitalTransformation'
+import Industary from '@/common/itconsulting/Industary'
+
+import ITMSP from '@/common/navbar/svg/ITMSP'
+import BusinessCommPricing from '@/common/navbar/svg/BusinessCommPricing'
+
+import CloudPhoneSystem from '@/common/navbar/svg/CloudPhoneSystem'
+import CloudContact from '@/common/navbar/svg/CloudContact'
+import BusinessMessaging from '@/common/navbar/svg/BusinessMessaging'
+import TeamWebColab from '@/common/navbar/svg/TeamWebColab'
+import DirectRouting from '@/common/navbar/svg/DirectRouting'
+import MobileDesktopApps from '@/common/navbar/svg/MobileDesktopApps'
+
+import Proactive from '@/common/navbar/svg/Proactive'
+import NetworkSecurity from '@/common/navbar/svg/NetworkSecurity'
+import DataBackup from '@/common/navbar/svg/DataBackup'
+import Helpdesk from '@/common/navbar/svg/Helpdesk'
+import SoftwareAndHardware from '@/common/navbar/svg/SoftwareAndHardware'
+import CloudServices from '@/common/navbar/svg/CloudServices'
+
+
 export const Data = {
     navbar: {
         menu: [
@@ -40,32 +62,32 @@ export const Data = {
                             {
                                 title: 'CLOUD PHONE SYSTEM',
                                 route: '/services/cloudphonesystem',
-                                icon: '/Services/UCaas/CloudPhoneSystem.png',
+                                Svg: CloudPhoneSystem 
                             },
                             {
                                 title: 'CLOUD CONTACT CENTER',
                                 route: '/services/cloudcontentcenter',
-                                icon: '/Services/UCaas/CloudContactCenter.png',
+                                Svg: CloudContact 
                             },
                             {
                                 title: 'BUSINESS MESSAGING',
                                 route: '/services/businessmessaging',
-                                icon: '/Services/UCaas/BussinessMessaging.png',
+                                Svg: BusinessMessaging 
                             },
                             {
                                 title: 'TEAM & WEB COLLABORATION',
                                 route: '/services/teamwebcollaboration',
-                                icon: '/Services/UCaas/Team&WebCollaboration.png',
+                                Svg: TeamWebColab 
                             },
                             {
                                 title: 'DIRECT ROUTING FOR MICROSOFT TEAMS',
                                 route: '/services/directrouting',
-                                icon: '/Services/UCaas/DirectRoutingForMicrosoftTeam.png',
+                                Svg: DirectRouting 
                             },
                             {
                                 title: 'MOBILE & DESKTOP APPS',
                                 route: '/services/mobiledesktopapp',
-                                icon: '/Services/UCaas/Mobile&DesktopApps.png',
+                                Svg: MobileDesktopApps 
                             },
                         ],
                     },
@@ -76,49 +98,35 @@ export const Data = {
                             {
                                 title: 'Proactive Monitoring and Maintenance',
                                 route: '/services/proactivemonitoring',
-                                icon: '/Services/ITMSP/ProactiveMonitoringandMaintenance.png',
+                                Svg: Proactive
                             },
                             {
                                 title: 'Network Security and Compliance',
                                 route: '/services/networksecurity',
-                                icon: '/Services/ITMSP/NetworkSecurityandCompliance.png',
+                                Svg: NetworkSecurity
                             },
                             {
                                 title: 'Data Backup and Disaster Recovery',
                                 route: '/services/databackup',
-                                icon: '/Services/ITMSP/DataBackupandDisasterRecovery.png',
+                                Svg: DataBackup
                             },
                             {
                                 title: 'Help Desk Support',
                                 route: '/services/helpdesksupport',
-                                icon: '/Services/ITMSP/HelpDeskSupport.png',
+                                Svg: Helpdesk
                             },
                             {
                                 title: 'Software and Hardware Management',
                                 route: '/services/softwarehardware',
-                                icon: '/Services/ITMSP/SoftwareAndHardwareManagement.png',
+                                Svg: SoftwareAndHardware
                             },
                             {
                                 title: 'Cloud Services and Migration',
                                 route: '/services/cloudservices',
-                                icon: '/Services/ITMSP/CloudServicesAndMigration.png',
+                                Svg: CloudServices
                             },
                         ],
                     },
-                    // {
-                        // title: 'IT Consulting',
-                        // route: 'itconsulting',
-                        // dropdown: [
-                        //     {
-                        //         title: 'IT Consulting paragraph',
-                        //         route: 'itconsulting',
-                        //         icon: '/Services/ITConsulting/Consulting.png',
-                        //         paragraph: 'Harness the Dynamic Potential of Cutting-Edge Technology with Expert IT Consulting. Seamlessly navigate the ever-evolving landscape of digital innovation and empower your organization with a bespoke IT strategy and roadmap.',
-                        //         icon: '/Services/ITConsulting/Consulting.png',
-                        //         button: 'Learn More',
-                        //     },
-                        // ],
-                    // },
                 ],
             },
             {
@@ -132,12 +140,12 @@ export const Data = {
                     {
                         title: 'IT MSP & Consulting',
                         route: '/pricing/msp',
-                        icon: '/Pricing/ITMSPConsulting.png'
+                        Svg: ITMSP
                     },
                     {
                         title: 'Business Comminucations',
                         route: '/pricing/voip',
-                        icon: '/Pricing/BusinessComminucation.png'
+                        Svg: BusinessCommPricing
                     }
                 ]
             },
@@ -283,17 +291,17 @@ export const Data = {
             {
                 title: 'Technology Strategy',
                 paragraph: 'We collaborate with you to develop a technology roadmap aligned with your business objectives. Our consultants assess your current ITlandscape, identify gaps, and recommend solutions to optimize your technology investments.',
-                img: '/ITConsultingServices/ITConsultingServices01.png'
+                Svg: Strategy
             },
             {
                 title: 'Digital Transformation',
                 paragraph: 'Embrace digital technologies to streamline operations and unlocknew opportunities. We help you harness the power of automation, data analytics, artificial intelligence, and Internet of Things (IoT) to drive innovation efficiency, and customer engagement.',
-                img: '/ITConsultingServices/ITConsultingServices02.png'
+                Svg: DigitalTransformation
             },
             {
                 title: 'Industry-Specific Solutions',
                 paragraph: 'We understand the unique challenges and requirements of different industries. With expertise in sectors such as healthcare, finance, retail, and more, we deliver tailored IT solutions that address industry-specificregulations, compliance, and best practices..',
-                img: '/ITConsultingServices/ITConsultingServices03.png'
+                Svg: Industary
             },
         ]
     },
@@ -424,7 +432,7 @@ export const Data = {
                 list: [
                     { name: 'Managed Services', link: '/pricing/msp' },
                     { name: 'Business Comminucations', link: '/pricing/voip' },
-                    { name: 'Status', link: 'status.vfixmsp.com' }
+                    { name: 'Status', link: 'https://status.vfixmsp.com/' }
                 ]
             },
         ],

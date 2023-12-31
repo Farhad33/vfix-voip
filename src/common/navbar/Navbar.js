@@ -34,9 +34,14 @@ export default function Navbar(props) {
         } else if (dropdownOption === 'pricing') {
             setIsServicesDropdownOpen(false)
             setIsPricingDropdownOpen(!isPricingDropdownOpen)
+        } else if (dropdownOption === 'services-sub-dropdown' || dropdownOption === 'pricing-sub-dropdown') {
+            setIsServicesDropdownOpen(false)
+            setIsPricingDropdownOpen(false)
+            setHamburgerMenu(false)
         } else {
             setIsServicesDropdownOpen(false)
             setIsPricingDropdownOpen(false)
+            setHamburgerMenu(false)
         }
     }
 
@@ -85,7 +90,14 @@ export default function Navbar(props) {
                         </DropdownItem>
                     ))}
                     <DropdownItem>
-                        <LoginButton onClick={() => { push(Data.navbar.login) }}>Login</LoginButton>
+                        <LoginButton 
+                            onClick={() => { 
+                                push(Data.navbar.login)
+                                handleMenuClick()
+                            }}
+                        >
+                            Login
+                        </LoginButton>
                     </DropdownItem>
                 </NavList>
             </NavLinks>

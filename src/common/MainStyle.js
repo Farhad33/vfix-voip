@@ -9,14 +9,13 @@ export const Button = styled.button`
   border: none;
   border-radius: 20px;
   height: 40px;
-  font-size: ${({variant}) => Theme.typography.fontSize.button};
+  font-size: ${({ variant }) => Theme.typography.fontSize.button};
   padding: 0 calc(1vw + 20px);
   color: ${color.White};
   cursor: pointer;
   &:hover {
     background: ${color.Black};
-    transition: all .5s ease;
-    
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 `
 

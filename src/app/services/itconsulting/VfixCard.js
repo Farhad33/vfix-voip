@@ -18,7 +18,7 @@ export default function Cards({ title, content, urlImage })  {
         </Typography>
       </CardTitle>
       <CardContent>
-        <Typography variant='subline4'>
+        <Typography variant='body3'>
           {content}
         </Typography>
       </CardContent>

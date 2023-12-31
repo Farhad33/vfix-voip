@@ -1,13 +1,15 @@
 'use client'
-import Image from 'next/image'
+import { useState } from'react'
 import { Button } from '../MainStyle'
 import { HeaderContainer, HeaderLeftSide, HeadTitle, Paragraph, HeaderRightSide } from '../header/HeaderStyle'
 import Typography from '../Typography'
 import { Data } from '../Data'
 import { useEffect } from 'react'
-import { DotLottiePlayer, Controls } from '@dotlottie/react-player'
+import { DotLottiePlayer } from '@dotlottie/react-player'
+import BookingIframe from '@/common/BookingIframe'
 
 export default function Header() {
+    const [showBooking, setShowbooking] = useState(false)
 
     useEffect(() => {
         import("@lottiefiles/lottie-player")
@@ -24,7 +26,8 @@ export default function Header() {
                         {Data.header.paragraph}
                     </Typography>
                 </Paragraph>
-                <Button>{Data.header.button}</Button>
+                <Button onClick={() => setShowbooking(true)} >Request Consultation</Button>
+                <BookingIframe showBooking={showBooking} setShowbooking={setShowbooking} />
             </HeaderLeftSide>
             <HeaderRightSide>
             <DotLottiePlayer

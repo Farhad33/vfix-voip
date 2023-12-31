@@ -25,7 +25,7 @@ export default function ServicesDropdown({ item, selectedMenu, handleMenuClick, 
                         {subItem.dropdown && <ServicesSubDropDown items={subItem.dropdown} handleMenuClick={handleMenuClick} />}
                     </ServicesDropdownItem>
                 ))}
-                <ServicesItConsulting />
+                <ServicesItConsulting handleMenuClick={handleMenuClick} />
             </DropdownList>
         </DropdownContainer>
     </>

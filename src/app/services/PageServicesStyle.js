@@ -29,7 +29,7 @@ export const LeftSide = styled.div`
 `
 export const HeadTitle = styled.div`
 
-    h5 {
+    h4 {
         color: ${color.Blue200};
         border-bottom: 2px solid ${color.Green200};
         padding-bottom: 3px;

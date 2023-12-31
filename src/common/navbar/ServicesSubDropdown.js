@@ -12,15 +12,15 @@ export default function ServicesSubDropDown({ items, handleMenuClick }) {
     <SubDropDownContainer>
       <SubDropDownList>
         {
-          items.map((item, index) => (
+          items.map(({ route, title, Svg}, index) => (
             <SubDropDownLink 
               key={index} 
               onClick={() => { 
-                push(item.route) 
-                handleMenuClick('services') 
+                push(route) 
+                handleMenuClick('services-sub-dropdown') 
               }}>
-              {item.icon && <SubDropDownIcon src={item.icon} alt={item.title} width={17} height={17} />}
-              <Typography variant='subline2' >{item.title}</Typography>
+              <Svg />
+              <Typography variant='subline2' >{title}</Typography>
             </SubDropDownLink>
           ))
         }
@@ -47,6 +47,10 @@ export const SubDropDownLink = styled.li`
   }
   @media (max-width: 768px) {
         color: ${color.White};
+  }
+  svg {
+    width: 20px;
+    margin-right: 10px;
   }
 `
 export const SubDropDownRoute = styled.a`

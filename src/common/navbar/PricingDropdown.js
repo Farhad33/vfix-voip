@@ -26,21 +26,16 @@ export default function PricingDropdown({
 
         <DropdownContainer>
             <DropdownList $isDropdownOpen={isPricingDropdownOpen} >
-                {item.dropdown.map((subItem, subIndex) => (
+                {item.dropdown.map(({ Svg, title, route }, subIndex) => (
                     <PricingDropdownItem 
                         key={subIndex}
                         onClick={() => {
-                            handleMenuClick('pricing')
-                            push(subItem.route)
+                            handleMenuClick('pricing-sub-dropdown')
+                            push(route)
                         }}
                     >
-                        <SubLinkIcon
-                            width={50} 
-                            height={50} 
-                            src={subItem.icon} 
-                            alt={subItem.title} 
-                        />
-                        <MenuTitle>{subItem.title}</MenuTitle>
+                        <Svg />
+                        <MenuTitle>{title}</MenuTitle>
                     </PricingDropdownItem>
                 ))}
             </DropdownList>
@@ -52,9 +47,9 @@ const PricingDropdownItem = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-`
-const StyledLink = styled(Link)`
-    text-decoration: none;
+    svg {
+        width: 60px;
+    }
 `
 const selectedMenuCSS = css`
     background-image: linear-gradient(to right, ${color.Green200}, ${color.Blue200});
@@ -79,8 +74,6 @@ const MenuTitle = styled.span`
         padding: 5px 0;
     }
 `
-const SubLinkIcon = styled(Image)`
-`
 const DropdownList = styled.ul`
     display: ${({$isDropdownOpen}) => $isDropdownOpen ? 'flex' : 'none'};
     list-style: none;
@@ -89,7 +82,7 @@ const DropdownList = styled.ul`
     position: absolute;
     background: ${color.White};
     box-shadow: 0px 6px 30px 5px ${color.Blue300};
-    gap: 10px;
+    gap: 40px;
     margin-top: 15px;
     padding: 20px;
     z-index: 1;
@@ -99,7 +92,6 @@ const DropdownList = styled.ul`
     @media (max-width: 768px) {
         display: ${({$isDropdownOpen}) => $isDropdownOpen ? 'block' : 'none'};
         position: relative;
-        /* background: linear-gradient(to bottom, ${color.Green50}, ${color.Blue200}); */
         box-shadow: unset;
         background: #00000000;
         gap: 0;
@@ -111,7 +103,6 @@ const DropdownList = styled.ul`
     }
     span {
         margin-top: 10px;
-        /* font-weight: 700; */
     }
 `
 const DropdownContainer = styled.div`

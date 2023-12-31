@@ -1,19 +1,21 @@
 'use client'
+import { useState } from'react'
 import styled from 'styled-components'
 import Image from 'next/image'
-import { useRouter } from 'next/navigation'
 import Typography from "@/common/Typography"
 import { Button } from "@/common/MainStyle"
 import { data } from './data'
+import BookingIframe from '@/common/BookingIframe'
 
 export default function MiddleSection() {
-    const { push } = useRouter()
+    const [showBooking, setShowbooking] = useState(false)
 
     return (
         <MiddleSectionContainer>
             <TopContainer>
                 <Typography variant='h4'>Ready To Transform Your Business?</Typography>
-                <Button onClick={() => push('#contact-us')}>Request Consultation</Button>
+                <Button onClick={() => setShowbooking(true)} >Request Consultation</Button>
+                <BookingIframe showBooking={showBooking} setShowbooking={setShowbooking} />
             </TopContainer>
             <BottomContainer>
                 {data.middleSection.map((link, index) => (

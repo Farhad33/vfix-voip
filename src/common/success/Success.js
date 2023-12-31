@@ -1,12 +1,15 @@
-import {Button} from '../MainStyle'
-import {Container, SuccessContainer, SuccessLeftSide, SuccessCenterSide, SuccessRightSide, SuccessTitle,TitleRightSide, ParagraphRightSide} from '../success/SuccessStyle'
+'use client'
+import { Button } from '../MainStyle'
+import { SuccessContainer, SuccessLeftSide, SuccessCenterSide, SuccessRightSide, SuccessTitle,TitleRightSide, ParagraphRightSide} from '../success/SuccessStyle'
 import { Data } from '../Data'
 import Typography from '../Typography'
 import SuccessCard from './SuccessCard'
-import { Paragraph } from '../header/HeaderStyle'
+import { useRouter } from 'next/navigation'
 
 
 export default function Success() {
+    const { push } = useRouter()
+
     return(
         <SuccessContainer>
             <SuccessLeftSide>
@@ -45,7 +48,7 @@ export default function Success() {
                             {Data.success.headContent}
                         </Typography>
                     </ParagraphRightSide>
-                    <Button>{Data.success.button}</Button>
+                    <Button onClick={() => push('#contact-us')} >Contact Us</Button>
                 </SuccessTitle>
             </SuccessRightSide>
         </SuccessContainer>

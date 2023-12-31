@@ -1,5 +1,7 @@
 'use client'
+import { useState } from'react'
 import styled from "styled-components";
+import BookingIframe from '@/common/BookingIframe'
 import Typography from "@/common/Typography";
 import { Button } from "@/common/MainStyle";
 import { color } from "@/common/Theme";
@@ -11,10 +13,10 @@ export default function PricinCard({
     discount_amount,
     discount_percent,
     price,
-    captionBtn,
     items,
     contractLength
 }) {
+    const [showBooking, setShowbooking] = useState(false)
 
     return (
         <PricingCard>
@@ -57,9 +59,8 @@ export default function PricinCard({
                             <Typography variant='body3'>/User/Month</Typography>
                         </UserMonth>
                     </Period>
-                    <Button>
-                        {captionBtn}
-                    </Button>
+                    <Button onClick={() => setShowbooking(true)} >Request Quote</Button>
+                    <BookingIframe showBooking={showBooking} setShowbooking={setShowbooking} />
                 </Payment>
                 <ListItems>
                     {
@@ -95,6 +96,13 @@ const PricingCard = styled.div`
 `
 const CardContent = styled.div`
     padding-bottom: calc(1vw + 6px);
+    height: 290px;
+    @media (max-width: 1000px) {
+        height: 235px;
+    }
+    @media (max-width: 700px) {
+        height: 190px;
+    }
 `
 
 const Title = styled.div`

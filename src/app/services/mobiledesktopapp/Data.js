@@ -43,7 +43,7 @@ export const  Data = {
             },
             {
                 title: 'Wi-Fi & 4G/5G Calling',
-                paragraph: 'With MaX UC Mobile, you can make calls over Wi-Fi or 3G/4G connections, ensuring you\'re always connected.',
+                paragraph: 'With MaX UC Mobile, you can make calls over Wi-Fi or 4G/5G connections, ensuring you\'re always connected.',
                 img: '/Services/UCaas/Mobile&DesktopApps/WiFi&4G5GCalling.png'
             },
         ]

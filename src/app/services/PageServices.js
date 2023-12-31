@@ -19,7 +19,7 @@ export default function PageServices({data, SVGComponent }) {
                 <OverviewContainer>
                     <LeftSide>
                         <HeadTitle>
-                            <Typography variant='h5'>
+                            <Typography variant='h4'>
                                 {data.Overview.headTitle}
                             </Typography>
                         </HeadTitle>
@@ -32,7 +32,7 @@ export default function PageServices({data, SVGComponent }) {
                             <ParagraphContainer>
                                 {data.Overview.contents.map((text, index) => (
                                     <Paragraph key={index}>
-                                        <Typography variant='body4'>
+                                        <Typography variant='body3'>
                                             {text.paragraph}
                                         </Typography>
                                     </Paragraph>
@@ -42,7 +42,7 @@ export default function PageServices({data, SVGComponent }) {
                             <ParagraphContainer>
                                 {data.Overview.contents.map((text, index) => (
                                     <Paragraph key={index}>
-                                        <Typography variant='body4'>
+                                        <Typography variant='body3'>
                                             {text.paragraph}
                                         </Typography>
                                     </Paragraph>
@@ -52,7 +52,7 @@ export default function PageServices({data, SVGComponent }) {
                         <ListContainer>
                             {data.Overview.list.map((item, index) => (
                                 <ListItems key={index}>
-                                    <Typography variant='body4'>
+                                    <Typography variant='body3'>
                                         {item}
                                     </Typography>
                                 </ListItems>

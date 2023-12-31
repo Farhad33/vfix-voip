@@ -5,16 +5,16 @@ import Typography from "../Typography";
 
 
 
-export default function ITConsultingCard({title, content, urlImage}) {
+export default function ITConsultingCard({ title, paragraph, Svg }) {
     return(
         <CardContainer>
-            <CardImage src={urlImage} alt={title} width={70} height={70} />
+            <Svg />
             <CardContetnContainer>
                 <Typography variant='h4'>
                     {title}
                 </Typography>
                 <Typography variant='body2'>
-                    {content}
+                    {paragraph}
                 </Typography>
             </CardContetnContainer>
         </CardContainer>
@@ -35,6 +35,11 @@ const CardContainer = styled.div`
     @media (max-width: 944px) {
         height: unset;
         padding: 30px;
+    }
+    svg {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 20px;
     }
 `
 const CardImage = styled(Image)`

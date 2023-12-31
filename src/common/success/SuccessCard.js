@@ -29,9 +29,12 @@ const CardContainer = styled.div`
   flex-direction: column;
   width: 85%;
   margin-bottom: 35px;
-  @media (max-width: 768px) {
+  @media (max-width: 700px) {
        width: 47%;
-    }
+       svg {
+        width: 70%;
+       }
+  }
 `;
 
 const CardImage = styled.div`

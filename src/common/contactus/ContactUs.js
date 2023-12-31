@@ -6,6 +6,7 @@ import { Data } from './ContactUsData'
 import Typography from '../Typography'
 import Image from "next/image"
 import axios from 'axios'
+import { Button } from '@/common/MainStyle'
 
 export default function Contact() {
     const [message, setMessage] = useState(false)
@@ -71,7 +72,7 @@ export default function Contact() {
                                     maxLength={10}
                                 />
                                 <textarea name="message" placeholder={Data.contact.message} rows="10" cols="50" required></textarea>
-                                <input type="submit" name="button" />
+                                <Button type="submit">Submit</Button>
                             </form>
                         }
                     </ContactRightSide>
