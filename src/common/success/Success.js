@@ -14,24 +14,24 @@ export default function Success() {
         <SuccessContainer>
             <SuccessLeftSide>
                 {
-                    Data.success.cards1.map(({ title, paragraph, Svg }, index) => (
+                    Data.success.cards1.map(({ title, paragraph, svg }, index) => (
                         <SuccessCard 
                             key={index}
                             title={title}
                             content={paragraph}
-                            Svg={Svg}
+                            svg={svg}
                         />
                     ))
                 }
             </SuccessLeftSide>
             <SuccessCenterSide>
                 {
-                    Data.success.cards2.map((card, index) => (
+                    Data.success.cards2.map(({ title, paragraph, svg}, index) => (
                         <SuccessCard 
                             key={index}
-                            title={card.title}
-                            content={card.paragraph}
-                            Svg={card.Svg}
+                            title={title}
+                            content={paragraph}
+                            svg={svg}
                         />
                     ))
                 }

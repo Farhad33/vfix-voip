@@ -12,12 +12,12 @@ export default function Services() {
             </ServicesTitle>
             <ServicesCardContainer>
                 {
-                    Data.services.cards.map(({ title, paragraph, Svg}, index) => (
+                    Data.services.cards.map(({ title, paragraph, svg}, index) => (
                         <ServicesCard 
                             key={index}
                             title={title} 
                             content={paragraph} 
-                            Svg={Svg}  
+                            svg={svg}  
                         />
                     )
                     )

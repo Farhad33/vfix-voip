@@ -4,6 +4,8 @@ import { color } from "../Theme"
 import Image from "next/image";
 import Typography from "../Typography";
 import { useRouter } from 'next/navigation'
+import SVGComponents from "@/common/SVGComponents"
+// const SVGComponent = SVGComponents[svg]
 
 export default function ServicesSubDropDown({ items, handleMenuClick }) {
   const { push } = useRouter()
@@ -12,18 +14,18 @@ export default function ServicesSubDropDown({ items, handleMenuClick }) {
     <SubDropDownContainer>
       <SubDropDownList>
         {
-          items.map(({ route, title, Svg}, index) => (
-            <SubDropDownLink 
+          items.map(({ route, title, svg}, index) => {
+            const SVGComponent = SVGComponents[svg]
+            return <SubDropDownLink 
               key={index} 
               onClick={() => { 
                 push(route) 
                 handleMenuClick('services-sub-dropdown') 
               }}>
-              <Svg />
+              <SVGComponent />
               <Typography variant='subline2' >{title}</Typography>
             </SubDropDownLink>
-          ))
-        }
+        })}
       </SubDropDownList>
     </SubDropDownContainer>
   )

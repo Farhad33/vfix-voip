@@ -1,11 +1,8 @@
 'use client'
-import { useState } from 'react'
 import styled, { css } from 'styled-components'
 import { color } from "../Theme"
-import Link from "next/link"
-import Image from "next/image"
 import { useRouter } from 'next/navigation'
-import SubDropDown from './ServicesSubDropdown'
+import SVGComponents from "@/common/SVGComponents"
 
 export default function PricingDropdown({ 
     item, 
@@ -26,18 +23,19 @@ export default function PricingDropdown({
 
         <DropdownContainer>
             <DropdownList $isDropdownOpen={isPricingDropdownOpen} >
-                {item.dropdown.map(({ Svg, title, route }, subIndex) => (
-                    <PricingDropdownItem 
+                {item.dropdown.map(({ svg, title, route }, subIndex) => {
+                    const SVGComponent = SVGComponents[svg]
+                    return <PricingDropdownItem 
                         key={subIndex}
                         onClick={() => {
                             handleMenuClick('pricing-sub-dropdown')
                             push(route)
                         }}
                     >
-                        <Svg />
+                        <SVGComponent />
                         <MenuTitle>{title}</MenuTitle>
                     </PricingDropdownItem>
-                ))}
+                })}
             </DropdownList>
         </DropdownContainer>
     </>

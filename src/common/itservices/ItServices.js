@@ -16,12 +16,12 @@ export default function ItServices() {
             </ItServicesHead>
             <ItServicesCardContainer>
                 {
-                    Data.ITManagedServices.cards.map(({ Svg, title, paragraph, button, btnUrl}, index) => (
+                    Data.ITManagedServices.cards.map(({ svg, title, paragraph, button, btnUrl}, index) => (
                         <ItServicesCard 
                             key={index}
                             title={title}
                             content={paragraph}
-                            Svg={Svg}
+                            svg={svg}
                             btnText={button}
                             btnUrl={btnUrl}
                         />

@@ -2,13 +2,15 @@
 import styled from "styled-components";
 import Image from "next/image";
 import Typography from "../Typography";
+import SVGComponents from "@/common/SVGComponents"
 
 
+export default function ITConsultingCard({ title, paragraph, svg }) {
+    const SVGComponent = SVGComponents[svg]
 
-export default function ITConsultingCard({ title, paragraph, Svg }) {
     return(
         <CardContainer>
-            <Svg />
+            <SVGComponent />
             <CardContetnContainer>
                 <Typography variant='h4'>
                     {title}

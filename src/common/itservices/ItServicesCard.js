@@ -4,13 +4,15 @@ import {Button} from '../MainStyle'
 import Typography from "../Typography"
 import {color} from '../Theme'
 import { useRouter } from 'next/navigation'
+import SVGComponents from "@/common/SVGComponents"
 
-export default function ItServicesCard({ Svg, title, content, btnText, btnUrl }) {
+export default function ItServicesCard({ svg, title, content, btnText, btnUrl }) {
     const { push } = useRouter()
+    const SVGComponent = SVGComponents[svg]
 
     return(
         <CardContainer>
-            <Svg />
+            <SVGComponent />
             <CardContentContainer>
                 <div>
                     <CardTitle>

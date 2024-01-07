@@ -1,13 +1,15 @@
 'use client'
-import styled from "styled-components";
-import Typography from "../Typography";
-import { color } from "../Theme";
+import styled from "styled-components"
+import Typography from "../Typography"
+import { color } from "../Theme"
+import SVGComponents from "@/common/SVGComponents"
 
-export default function ServicesCard({title, content, Svg}) {
+export default function ServicesCard({title, content, svg}) {
+    const SVGComponent = SVGComponents[svg]
     return (
         <CardContainer>
             <CardImage>
-                <Svg />
+                <SVGComponent />
             </CardImage>
             <Typography variant='h4'>{title}</Typography>
             <Typography variant='body2'>{content}</Typography>

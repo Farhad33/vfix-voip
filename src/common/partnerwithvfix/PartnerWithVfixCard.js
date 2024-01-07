@@ -1,12 +1,14 @@
 'use client'
 import styled from "styled-components";
-import Image from "next/image";
 import Typography from "../Typography";
+import SVGComponents from "@/common/SVGComponents"
 
-export default function PartnerWithVfixCard({title, content, Svg}) {
+export default function PartnerWithVfixCard({title, content, svg}) {
+    const SVGComponent = SVGComponents[svg]
+
     return(
         <CardContainer>
-            <Svg />
+            <SVGComponent />
             <Typography variant='h4'>
                 {title}
             </Typography>

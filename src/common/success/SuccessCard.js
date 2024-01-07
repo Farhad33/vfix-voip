@@ -1,14 +1,15 @@
 'use client'
 import styled from 'styled-components';
 import Typography from '../Typography';
+import SVGComponents from "@/common/SVGComponents"
 
 
-
-export default function SuccessCard ({ title, content, Svg })  {
+export default function SuccessCard ({ title, content, svg })  {
+  const SVGComponent = SVGComponents[svg]
   return (
     <CardContainer>
         <CardImage>
-            <Svg />
+            <SVGComponent />
         </CardImage>
       <CardTitle>
         <Typography variant='h4'>

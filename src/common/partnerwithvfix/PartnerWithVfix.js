@@ -15,12 +15,12 @@ export default function PartnerWithVfix() {
                 </Typography>
             </PartnerWithVfixHead>
             <PartnerWithVfixContainerCard>
-                {Data.PartnerWithVfix.cards.map(({ title, paragraph, Svg}, index) => (
+                {Data.PartnerWithVfix.cards.map(({ title, paragraph, svg}, index) => (
                     <PartnerWithVfixCard 
                         key={index}
                         title={title}
                         content={paragraph}
-                        Svg={Svg}
+                        svg={svg}
                     />
                 ))}
             </PartnerWithVfixContainerCard>

@@ -4,16 +4,11 @@ import { Button } from '../MainStyle'
 import { HeaderContainer, HeaderLeftSide, HeadTitle, Paragraph, HeaderRightSide } from '../header/HeaderStyle'
 import Typography from '../Typography'
 import { Data } from '../Data'
-import { useEffect } from 'react'
 import { DotLottiePlayer } from '@dotlottie/react-player'
 import BookingIframe from '@/common/BookingIframe'
 
 export default function Header() {
     const [showBooking, setShowbooking] = useState(false)
-
-    useEffect(() => {
-        import("@lottiefiles/lottie-player")
-    });
 
     return (
         <HeaderContainer>
