@@ -10,7 +10,10 @@ export default function BlogBox({ content }) {
 
     return (
         <ArticleBox onClick={() => push(`/blog/${content?.id}`)}>
-            <Thumbnail src={`https://strapi.myvfix.com${content?.attributes?.thumbnail?.data?.attributes?.url}`} />
+            <Thumbnail 
+                src={`https://strapi.myvfix.com${content?.attributes?.thumbnail?.data?.attributes?.url}`} 
+                alt={content?.attributes?.thumbnail?.data?.attributes?.alternativeText}
+            />
             <TextBox>
                 <Typography variant='body5'>{formatDate(content?.attributes?.createdAt)}</Typography>
                 <Typography variant='h5'>{content?.attributes?.title}</Typography>

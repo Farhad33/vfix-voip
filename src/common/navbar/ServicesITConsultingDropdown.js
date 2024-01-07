@@ -17,7 +17,7 @@ export default function ServicesItConsulting({ handleMenuClick }) {
                     {ItConsultingData.title}
                 </RoutConsulting>
             </ItConsultingTitle>
-            <ItConsultingImage src={ItConsultingData.icon} width={160} height={100} alt='image' />
+            <ItConsultingImage src={ItConsultingData.icon} width={160} height={100} alt={ItConsultingData.title} />
             <Typography variant='subline2'>{ItConsultingData.paragraph}</Typography>
             <ItConsultingButton onClick={() => { 
                 push(ItConsultingData.route)

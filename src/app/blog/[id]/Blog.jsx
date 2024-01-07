@@ -29,7 +29,7 @@ export default function Blog({ id }) {
             src={imageUrl}
             width={300}
             height={300}
-            alt={data?.attributes?.thumbnail?.title}
+            alt={data?.attributes?.thumbnail?.data?.attributes?.alternativeText}
         />
         <Markdown>{data?.attributes?.markdown}</Markdown>
     </BlogsContainer>
