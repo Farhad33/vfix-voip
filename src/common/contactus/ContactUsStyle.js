@@ -49,7 +49,7 @@ export const ContactLeftSide = styled.div`
         width: 100%;
     }
     @media (max-width: 470px) {
-        img {
+        svg {
             width: 300px;
             height: 300px;
         }

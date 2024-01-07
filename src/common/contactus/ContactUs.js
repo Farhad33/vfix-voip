@@ -7,6 +7,7 @@ import Typography from '../Typography'
 import Image from "next/image"
 import axios from 'axios'
 import { Button } from '@/common/MainStyle'
+import ContactUsVfixSVG from './ContactUsVfixSVG'
 
 export default function Contact() {
     const [message, setMessage] = useState(false)
@@ -49,7 +50,7 @@ export default function Contact() {
                 <ContactFormContainer>
                     <Shadow />
                     <ContactLeftSide>
-                        <Image src={Data.contact.image} width={500} height={500} alt={Data.contact.contactALT} priority={false} />
+                        <ContactUsVfixSVG />
                     </ContactLeftSide>
                     <ContactRightSide>
                         {message ? <Message>Your response has been sent. One of our representatives will contact you shortly.</Message> :
