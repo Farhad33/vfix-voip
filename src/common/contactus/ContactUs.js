@@ -29,7 +29,11 @@ export default function Contact() {
     }
 
     const phoneValidation = (event) => {
-        event.target.setCustomValidity("Phone number must be 10 digits long...")
+        if(event.target.value.length === 10) {
+            event.target.setCustomValidity("")
+        } else {
+            event.target.setCustomValidity("Phone number must be 10 digits long.")
+        }
     }
 
 
