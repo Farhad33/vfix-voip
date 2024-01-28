@@ -24,13 +24,13 @@ export default function Contact() {
             "TicketType": "Request",
             "TicketTitle": "Vfix MSP Website Request"
         }
-        const contact = await axios.post('/api/atera', contactPayload);
+        await axios.post('/api/atera', contactPayload);
         setMessage(true)
     }
 
-    const handleInvalid = (event) => {
-        event.target.setCustomValidity("Phone number must be 10 digits long.")
-      };
+    const phoneValidation = (event) => {
+        event.target.setCustomValidity("Phone number must be 10 digits long...")
+    }
 
 
     return (
@@ -68,7 +68,8 @@ export default function Contact() {
                                     placeholder={Data.contact.phone} 
                                     required 
                                     pattern="[0-9]{10}"
-                                    onInvalid={handleInvalid}
+                                    onInvalid={phoneValidation}
+                                    onInput={phoneValidation}
                                     maxLength={10}
                                 />
                                 <textarea name="message" placeholder={Data.contact.message} rows="10" cols="50" required></textarea>
