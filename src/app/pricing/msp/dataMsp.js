@@ -1,3 +1,4 @@
+import { color } from "@/common/Theme"
 import { Tulpen_One } from "next/font/google"
 
 export const faqMSP = {
@@ -13,29 +14,29 @@ export const faqMSP = {
             title: 'How is VFIX MSP beneficial for my business?',
             paragraph: 'VFIX MSP streamlines your IT operations by proactively managing and monitoring devices, networks, and servers. Benefits include:',
             list: [
-                '*Reduced downtime through preemptive issue detection.',
-                '*Enhanced security with updated patches and advanced security features.',
-                '*Cost savings by avoiding major IT disasters.',
-                '*Support availability, ensuring smooth business operations.',
+                'Reduced downtime through preemptive issue detection.',
+                'Enhanced security with updated patches and advanced security features.',
+                'Cost savings by avoiding major IT disasters.',
+                'Support availability, ensuring smooth business operations.',
             ]
         },
         {
             title: 'How is pricing structured for VFIX MSP services?',
             paragraph: 'VFIX MSP offers tiered pricing depending on the device or service:',
             list: [
-                '*Node End Devices: Starts at $25/device/month.',
-                '*Servers: Begins at $175/server/month.',
-                '*Network (Per Location): Starting at $150/network/month.',
-                '*Printers: Offered at $10/printer/month.',
+                'Node End Devices: Starts at $25/device/month.',
+                'Servers: Begins at $175/server/month.',
+                'Network (Per Location): Starting at $150/network/month.',
+                'Printers: Offered at $10/printer/month.',
             ]
         },
         {
             title: 'What services can I expect for Node End Devices?',
             paragraph: 'Depending on your chosen tier:',
             list: [
-                '*Basic: Essential services like monitoring, patch management, and limited on-site support.',
-                '*Advanced: Enhanced security, firewall configuration, and extended remote support.',
-                '*Premium: 24/7 support, IT asset management, data backup, and more.',
+                'Basic: Essential services like monitoring, patch management, and limited on-site support.',
+                'Advanced: Enhanced security, firewall configuration, and extended remote support.',
+                'Premium: 24/7 support, IT asset management, data backup, and more.',
             ]
         },
         {
@@ -47,12 +48,12 @@ export const faqMSP = {
             paragraph: 'Network services, dependent on your pricing tier, include basic security, DHCP & DNS management, advanced security measures, firewall management, and more. Premium tier offers exclusive services like network design and planning.',
         },
         {
-            title: 'I only need services for my printers. What does VFIX MSP offer?',
-            paragraph: 'For printers, the Basic tier at $10/printer/month includes monitoring, basic troubleshooting, driver updates, and limited on-site support.',
+            title: 'What does "Limited on-site support (X Hours/M)" mean in VFIX MSP\'s offerings?',
+            paragraph: 'It represents the included hours of on-site technical support per month. For instance, "3 Hours/M" means up to 3 hours of on-site support each month. Consult VFIX MSP for any extra charges beyond the included hours.',
         },
         {
-            title: 'What does "Limited on-site support (X Hours/M)" mean in VFIX MSP\'s offerings?',
-            paragraph: 't represents the included hours of on-site technical support per month. For instance, "3 Hours/M" means up to 3 hours of on-site support each month. Consult VFIX MSP for any extra charges beyond the included hours.',
+            title: 'What if I go over my "Limited on-site support" hours?',
+            paragraph: 'In most cases you wont even need any on-site services. But if that\'s the case you will be charged based on Managed IT services hourly rate.',
         },
         {
             title: 'How can VFIX MSP assure the security of my business data?',
@@ -70,46 +71,9 @@ export const faqMSP = {
 }
 
 export const tablePricingData = [
+    
     {
-        title: 'Break and Fix Model',
-        table: {
-            thead: [
-                {
-                    title: 'Services',
-                    price: ''
-                },
-                {
-                    title: 'Hourly',
-                    price: '$250',
-                    description: 'printer/month' 
-                },
-            ],
-            tbody: [
-                {
-                    title: 'Printer monitoring and management',
-                    basic: true,
-                },
-                {
-                    title: 'Basic printer troubleshooting',
-                    basic: true,
-                },
-                {
-                    title: 'Printer driver installation and updates',
-                    basic: true,
-                },
-                {
-                    title: 'Limited on-site support (3 Hours/M)',
-                    basic: true,
-                },
-                {
-                    title: 'Remote support',
-                    basic: true,
-                },
-            ]
-        }
-    },
-    {
-        title: 'Node End Pricing (Desktops, Laptops)',
+        title: 'Desktop & Laptop Pricing',
         table: {
             thead: [
                 {
@@ -279,32 +243,44 @@ export const tablePricingData = [
             ],
             tbody: [
                 {
-                    title: 'Server monitoring',
+                    title: 'Server Monitoring',
                     basic: true,
                     advanced: true,
                     premium: true
                 },
                 {
-                    title: 'Patch management',
+                    title: 'Patch Management',
                     basic: true,
                     advanced: true,
                     premium: true
                 },
                 {
-                    title: 'Basic server maintenance',
+                    title: 'Basic Server Maintenance',
                     basic: true,
                     advanced: true,
                     premium: true
                 },
                 {
-                    title: 'User and permission management',
+                    title: 'User and Permission Management',
                     basic: true,
                     advanced: true,
                     premium: true
                 },
                 {
-                    title: 'Software and OS updates',
+                    title: 'Software and OS Updates',
                     basic: true,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Application Server Management',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Server Firewall Management',
+                    basic: false,
                     advanced: true,
                     premium: true
                 },
@@ -348,6 +324,30 @@ export const tablePricingData = [
                     title: 'Cloud server backup',
                     basic: false,
                     advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Vulnerability Assessment',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Endpoint Threat Detection And Response For Servers',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Antivirus and Anti-malware management For Servers',
+                    basic: false,
+                    advanced: true,
+                    premium: true
+                },
+                {
+                    title: 'Managed Detection And Response 24x7',
+                    basic: false,
+                    advanced: false,
                     premium: true
                 },
                 {
@@ -522,6 +522,53 @@ export const tablePricingData = [
                     title: 'Remote support',
                     basic: true,
                 },
+            ]
+        }
+    },
+    {
+        title: 'Extra Services',
+        table: {
+            thead: [
+                {
+                    title: 'Benefits',
+                    price: ''
+                },
+                {
+                    title: 'Break Fix Model',
+                    price: '$259/Hour',
+                    description: 'IT support for non service plan customers'
+                },
+                
+                {
+                    title: 'Managed IT Services',
+                    price: '$129/Hour',
+                    description: 'For additional On-Site IT support',
+                },
+
+            ],
+            tbody: [
+                {
+                    title: 'Guaranteed Service Time',
+                    basic: false,
+                    advanced: true,
+                },
+                {
+                    title: 'Predictable Costs',
+                    basic: false,
+                    advanced: true,
+                },
+                {
+                    title: 'Constant Monitoring after the service',
+                    basic: false,
+                    advanced: true,
+                },
+                {
+                    title: 'Robust Security',
+                    basic: false,
+                    advanced: true,
+                },
+
+                
             ]
         }
     },
