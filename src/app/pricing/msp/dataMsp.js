@@ -71,6 +71,44 @@ export const faqMSP = {
 
 export const tablePricingData = [
     {
+        title: 'Break and Fix Model',
+        table: {
+            thead: [
+                {
+                    title: 'Services',
+                    price: ''
+                },
+                {
+                    title: 'Hourly',
+                    price: '$250',
+                    description: 'printer/month' 
+                },
+            ],
+            tbody: [
+                {
+                    title: 'Printer monitoring and management',
+                    basic: true,
+                },
+                {
+                    title: 'Basic printer troubleshooting',
+                    basic: true,
+                },
+                {
+                    title: 'Printer driver installation and updates',
+                    basic: true,
+                },
+                {
+                    title: 'Limited on-site support (3 Hours/M)',
+                    basic: true,
+                },
+                {
+                    title: 'Remote support',
+                    basic: true,
+                },
+            ]
+        }
+    },
+    {
         title: 'Node End Pricing (Desktops, Laptops)',
         table: {
             thead: [
