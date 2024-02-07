@@ -1,5 +1,4 @@
-import { color } from "@/common/Theme"
-import { Tulpen_One } from "next/font/google"
+
 
 export const faqMSP = {
     pricingTitle: 'Our Pricing and FAQs',
