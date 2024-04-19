@@ -8,6 +8,12 @@ export const Data = {
             img: '/Login/HelpDeskSupport.png'
         },
         {
+            title: 'Cloud Backup',
+            buttonText: 'Login',
+            url: 'https://backup.vfixmsp.com/#/login',
+            img: '/Login/cloud.png'
+        },
+        {
             title: 'Fax Portal',
             buttonText: 'Login',
             url: 'https://myhostedfax.com',
