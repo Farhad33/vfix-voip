@@ -5,7 +5,7 @@ export default function Login() {
         <Page>
             <iframe
                 src="https://chat.openai.com/"
-                style="height:100vh;width:100%;"
+                style={{ height: '100vh', width: '100%' }}
             >
             </iframe>
         </Page>
