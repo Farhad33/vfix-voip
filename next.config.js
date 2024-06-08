@@ -12,4 +12,12 @@ module.exports = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: '/sitemap.xml',
+        destination: '/sitemap.xml.js',
+      },
+    ];
+  },
 }
