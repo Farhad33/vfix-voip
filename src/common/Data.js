@@ -118,15 +118,17 @@ export const Data = {
         alt: 'Vfix Voip Logo'
     },
     header: {
-        title: 'We help our Customers transform and grow their businesses with confidence.',
-        paragraph: 'VFIX Communications IT Managed Services, IT consulting, and business communications solutions such as VoIP, Unified Communications (UC), Hosted PBX Contact Center and Business Messaging services are designed to enhance productivity, streamline operations, and drive digital transformation. Partner with us to unlock the full potential of your organization and achieve sustainable growth.',
+        title: 'VFIX Provides IT Helpdesk Support and Managed IT Services for you home, office and small businesses in San Francisco Bay Area',
+        paragraph: 'VFIX Communications Managed IT Services, IT consulting, and communications solutions such as VoIP, Unified Communications (UC), Hosted PBX Contact Center and Messaging services are designed to enhance productivity, streamline operations, and drive digital transformation. Partner with us to unlock the full potential of your IT needs for your home or business.',
+        //'VFIX Communications Managed IT Services, IT consulting, and business communications solutions such as VoIP, Unified Communications (UC), Hosted PBX Contact Center and Business Messaging services are designed to enhance productivity, streamline operations, and drive digital transformation. Partner with us to unlock the full potential of your organization and achieve sustainable growth.'
         button: 'Learn More',
         img: '/Header/header.json',
         alt: 'Man'
     },
     success: {
         headTitle: 'Success With VFIX Communications',
-        headContent: ' Unlock your business s potential for success with our comprehensive suite of services. From reliable IT management to cutting-edge cloud solutions and seamless communication, we provide the tools and expertise to drive your business forward. Partner with us today and experience the transformation that leads to unparalleled success.',
+        headContent: 'Unlock your home or office IT needs with our comprehensive suite of services. From reliable IT management to cutting-edge cloud solutions and seamless communication, we provide the tools and expertise to drive your IT needs forward. Partner with us today and experience the transformation that leads to unparalleled success.',
+        //'Unlock your business potential for success with our comprehensive suite of services. From reliable IT management to cutting-edge cloud solutions and seamless communication, we provide the tools and expertise to drive your business forward. Partner with us today and experience the transformation that leads to unparalleled success.'
         button: 'Learn More',
         cards1: [
             {
@@ -136,7 +138,8 @@ export const Data = {
             },
             {
                 title: 'Tailored Solutions',
-                paragraph: 'We provide personalized, customized solutions that cater to your specific business needs, ensuring maximum efficiency and effectiveness.',
+                paragraph: 'We provide personalized, customized solutions that cater to your specific home or business needs, ensuring maximum efficiency and effectiveness.',
+                //'We provide personalized, customized solutions that cater to your specific business needs, ensuring maximum efficiency and effectiveness.'
                 svg: 'Tailored'
             },
         ],
@@ -148,7 +151,7 @@ export const Data = {
             },
             {
                 title: 'End-to-End Services',
-                paragraph: 'From IT Managed Services to cloud solutions and business communications, we offer a complete suite of services, simplifying your technology needs by having a single, trusted partner.',
+                paragraph: 'From Managed IT Services to cloud solutions and business communications, we offer a complete suite of services, simplifying your technology needs by having a single, trusted partner.',
                 svg: 'EndToEnd'
             },
         ]
@@ -185,39 +188,46 @@ export const Data = {
 
     },
     itmanaged: {
-        title: 'Your Trusted IT Managed Service Provider and IT Consulting Partner',
-        paragraph: 'At VFIX Communications, we are committed to delivering comprehensive IT solutions that meet the diverse needs of businesses across industries. As your trusted IT Managed Service Provider (MSP) and IT consulting partner, we offer a wide range of services to ensure your technology infrastructure is robust, secure, and aligned with your business goals. With our expertise and strategic guidance, we help you maximize productivity, enhance security, and drive digital transformation.',
+        title: 'Your Trusted Managed IT Service Provider and IT Consulting Partner',
+        paragraph: 'At VFIX Communications, we are committed to delivering comprehensive IT solutions for you that meet the diverse needs of your home or office. As your trusted Managed IT Service Provider (MSP) and IT consulting partner, we offer a wide range of services like computer and server repair, Wi-Fi network installation Virus and Malware Removal.',
+        //'At VFIX Communications, we are committed to delivering comprehensive IT solutions that meet the diverse needs of businesses across industries. As your trusted Managed IT Service Provider (MSP) and IT consulting partner, we offer a wide range of services to ensure your technology infrastructure is robust, secure, and aligned with your business goals. With our expertise and strategic guidance, we help you maximize productivity, enhance security, and drive digital transformation.'
         button: 'Learn More',
         img: '/ITManaged/ITManaged.png'
     },
     ITManagedServices: {
-        headTitle: 'IT Managed Services',
-        headContent: 'As your dedicated IT Managed Service Provider, we take care of your technology infrastructure so you can focus on your core business. Our tailored IT Managed Services include:',
+        headTitle: 'Managed IT Services',
+        headContent: 'As your dedicated Managed IT Service Provider, we take care of your technology infrastructure so you can focus on your core business. Our tailored Managed IT Services include:',
         cards: [
             {
-                title: 'Proactive Monitoring and Maintenance',
-                paragraph: 'We monitor your network, servers, and devices 24/7, detecting and resolving potential issues before they impact your operations. Our proactive approach ensures optimal performance, minimizes downtime, and improves overall system reliability.',
+                title: 'Virus and Malware Removal Service',
+                //Proactive Monitoring and Maintenance
+                paragraph: 'We remove Virus and Malwares from you home or office computer and update all the applications to ensure the secuirty of your computer. We also remove all the corrupt files and suggest a new malware protection to ensure your computer saftey in the future. ',
+                //'We monitor your network, servers, and devices 24/7, detecting and resolving potential issues before they impact your operations. Our proactive approach ensures optimal performance, minimizes downtime, and improves overall system reliability.'
                 button: 'Learn More',
                 svg: 'SVGProactive',
                 btnUrl: '/services/proactivemonitoring'
             },
             {
-                title: 'Network Security and Compliance',
-                paragraph: 'We implement robust security measures to protect your sensitive data from cyber threats. Our team ensures compliance with industry standards and regulations, such as HIPAA, GDPR, and PCI-DSS, providing you with peace of mind and mitigating risks.',
+                title: 'Wi-Fi Desgin and Installation',
+                //'Network Security and Compliance'
+                paragraph: 'We desing and implement your Wi-Fi using Mesh system to ensure you have a solid Wi-Fi network in your home or in your office and to protect your sensitive data from cyber threats. Our team ensures to implement industry standards and to providing you with peace of mind and mitigating risks.',
+                //'We implement robust security measures to protect your sensitive data from cyber threats. Our team ensures compliance with industry standards and regulations, such as HIPAA, GDPR, and PCI-DSS, providing you with peace of mind and mitigating risks.'
                 button: 'Learn More',
                 svg: 'SVGNetworkSecurity',
                 btnUrl: '/services/networksecurity'
             },
             {
                 title: 'Data Backup and Disaster Recovery',
-                paragraph: 'We safeguard your critical data through regular backups and implement comprehensive disaster recovery solutions. In the event of data loss or system failure, we ensure quick restoration and minimal disruption to your business operations.',
+                paragraph: 'We safeguard your critical data through regular backups and implement comprehensive disaster recovery solutions. In the event of data loss or system failure, we ensure quick restoration and minimal disruption to your day to day.',
+                //'We safeguard your critical data through regular backups and implement comprehensive disaster recovery solutions. In the event of data loss or system failure, we ensure quick restoration and minimal disruption to your business operations.'
                 button: 'Learn More',
                 svg: 'SVGDataBackup',
                 btnUrl: '/services/databackup'
             },
             {
                 title: 'Help Desk Support',
-                paragraph: 'Our dedicated help desk team is available to resolve your IT-related issues promptly. From troubleshooting software glitches to addressing hardware concerns, we provide efficient support, enabling your employees to stay productive.',
+                paragraph: 'Our dedicated help desk team is available to resolve your IT-related issues promptly. From troubleshooting software glitches to addressing hardware concerns, we provide efficient support,even as simple as a change of a Wi-Fi password',
+                //'Our dedicated help desk team is available to resolve your IT-related issues promptly. From troubleshooting software glitches to addressing hardware concerns, we provide efficient support, enabling your employees to stay productive.'
                 button: 'Learn More',
                 svg: 'SVGHelpDesk',
                 btnUrl: '/services/helpdesksupport'
@@ -238,7 +248,7 @@ export const Data = {
             },
         ]
     },
-    ITConsultingServices: {
+    /*ITConsultingServices: {
         headTitle: 'IT Consulting Services',
         headContent: 'Our IT consulting services are designed to transform your business and leverage technology for sustainable growth. We offer strategic guidance and practical solutions in various areas, including:',
         cards: [
@@ -287,7 +297,7 @@ export const Data = {
     },
     PartnerWithVfix: {
         headTitle: 'Partner with VFIX Communications to leverage the following advantages',
-        headContent: 'Contact us today to discuss your IT needs and discover how VFIX Communications can become your trusted IT Managed Service Provider and IT consulting partner. Let us empower your organization with reliable IT management, innovative solutions, and strategic guidance for long-term success.',
+        headContent: 'Contact us today to discuss your IT needs and discover how VFIX Communications can become your trusted Managed IT Service Provider and IT consulting partner. Let us empower your organization with reliable IT management, innovative solutions, and strategic guidance for long-term success.',
         contactUsText: 'Feeling unsure or have any questions? Reach out today and let s embark on a journey towards empowering your business!',
         contactUsBtn: 'Contact Us Today',
         cards: [
@@ -317,7 +327,7 @@ export const Data = {
                 svg: 'LongTerm'
             },
         ]
-    },
+    },*/
     footer: {
         address: 'San Francisco CA',
         phone: 'Toll Free: 888.888.5854',
@@ -353,7 +363,7 @@ export const Data = {
                 list: [
                     { name: 'Call Center', link: '/services/cloudcontentcenter' },
                     { name: 'IT Consulting', link: '/services/itconsulting' },
-                    { name: 'IT Managed Services', link: '/pricing/msp' },
+                    { name: 'Managed IT Services', link: '/pricing/msp' },
                     { name: 'Cloud Phone System', link: '/services/cloudphonesystem' },
                     { name: 'Cloud Services', link: '/services/cloudservices' },
                     { name: 'Business Messaging', link: '/services/businessmessaging' }
