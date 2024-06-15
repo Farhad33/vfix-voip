@@ -4,9 +4,9 @@ import Success from '@/common/success/Success'
 import Services from '@/common/services/Services'
 import ItManaged from '@/common/itmanaged/ItManaged'
 import ItServices from '@/common/itservices/ItServices'
-import ITConsulting from '@/common/itconsulting/ITConsulting'
-import Industries from '@/common/industries/Industries'
-import PartnerWithVfix from '@/common/partnerwithvfix/PartnerWithVfix'
+// import ITConsulting from '@/common/itconsulting/ITConsulting'
+// import Industries from '@/common/industries/Industries'
+// import PartnerWithVfix from '@/common/partnerwithvfix/PartnerWithVfix'
 
 export const metadata = {
   title: 'Vfix Viop',
@@ -22,9 +22,9 @@ export default function Home() {
       <Services />
       <ItManaged />
       <ItServices />
-      <ITConsulting />
-      <Industries />
-      <PartnerWithVfix />
+      {/* <ITConsulting /> */}
+      {/* <Industries /> */}
+      {/* <PartnerWithVfix /> */}
     </Page> 
     
   )
