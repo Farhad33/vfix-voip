@@ -1,6 +1,6 @@
 export const  data = {
     topSection: {
-        title: "Empower Your Business  and Unleash Success through Expertise and Reliability with VFIX MSP",
+        title: "Empower Your Business and Unleash Success through Expertise and Reliability with VFIX Managed Services",
         img: '/Why-Vfix/why-vfix.png',
         listTitle: "Why choose VFIX MSP over the competitors?",
         list: [
@@ -29,7 +29,7 @@ export const  data = {
     featureTitle: "Industry Leading UCaaS and IT Services",
     features: [
         {
-            title: "IT Managed Services",
+            title: "Managed IT Services",
             paragraph: "",
             img: "/Why-Vfix/IT-Managed-Services.png"
         },
