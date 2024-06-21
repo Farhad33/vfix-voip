@@ -248,7 +248,7 @@ export const Data = {
             },
         ]
     },
-    /*ITConsultingServices: {
+    ITConsultingServices: {
         headTitle: 'IT Consulting Services',
         headContent: 'Our IT consulting services are designed to transform your business and leverage technology for sustainable growth. We offer strategic guidance and practical solutions in various areas, including:',
         cards: [
@@ -327,7 +327,7 @@ export const Data = {
                 svg: 'LongTerm'
             },
         ]
-    },*/
+    },
     footer: {
         address: 'San Francisco CA',
         phone: 'Toll Free: 888.888.5854',
