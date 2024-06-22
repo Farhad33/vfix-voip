@@ -1,5 +1,5 @@
 export const dataVoip = {
-    pricingTitle: 'Our Pricing and FAQs',
+    pricingTitle: 'VFIX VoIP FAQs',
     frequentlyTitle: 'Frequently Asked Questions',
     frequentlyParagraph: '',
     faqItems: [

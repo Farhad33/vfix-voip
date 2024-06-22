@@ -525,6 +525,47 @@ export const tablePricingData = [
         }
     },
     {
+        title: 'VFIX Cloud Backup',
+        table: {
+            thead: [
+                {
+                    title: 'Storage',
+                    price: 'Plan Price'
+                },
+                {
+                    title: '1 TB',
+                    price: '$14.99'
+                },                
+                {
+                    title: '2 TB',
+                    price: '$23.99'
+                },
+                {
+                    title: '3 TB',
+                    price: '$32.99'
+                },
+                {
+                    title: '4 TB',
+                    price: '$39.99'
+                },
+                {
+                    title: '6 TB',
+                    price: '$54.99'
+                },
+                {
+                    title: '8 TB',
+                    price: '$69.99'
+                },
+
+            ],
+            tbody: [
+               
+
+                
+            ]
+        }
+    },
+    {
         title: 'Extra Services',
         table: {
             thead: [
