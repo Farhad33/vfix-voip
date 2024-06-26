@@ -2,7 +2,7 @@
 export const Data =  {   
     contact : {
         subject: 'Contact Us Today',
-        p: `We are committed to our Partners’ success. Contact us today to start building your cloud business.`,
+        p: `We are committed to our customers’ success. Contact us today to see how VFIX can help your business.`,
         buttonName: 'Submit',
         firstName: 'First Name...',
         lastName: 'Last Name...',

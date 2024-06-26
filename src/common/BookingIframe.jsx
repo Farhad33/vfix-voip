@@ -14,9 +14,9 @@ export default function BookingIframe({ showBooking, setShowbooking }) {
                     </>}
                     <Iframe 
                         onLoad={() => setIsLoaded(false)}
-                        src='https://book.ms/b/VFIXCommunicationExpert@myvfix.com' 
+                        src='https://outlook.office365.com/owa/calendar/TalktoVFIXTechnician@VFIXmsp.com/bookings/'
                     ></Iframe>
-                    <CloseButton onClick={() => setShowbooking(!showBooking)}>X</CloseButton>
+                    <CloseButton onClick={() => setShowbooking(!showBooking)}>❌</CloseButton>
                 </IframeContainer>
             )}
         </>
@@ -56,7 +56,7 @@ const CloseButton = Styled.button`
   right: 30px;
   border: none;
   background: transparent;
-  font-size: 30px;
+  font-size: 20px;
   padding: 5px;
   cursor: pointer;
   z-index: 11;

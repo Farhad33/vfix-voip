@@ -7,8 +7,8 @@ import { PricingTitle } from './PricingPageStyle'
 import { dataVoip } from "./dataVoip"
 
 export const metadata = {
-    title: 'Business Communications',
-    description: 'Business Communications',
+    title: 'Affordable VoIP Solutions - VFIX Communications Pricing',
+    description: 'Explore affordable VoIP solutions with VFIX Communications. Discover competitive pricing for high-quality VoIP services designed to enhance communication and productivity for businesses in the San Francisco Bay Area. Contact Us Today for a customized quote!',
   }
 
 export default function BusinessCommunications() {

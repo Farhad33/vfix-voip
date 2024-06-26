@@ -10,7 +10,7 @@ export const Data = {
                 route: '',
                 dropdown: [
                     {
-                        title: 'UCaas',
+                        title: 'Unified Communications',
                         route: '',
                         dropdown: [
                             {
@@ -46,7 +46,7 @@ export const Data = {
                         ],
                     },
                     {
-                        title: 'IT MSP',
+                        title: 'Managed IT Services',
                         route: '',
                         dropdown: [
                             {
@@ -70,7 +70,7 @@ export const Data = {
                                 svg: 'Helpdesk'
                             },
                             {
-                                title: 'Software and Hardware Management',
+                                title: 'IT Project Management',
                                 route: '/services/softwarehardware',
                                 svg: 'SoftwareAndHardware'
                             },
@@ -92,7 +92,7 @@ export const Data = {
                 route: '',
                 dropdown: [
                     {
-                        title: 'IT MSP & Consulting',
+                        title: 'Managed IT & Consulting',
                         route: '/pricing/msp',
                         svg: 'ITMSP'
                     },
@@ -118,17 +118,15 @@ export const Data = {
         alt: 'Vfix Voip Logo'
     },
     header: {
-        title: 'VFIX Provides IT Helpdesk Support and Managed IT Services for you home, office and small businesses in San Francisco Bay Area',
-        paragraph: 'VFIX Communications Managed IT Services, IT consulting, and communications solutions such as VoIP, Unified Communications (UC), Hosted PBX Contact Center and Messaging services are designed to enhance productivity, streamline operations, and drive digital transformation. Partner with us to unlock the full potential of your IT needs for your home or business.',
-        //'VFIX Communications Managed IT Services, IT consulting, and business communications solutions such as VoIP, Unified Communications (UC), Hosted PBX Contact Center and Business Messaging services are designed to enhance productivity, streamline operations, and drive digital transformation. Partner with us to unlock the full potential of your organization and achieve sustainable growth.'
+        title: 'VFIX: Comprehensive Managed IT Services in San Francisco Bay Area',
+        paragraph: 'VFIX provides Managed IT Services, IT consulting, and business communications solutions such as VoIP, Cloud Contact Center, and Business Messaging services. These solutions are crafted to enhance productivity, streamline operations, and drive digital transformation.',
         button: 'Learn More',
         img: '/Header/header.json',
         alt: 'Man'
     },
     success: {
         headTitle: 'Success With VFIX Communications',
-        headContent: 'Unlock your home or office IT needs with our comprehensive suite of services. From reliable IT management to cutting-edge cloud solutions and seamless communication, we provide the tools and expertise to drive your IT needs forward. Partner with us today and experience the transformation that leads to unparalleled success.',
-        //'Unlock your business potential for success with our comprehensive suite of services. From reliable IT management to cutting-edge cloud solutions and seamless communication, we provide the tools and expertise to drive your business forward. Partner with us today and experience the transformation that leads to unparalleled success.'
+        headContent: 'Unlock your business potential for success with our comprehensive suite of services. From reliable IT management to cutting-edge cloud solutions and seamless communication, we provide the tools and expertise to drive your business forward. Partner with us today and experience the transformation that leads to unparalleled success.',
         button: 'Learn More',
         cards1: [
             {
@@ -138,8 +136,7 @@ export const Data = {
             },
             {
                 title: 'Tailored Solutions',
-                paragraph: 'We provide personalized, customized solutions that cater to your specific home or business needs, ensuring maximum efficiency and effectiveness.',
-                //'We provide personalized, customized solutions that cater to your specific business needs, ensuring maximum efficiency and effectiveness.'
+                paragraph: 'We provide personalized, customized solutions that cater to your specific business needs, ensuring maximum efficiency and effectiveness.',
                 svg: 'Tailored'
             },
         ],
@@ -157,10 +154,10 @@ export const Data = {
         ]
     },
     services: {
-        headTitle: 'View Our UCaaS Services',
+        headTitle: 'Our VoIP and UCaaS Services',
         cards: [
             {
-                title: 'Hosted PBX',
+                title: 'Hosted PBX (VoIP)',
                 paragraph: 'Experience the transformative power of our advanced Hosted VoIP service. Save money, increase productivity, and stay ahead in the changing workplace with IP-based cloud communications.',
                 svg: 'HostedPBX'
             },
@@ -189,55 +186,48 @@ export const Data = {
     },
     itmanaged: {
         title: 'Your Trusted Managed IT Service Provider and IT Consulting Partner',
-        paragraph: 'At VFIX Communications, we are committed to delivering comprehensive IT solutions for you that meet the diverse needs of your home or office. As your trusted Managed IT Service Provider (MSP) and IT consulting partner, we offer a wide range of services like computer and server repair, Wi-Fi network installation Virus and Malware Removal.',
-        //'At VFIX Communications, we are committed to delivering comprehensive IT solutions that meet the diverse needs of businesses across industries. As your trusted Managed IT Service Provider (MSP) and IT consulting partner, we offer a wide range of services to ensure your technology infrastructure is robust, secure, and aligned with your business goals. With our expertise and strategic guidance, we help you maximize productivity, enhance security, and drive digital transformation.'
+        paragraph: 'At VFIX Communications, we are committed to delivering comprehensive IT solutions that meet the diverse needs of businesses across industries. As your trusted Managed IT Service Provider (MSP) and IT consulting partner, we offer a wide range of services to ensure your technology infrastructure is robust, secure, and aligned with your business goals. With our expertise and strategic guidance, we help you maximize productivity, enhance security, and drive digital transformation.',
         button: 'Learn More',
         img: '/ITManaged/ITManaged.png'
     },
     ITManagedServices: {
-        headTitle: 'Managed IT Services',
+        headTitle: 'VFIX Managed IT Services',
         headContent: 'As your dedicated Managed IT Service Provider, we take care of your technology infrastructure so you can focus on your core business. Our tailored Managed IT Services include:',
         cards: [
             {
-                title: 'Virus and Malware Removal Service',
-                //Proactive Monitoring and Maintenance
-                paragraph: 'We remove Virus and Malwares from you home or office computer and update all the applications to ensure the secuirty of your computer. We also remove all the corrupt files and suggest a new malware protection to ensure your computer saftey in the future. ',
-                //'We monitor your network, servers, and devices 24/7, detecting and resolving potential issues before they impact your operations. Our proactive approach ensures optimal performance, minimizes downtime, and improves overall system reliability.'
+                title: 'Proactive Remote Monitoring and Maintenance',
+                paragraph: 'We monitor your network, servers, and devices 24/7, detecting and resolving potential issues before they impact your operations. Our proactive approach ensures optimal performance, minimizes downtime, and improves overall system reliability.',
                 button: 'Learn More',
                 svg: 'SVGProactive',
                 btnUrl: '/services/proactivemonitoring'
             },
             {
-                title: 'Wi-Fi Desgin and Installation',
-                //'Network Security and Compliance'
-                paragraph: 'We desing and implement your Wi-Fi using Mesh system to ensure you have a solid Wi-Fi network in your home or in your office and to protect your sensitive data from cyber threats. Our team ensures to implement industry standards and to providing you with peace of mind and mitigating risks.',
-                //'We implement robust security measures to protect your sensitive data from cyber threats. Our team ensures compliance with industry standards and regulations, such as HIPAA, GDPR, and PCI-DSS, providing you with peace of mind and mitigating risks.'
+                title: 'Network Security and Compliance',
+                paragraph: 'We implement robust security measures to protect your sensitive data from cyber threats. Our team ensures compliance with industry standards and regulations, such as HIPAA, GDPR, and PCI-DSS, providing you with peace of mind and mitigating risks.',
                 button: 'Learn More',
                 svg: 'SVGNetworkSecurity',
                 btnUrl: '/services/networksecurity'
             },
             {
-                title: 'Data Backup and Disaster Recovery',
-                paragraph: 'We safeguard your critical data through regular backups and implement comprehensive disaster recovery solutions. In the event of data loss or system failure, we ensure quick restoration and minimal disruption to your day to day.',
-                //'We safeguard your critical data through regular backups and implement comprehensive disaster recovery solutions. In the event of data loss or system failure, we ensure quick restoration and minimal disruption to your business operations.'
+                title: 'IT Project Management',
+                paragraph: 'Our IT project management services cover the full project lifecycle, from planning to completion. With PMP® certified staff, projects are delivered on time, within budget, and meet your business objectives, minimizing risks and maximizing efficiency.',
                 button: 'Learn More',
-                svg: 'SVGDataBackup',
-                btnUrl: '/services/databackup'
+                svg: 'SVGHardwareManagement',
+                btnUrl: '/services/softwarehardware'
             },
             {
-                title: 'Help Desk Support',
-                paragraph: 'Our dedicated help desk team is available to resolve your IT-related issues promptly. From troubleshooting software glitches to addressing hardware concerns, we provide efficient support,even as simple as a change of a Wi-Fi password',
-                //'Our dedicated help desk team is available to resolve your IT-related issues promptly. From troubleshooting software glitches to addressing hardware concerns, we provide efficient support, enabling your employees to stay productive.'
+                title: 'IT Help Desk Support',
+                paragraph: 'Our dedicated help desk team is available to resolve your IT-related issues promptly. From troubleshooting software glitches to addressing hardware concerns, we provide efficient support, enabling your employees to stay productive.',
                 button: 'Learn More',
                 svg: 'SVGHelpDesk',
                 btnUrl: '/services/helpdesksupport'
             },
             {
-                title: 'Software and Hardware Management',
-                paragraph: 'We handle all aspects of software and hardware management, including license management, updates, and upgrades. Our experts ensure that your technology environment is up-to-date, secure, and optimized for performance.',
+                title: 'Data Backup and Disaster Recovery',
+                paragraph: 'We safeguard your critical data through regular backups and implement comprehensive disaster recovery solutions. In the event of data loss or system failure, we ensure quick restoration and minimal disruption to your business operations.',
                 button: 'Learn More',
-                svg: 'SVGHardwareManagement',
-                btnUrl: '/services/softwarehardware'
+                svg: 'SVGDataBackup',
+                btnUrl: '/services/databackup'
             },
             {
                 title: 'Cloud Services and Migration',
@@ -248,7 +238,7 @@ export const Data = {
             },
         ]
     },
-    /*ITConsultingServices: {
+    ITConsultingServices: {
         headTitle: 'IT Consulting Services',
         headContent: 'Our IT consulting services are designed to transform your business and leverage technology for sustainable growth. We offer strategic guidance and practical solutions in various areas, including:',
         cards: [
@@ -327,7 +317,7 @@ export const Data = {
                 svg: 'LongTerm'
             },
         ]
-    },*/
+    },
     footer: {
         address: 'San Francisco CA',
         phone: 'Toll Free: 888.888.5854',
@@ -350,7 +340,7 @@ export const Data = {
             {
                 title: 'Cloud Phone System',
                 list: [
-                    { name: 'PowerDialer', link: '/services/cloudphonesystem' },
+                    { name: 'Voice over IP (VoIP)', link: '/services/cloudphonesystem' },
                     { name: 'IVR', link: '/services/cloudcontentcenter' },
                     { name: 'Call Routing', link: '/services/directrouting' },
                     { name: 'Call Center Analytics', link: '/services/cloudcontentcenter' },
@@ -372,12 +362,13 @@ export const Data = {
             {
                 title: 'Portals',
                 list: [
-                    { name: 'Service Desk Portal', link: 'http://portal.vfixmsp.com' },
+                    { name: 'Service Desk Portal', link: 'https://portal.vfixmsp.com' },
                     { name: 'Fax Portal', link: 'https://myhostedfax.com' },
                     { name: 'Call Recordings', link: 'https://vfix.mysiprec.com' },
                     { name: 'Phone System End User Portal ', link: 'https://vfix.uccommportal.com' },
                     { name: 'Business Group Admin Portal ', link: 'https://vfix.uccommportal.com/bg' },
-                    { name: 'Self Serve Billing', link: 'https://vfix.mycloudbill.com/selfcare.do?party=vfix' }
+                    { name: 'Self Serve Billing', link: 'https://vfix.mycloudbill.com/selfcare.do?party=vfix' },
+                    { name: 'VFIX Cloud Backup', link: 'https://backup.vfixmsp.com' }
                 ]
             },
             {
@@ -387,21 +378,21 @@ export const Data = {
                     { name: 'Network Security', link: '/services/networksecurity' },
                     { name: 'IT Help Desk', link: '/services/helpdesksupport' },
                     { name: 'Proactive Monitoring & Maintenance ', link: '/services/proactivemonitoring' },
-                    { name: 'Software & Hardware Mangement', link: '/services/softwarehardware' },
+                    { name: 'IT Project Management', link: '/services/softwarehardware' },
                     { name: 'Backup and disaster recovery', link: '/services/databackup' },
                 ]
             },
             {
                 title: 'Pricing & FAQs',
                 list: [
-                    { name: 'Managed Services', link: '/pricing/msp' },
+                    { name: 'Managed IT Services', link: '/pricing/msp' },
                     { name: 'Business Comminucations', link: '/pricing/voip' },
-                    { name: 'Status', link: 'https://status.vfixmsp.com/' }
+                    { name: 'System Status', link: 'https://status.vfixmsp.com/' }
                 ]
             },
         ],
         footerEnd: {
-            list: ['Copyright VFIX 2023', 'Privacy Policy', 'Terms & Conditions']
+            list: ['Copyright VFIX 2024', /*'Privacy Policy', 'Terms & Conditions'*/]
         }
     }
 }
