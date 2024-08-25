@@ -21,7 +21,7 @@ export default function Blog({ id }) {
   }, [id, endPoint])
 
   if(data.length === 0) return <h1>loading ...</h1>
-
+  
   return (
     <BlogsContainer>
         <Title variant='h2'>{data?.attributes?.title}</Title>

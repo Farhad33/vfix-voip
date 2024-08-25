@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown'
 import styled from 'styled-components'
 import gfm from 'remark-gfm';
 import Image from 'next/image'
+import { strapiBaseURL } from '@/lib/api'
 
 const StyledMarkdown = styled(ReactMarkdown)`
     h1, h2, h3, h4, h5, h6 {
@@ -42,7 +43,8 @@ const StyledMarkdown = styled(ReactMarkdown)`
 const Markdown = ({ children }) => {
     const components = {
       img: ({node, ...props}) => {
-        return <Image {...props} width={300} height={300} alt={props.alt} />
+        const url = `${strapiBaseURL}${props.src}`
+        return <Image {...props} src={url} width={300} height={300} alt={props.alt} />
       },
     };
   
