@@ -8,7 +8,6 @@ import { strapiBaseURL } from '@/lib/api'
 const StyledMarkdown = styled(ReactMarkdown)`
     h1, h2, h3, h4, h5, h6 {
         margin-top: 25px;
-        margin-bottom: 25px;
         color: rgba(41, 41, 41, 1);
     }
     p, ol, li, img {
@@ -21,10 +20,10 @@ const StyledMarkdown = styled(ReactMarkdown)`
         word-wrap: break-word;
         color: rgba(41, 41, 41, 1);
         font-size: 20px;
-        margin-top: 2em;
+        margin-top: 10px;
+        margin-bottom: 50px;
         line-height: 32px;
         letter-spacing: -0.003em;
-        margin-bottom: -0.46em;
     }
     ol, ul {
         color: rgba(41, 41, 41, 1);
