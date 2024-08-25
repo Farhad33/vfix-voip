@@ -71,7 +71,7 @@ export const Data = {
                             },
                             {
                                 title: 'IT Project Management',
-                                route: '/services/softwarehardware',
+                                route: '/services/itprojectmanagement',
                                 svg: 'SoftwareAndHardware'
                             },
                             {
@@ -213,7 +213,7 @@ export const Data = {
                 paragraph: 'Our IT project management services cover the full project lifecycle, from planning to completion. With PMP® certified staff, projects are delivered on time, within budget, and meet your business objectives, minimizing risks and maximizing efficiency.',
                 button: 'Learn More',
                 svg: 'SVGHardwareManagement',
-                btnUrl: '/services/softwarehardware'
+                btnUrl: '/services/itprojectmanagement'
             },
             {
                 title: 'IT Help Desk Support',
@@ -378,7 +378,7 @@ export const Data = {
                     { name: 'Network Security', link: '/services/networksecurity' },
                     { name: 'IT Help Desk', link: '/services/helpdesksupport' },
                     { name: 'Proactive Monitoring & Maintenance ', link: '/services/proactivemonitoring' },
-                    { name: 'IT Project Management', link: '/services/softwarehardware' },
+                    { name: 'IT Project Management', link: '/services/itprojectmanagement' },
                     { name: 'Backup and disaster recovery', link: '/services/databackup' },
                 ]
             },

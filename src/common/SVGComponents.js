@@ -5,7 +5,7 @@ const SVGComponents = {
     SVGNetworkSecurity: dynamic(() => import('@/app/services/networksecurity/SVGComponent')),
     SVGDataBackup: dynamic(() => import('@/app/services/databackup/SVGComponent')),
     SVGHelpDesk: dynamic(() => import('@/app/services/helpdesksupport/SVGComponent')),
-    SVGHardwareManagement: dynamic(() => import('@/app/services/softwarehardware/SVGComponent')),
+    SVGHardwareManagement: dynamic(() => import('@/app/services/itprojectmanagement/SVGComponent')),
     SVGCloudServices: dynamic(() => import('@/app/services/cloudservices/SVGComponent')),
 
     Tailored: dynamic(() => import('@/common/success/Tailored')),
