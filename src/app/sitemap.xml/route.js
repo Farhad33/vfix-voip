@@ -34,7 +34,7 @@ async function generateSitemap() {
 
         let urls = response.data.data.map((page) => `
             <url>
-                <loc>https://www.vfixmsp.com/blog/${page.id}</loc>
+                <loc>https://www.vfixmsp.com/blog/${page.id}/${page?.attributes?.title.toLowerCase().replace(/\s/g, '-')}</loc>
                 <lastmod>${new Date(page.attributes.updatedAt).toISOString()}</lastmod>
             </url>
         `).join('');

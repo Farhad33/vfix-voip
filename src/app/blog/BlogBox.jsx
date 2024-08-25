@@ -7,9 +7,10 @@ export default function BlogBox({ content }) {
     const { push } = useRouter()
     const formatDate = (dateString) => 
         new Date(dateString).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+        let urlTitle = content?.attributes?.title.toLowerCase().replace(/\s/g, '-')
 
     return (
-        <ArticleBox onClick={() => push(`/blog/${content?.id}`)}>
+        <ArticleBox onClick={() => push(`/blog/${content?.id}/${urlTitle}`)}>
             <Thumbnail 
                 src={`https://strapi.myvfix.com${content?.attributes?.thumbnail?.data?.attributes?.url}`} 
                 alt={content?.attributes?.thumbnail?.data?.attributes?.alternativeText}
