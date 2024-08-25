@@ -32,12 +32,81 @@ async function generateSitemap() {
             throw new Error('Invalid API response structure');
         }
 
-        const urls = response.data.data.map((page) => `
+        let urls = response.data.data.map((page) => `
             <url>
-                <loc>https://vfixmsp.com/blog/${page.id}</loc>
+                <loc>https://www.vfixmsp.com/blog/${page.id}</loc>
                 <lastmod>${new Date(page.attributes.updatedAt).toISOString()}</lastmod>
             </url>
         `).join('');
+
+        urls += `
+            <url>
+                <loc>https://www.vfixmsp.com</loc>
+            </url>
+            <url>
+                <loc>https://www.vfixmsp.com/services/cloudphonesystem</loc>
+            </url>
+            <url>
+                <loc>https://www.vfixmsp.com/services/cloudcontentcenter</loc>
+            </url>
+            <url>
+                <loc>https://www.vfixmsp.com/services/businessmessaging</loc>
+            </url>
+            <url>
+                <loc>https://www.vfixmsp.com/services/teamwebcollaboration</loc>
+            </url>
+            <url>
+                <loc>https://www.vfixmsp.com/services/directrouting</loc>
+            </url>
+            <url>
+                <loc>https://www.vfixmsp.com/services/mobiledesktopapp</loc>
+            </url>
+            <url>
+                <loc>https://www.vfixmsp.com/services/proactivemonitoring</loc>
+            </url>
+            <url>
+                <loc>https://www.vfixmsp.com/services/networksecurity</loc>
+            </url>
+            <url>
+                <loc>https://www.vfixmsp.com/services/databackup</loc>
+            </url>
+            <url>
+                <loc>https://www.vfixmsp.com/services/helpdesksupport</loc>
+            </url>
+            <url>
+                <loc>https://www.vfixmsp.com/services/itprojectmanagement</loc>
+            </url>
+            <url>
+                <loc>https://www.vfixmsp.com/services/cloudservices</loc>
+            </url>
+            <url>
+                <loc>https://www.vfixmsp.com/services/itconsulting</loc>
+            </url>
+            <url>
+                <loc>https://www.vfixmsp.com/whyvfix</loc>
+            </url>
+            <url>
+                <loc>https://www.vfixmsp.com/pricing/msp</loc>
+            </url>
+            <url>
+                <loc>https://www.vfixmsp.com/pricing/voip</loc>
+            </url>
+            <url>
+                <loc>https://www.vfixmsp.com/download</loc>
+            </url>
+            <url>
+                <loc>https://www.vfixmsp.com/blog</loc>
+            </url>
+            <url>
+                <loc>https://portal.vfixmsp.com/login?redirectTo=%2F</loc>
+            </url>
+            <url>
+                <loc>https://backup.vfixmsp.com/#/login</loc>
+            </url>
+            <url>
+                <loc>https://status.vfixmsp.com</loc>
+            </url>
+        `
 
         return `<?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
