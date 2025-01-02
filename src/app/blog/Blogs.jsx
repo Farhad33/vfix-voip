@@ -11,7 +11,7 @@ export default function Blogs() {
   
   useEffect(() => {
     strapiAPI(url)
-    .then(response => setData(response.data.data))
+    .then(response => setData(response.data.data.reverse()))
     .catch(error => console.log('error => ', error))
   }, [])
 
