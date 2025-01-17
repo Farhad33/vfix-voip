@@ -40,8 +40,8 @@ jobs:
             rm vfixmsp.tar.gz &&
             cd vfixmsp-temp &&
             find . -name '._*' -exec rm {} \; &&
-            npm i &&
-            npm run build &&
+            yarn &&
+            yarn build &&
             cd .. &&
             rm -rf vfixmsp &&
             mv vfixmsp-temp vfixmsp &&
