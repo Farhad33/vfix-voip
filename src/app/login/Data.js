@@ -4,7 +4,7 @@ export const Data = {
         {
             title: 'Help Desk Support',
             buttonText: 'Login',
-            url: 'http://portal.vfixmsp.com',
+            url: 'https://it.vfixmsp.com',
             img: '/Login/HelpDeskSupport.png'
         },
         {
@@ -20,28 +20,34 @@ export const Data = {
             img: '/Login/FaxPortal.png'
         },
         {
-            title: 'Call Recordings',
+            title: 'Phone System',
             buttonText: 'Login',
-            url: 'https://vfix.mysiprec.com',
+            url: 'https://voip.vfixmsp.com/',
             img: '/Login/CallRecordings.png'
         },
         {
-            title: 'Billing & Invoices',
+            title: 'Video Meetings',
+            buttonText: 'Login',
+            url: ' https://voip.vfixmsp.com/video/',
+            img: '/Login/videocall.png'
+        },
+        {
+            title: 'Phone Billing & Invoices',
             buttonText: 'Login',
             url: ' https://vfix.mycloudbill.com/selfcare.do?party=vfix',
             img: '/Login/Billing&Invoices.png'
         },
-        {
-            title: 'VOIP Phone User Portal',
-            buttonText: 'Login',
-            url: 'https://vfix.uccommportal.com',
-            img: '/Login/VOIPPhoneUserPortal.png'
-        },
-        {
-            title: 'Business Group Admin',
-            buttonText: 'Login',
-            url: 'https://vfix.uccommportal.com/bg',
-            img: '/Login/BusinessGroupAdmin.png'
-        },
+        // {
+        //     title: 'VOIP Phone User Portal',
+        //     buttonText: 'Login',
+        //     url: 'https://vfix.uccommportal.com',
+        //     img: '/Login/VOIPPhoneUserPortal.png'
+        // },
+        // {
+        //     title: 'Business Group Admin',
+        //     buttonText: 'Login',
+        //     url: 'https://vfix.uccommportal.com/bg',
+        //     img: '/Login/BusinessGroupAdmin.png'
+        // },
     ]
 }
